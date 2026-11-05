@@ -72,7 +72,7 @@ Resposta: **“Sim, MIT e material autoral”.**
 Decisão: usar MIT e produzir material original. Não copiar páginas ou exercícios
 do livro para o projeto.
 
-## Rodada 2 — propostas aguardando resposta
+## Rodada 2 — decisões confirmadas
 
 ### Q4 — produção e reprodução do áudio
 
@@ -84,7 +84,8 @@ claramente identificado, enquanto faltarem amostras.
 Motivo: evitar latência de geração e cobrança por reprodução; garantir que os
 exercícios usem notas afinadas.
 
-Status: **pendente**. O sintetizador provisório não foi aprovado.
+Status: **aprovado explicitamente** pela resposta “Brainstorming = sim para as três perguntas”.
+Amostras ElevenLabs validadas e sintetizador provisório identificado estão aprovados.
 
 ### Q5 — progressão didática e extensão do piano
 
@@ -92,7 +93,8 @@ Proposta: organizar o curso do básico ao avançado, entregando primeiro fundame
 notas, pauta, claves de sol e fá, figuras, pausas e compassos. Piano SVG de 88 teclas,
 com região do exercício destacada e navegação horizontal no celular.
 
-Status: **pendente**. A ordem detalhada e as 88 teclas não foram aprovadas.
+Status: **aprovado explicitamente** pela mesma resposta. Progressão proposta e
+piano SVG de 88 teclas, com destaque e navegação horizontal no celular, estão aprovados.
 
 ### Q6 — visual e formas de interação
 
@@ -100,7 +102,9 @@ Proposta: visual sóbrio de conservatório, temas claro e escuro, exercícios po
 clique/toque no piano e teclado do computador. MIDI e reconhecimento de som por
 microfone ficam para depois.
 
-Status: **pendente**. Essas escolhas ainda não foram aprovadas.
+Status: **aprovado explicitamente** pela mesma resposta. Visual de conservatório,
+temas claro/escuro e interação por toque, mouse e teclado estão aprovados.
+MIDI e reconhecimento por microfone continuam para uma etapa posterior.
 
 ## Pesquisa técnica
 
@@ -231,8 +235,9 @@ Essa instrução autoriza execução e publicação no repositório, sem outra r
 confirmação. As recomendações ainda sem resposta de Q4–Q6 foram adotadas como
 premissas de implementação para permitir avanço: amostras validadas com som
 sintetizado provisório identificado; piano de 88 teclas; sol/fá e fundamentos;
-visual sóbrio, claro/escuro, interação por toque, mouse e teclado. Elas continuam
-sendo premissas, não respostas individuais atribuídas ao usuário.
+visual sóbrio, claro/escuro, interação por toque, mouse e teclado. Naquele momento
+eram premissas de implementação; posteriormente, o usuário aprovou explicitamente
+as três propostas, conforme registrado na rodada 2.
 
 ### Entregas e fatos atualizados
 
@@ -261,3 +266,15 @@ com integridade SQLite. O `ROADMAP.md` distingue as entregas verificadas das dua
 dependências externas: banco real de amostras ElevenLabs e deploy Railway/DNS.
 As fases futuras estão detalhadas em tarefas, subtarefas, microtarefas e asserts,
 sem serem apresentadas como implementadas.
+
+## Confirmação explícita da rodada 2
+
+Resposta do mantenedor: **“Brainstorming = sim para as três perguntas”.**
+
+A confirmação se refere a Q4, Q5 e Q6: áudio por amostras ElevenLabs validadas com
+síntese provisória identificada; progressão didática proposta e piano de 88 teclas;
+visual de conservatório com temas claro/escuro e interação por toque, mouse e teclado.
+Essas escolhas passam de premissas a decisões aprovadas, sem exigir mudanças no
+MVP já implementado. Credenciais, orçamento de geração e acesso Railway/DNS
+continuam sendo dependências operacionais; a aprovação não significa que esses
+serviços foram configurados nem que as amostras reais ou o deploy foram concluídos.

@@ -12,9 +12,10 @@ This is the primary handoff file for future sessions and agents. Read this file,
 - Keep code and original learning content MIT licensed. Never commit the source
   book, OCR text, credentials, runtime SQLite databases, or generated build output.
 - Implementation was explicitly authorized on 2026-11-05, including GitHub push.
-  Recommendations from interview round 2 are implementation assumptions, not
-  individual answers: sample-based piano with identified synthesis fallback,
-  88 keys, treble/bass fundamentals, light/dark interface, touch and keyboard.
+  The maintainer subsequently approved all three round-2 proposals explicitly:
+  validated ElevenLabs samples with an identified synthesis fallback, the proposed
+  learning progression and 88-key piano, and a conservatory-style light/dark
+  interface with touch, mouse and computer keyboard. MIDI/microphone remain future scope.
 - MVP includes local progress and original scores; accounts, score import, MIDI
   input and microphone recognition are future scope, not hidden MVP requirements.
 

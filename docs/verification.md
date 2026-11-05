@@ -69,3 +69,11 @@ handoff and preserve third-party attribution.
 
 These require the maintainer's service access. Local code/configuration and mocked
 API tests do not establish that the external operations were completed.
+
+## Round-2 approval update
+
+The maintainer explicitly approved Q4–Q6. Updated `docs/brainstorming.md`,
+`docs/project-decisions.md` and `ROADMAP.md` to distinguish the earlier assumptions
+from the current approved decisions. This is a documentation-only change;
+Markdown lint and whitespace checks validate it. Existing runtime behavior and
+external-operation completion statuses are unchanged.
