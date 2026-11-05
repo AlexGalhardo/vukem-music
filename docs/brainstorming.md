@@ -1,0 +1,222 @@
+# Vukem Music — brainstorming
+
+Data de início: 2026-11-05.
+Status: descoberta em andamento; implementação ainda não iniciada.
+
+Este arquivo registra o brainstorming, suas decisões e pendências. Uma sugestão
+não se torna requisito aprovado até receber uma resposta explícita do mantenedor.
+Atualizar este documento a cada resposta relevante, preservando o motivo das
+decisões e registrando eventuais mudanças de direção.
+
+## Objetivo
+
+Criar do zero um projeto open source para aprender teoria musical, com explicações,
+exercícios e leitura de partituras. Durante a reprodução, sincronizar o áudio com
+as notas destacadas na partitura e no piano SVG no navegador.
+
+## Requisitos fornecidos pelo mantenedor
+
+- Repositório: <https://github.com/AlexGalhardo/vukem-music.git>.
+- Configurar `origin` para esse repositório na implementação.
+- Backend com o framework pessoal Vukem:
+  <https://vukem.dev/docs/introduction>.
+- Inertia.js, React e shadcn/ui, com dashboard e sidebar.
+- SQLite como banco principal.
+- ElevenLabs para gerar notas com timbre de piano clássico.
+- Piano SVG no navegador, mostrando as teclas tocadas em sincronia com a partitura.
+- Explicações técnicas sobre os conceitos do livro de referência.
+- Ler integralmente o PDF e produzir resumos de todas as suas seções em `docs/*.md`
+  como referência para estudos e implementação.
+- Internacionalização em inglês, idioma padrão, e português.
+- Biome v2 para lint e formatação; `bun check` para verificar tipos.
+- Markdownlint e boas práticas open source, incluindo `SECURITY.md`,
+  `CODE_OF_CONDUCT.md`, `LICENSE.md` e `CONTRIBUTING.md`.
+- Deploy na Railway, com domínio `music.vukem.dev`.
+- Usar `grill-me` para perguntas, dúvidas e sugestões de implementação.
+- Documentar todo o brainstorming neste arquivo.
+- Ao final do brainstorming, criar `ROADMAP.md` na raiz do projeto como principal
+  guia de execução para sessões futuras e agentes.
+
+## Rodada 1 — decisões confirmadas
+
+### Q1 — escopo da primeira entrega
+
+Proposta: MVP para iniciantes com lições progressivas, exercícios de leitura e uma
+partitura de exemplo sincronizada com piano SVG e áudio. Importação de partituras
+fica para depois.
+
+Resposta: **“Sim, começar por esse MVP”.**
+
+Decisão: esse é o escopo inicial. A leitura e reprodução da partitura de exemplo
+fazem parte do MVP; importação de arquivos não faz parte dele.
+
+### Q2 — contas e progresso
+
+Proposta: começar sem cadastro, salvando o progresso no navegador.
+
+Resposta: **“Sim, sem cadastro inicialmente”.**
+
+Decisão: não implementar autenticação na primeira entrega. Login e sincronização
+de progresso entre dispositivos ficam para uma fase posterior a definir.
+O requisito de SQLite permanece; o progresso local não o substitui como banco
+principal da aplicação.
+
+### Q3 — licença e material educacional
+
+Proposta: MIT para código e conteúdo autoral; explicações e exercícios próprios,
+com referências ao livro e sem incluir o PDF no repositório público.
+
+Resposta: **“Sim, MIT e material autoral”.**
+
+Decisão: usar MIT e produzir material original. Não copiar páginas ou exercícios
+do livro para o projeto.
+
+## Rodada 2 — propostas aguardando resposta
+
+### Q4 — produção e reprodução do áudio
+
+Proposta: gerar amostras com ElevenLabs uma vez no backend, conferir e, quando
+necessário, corrigir a afinação. Reproduzir os arquivos no navegador com
+sincronização baseada no relógio do áudio. Usar um sintetizador provisório,
+claramente identificado, enquanto faltarem amostras.
+
+Motivo: evitar latência de geração e cobrança por reprodução; garantir que os
+exercícios usem notas afinadas.
+
+Status: **pendente**. O sintetizador provisório não foi aprovado.
+
+### Q5 — progressão didática e extensão do piano
+
+Proposta: organizar o curso do básico ao avançado, entregando primeiro fundamentos,
+notas, pauta, claves de sol e fá, figuras, pausas e compassos. Piano SVG de 88 teclas,
+com região do exercício destacada e navegação horizontal no celular.
+
+Status: **pendente**. A ordem detalhada e as 88 teclas não foram aprovadas.
+
+### Q6 — visual e formas de interação
+
+Proposta: visual sóbrio de conservatório, temas claro e escuro, exercícios por
+clique/toque no piano e teclado do computador. MIDI e reconhecimento de som por
+microfone ficam para depois.
+
+Status: **pendente**. Essas escolhas ainda não foram aprovadas.
+
+## Pesquisa técnica
+
+Fatos inspecionados em 2026-11-05; revalidar versões e ferramentas na implementação.
+
+### Vukem e frontend
+
+- Vukem usa Go no backend; Bun será o gerenciador de pacotes do frontend.
+- O framework oferece starter React com Inertia e suporte integrado a SQLite.
+- shadcn/ui precisa ser instalado e configurado no starter.
+- O starter possui verificação TypeScript; expor essa verificação como `bun check`.
+- `bun check` não verifica o backend Go, que precisa de verificações próprias.
+- Candidato de scaffold, ainda não executado:
+
+  ```sh
+  vukem new vukem-music \
+    --module github.com/AlexGalhardo/vukem-music \
+    --inertia react --pm bun --standards --license mit --ci
+  ```
+
+- O gerador usa `LICENSE`; adaptar para o `LICENSE.md` solicitado.
+- A inspeção do ambiente não encontrou Bun no PATH; o comando `go` disponível não
+  respondeu como compilador Go. Preparar e validar as ferramentas antes do scaffold.
+
+Fontes: [instalação](https://vukem.dev/docs/installation),
+[starters](https://vukem.dev/docs/starters),
+[banco de dados](https://vukem.dev/docs/database/overview),
+[Inertia e i18n](https://vukem.dev/docs/frontend/inertia-i18n).
+
+### Railway e SQLite
+
+- O template Railway assume PostgreSQL e worker; adaptar explicitamente para SQLite.
+- Persistir o banco em volume montado em `/app/storage`.
+- Executar migrations na inicialização do serviço com o volume disponível.
+- Não depender de migrations em pre-deploy para esse banco no volume.
+- Configurar `APP_URL=https://music.vukem.dev`, porta fornecida pela plataforma,
+  variáveis secretas e healthcheck.
+- Deploy e DNS ainda não foram configurados nem testados.
+
+Fonte: [Docker e Railway](https://vukem.dev/docs/deployment/docker-and-railway).
+
+### ElevenLabs
+
+- A API Sound Effects recebe descrição textual e parâmetros de geração.
+- O contrato inspecionado não expõe um campo numérico de frequência-alvo da nota.
+- Inferência técnica: não assumir afinação correta apenas pelo texto do prompt;
+  validar as amostras antes do uso didático.
+- Nenhuma amostra foi gerada. Credenciais, orçamento, quantidade de amostras e
+  critérios de aceitação ainda precisam ser definidos.
+
+Fonte: [Create sound effect](https://elevenlabs.io/docs/api-reference/text-to-sound-effects/convert).
+
+## Livro e progresso da leitura
+
+- Fonte fornecida:
+  <https://drive.google.com/file/d/1YVIp9m8UC4dpr878bRoFppoy5lEBG_Pw/view?usp=drivesdk>.
+- Identificação conferida: Bohumil Med, _Teoria da Música_, 5ª edição, MusiMed,
+  Brasília, 2017; ISBN 978-85-7092-058-4.
+- Download concluído em diretório temporário, fora do repositório.
+- Arquivo com 424 páginas digitalizadas, sem camada de texto utilizável.
+- Sumário localizado nas páginas 7–8 do PDF: 58 capítulos, além de materiais finais.
+- Áreas identificadas: som e notação; claves e valores; alterações; intervalos e
+  enarmonia; escalas e série harmônica; compassos e métrica; tonalidade e modulação;
+  modos e transposição; andamento, quiálteras e expressão; acordes, cifras e
+  ornamentos; condução de vozes; instrumentos transpositores e notação moderna.
+- Cobertura textual reportada pela pesquisa até este registro: páginas 1–30 do
+  PDF, com lacunas do OCR em símbolos musicais. Capa e sumário foram conferidos
+  visualmente. **A leitura integral não está concluída.**
+- OCR integral em andamento. Extração por OCR não equivale a leitura ou verificação
+  das partituras; exemplos e símbolos exigem conferência visual.
+- Documentar a cobertura por capítulo e as páginas de referência durante a leitura.
+- Os resumos de todas as seções ainda não foram escritos.
+
+### Sugestões técnicas surgidas da leitura inicial
+
+Ainda não aprovadas como implementação:
+
+- Separar grafia enarmônica da altura sonora no modelo de notas.
+- Representar durações musicais como valores racionais para preservar proporções.
+- Para exercícios em temperamento igual de 12 notas, considerar referência
+  Lá4 = 440 Hz e `f = 440 * 2^((midi - 69) / 12)`.
+- Contextualizar outros sistemas de afinação nas explicações, sem aplicar
+  simplificações históricas como fórmulas universais do motor de áudio.
+
+## Contrato para o ROADMAP.md final
+
+Criar na raiz do repositório, ao concluir o brainstorming. Será o principal arquivo
+para orientar a execução por futuras sessões e agentes. Até lá, não apresentar
+escolhas pendentes como fases ou requisitos aprovados.
+
+O roadmap deverá conter:
+
+- Fases ordenadas por dependências e entregas observáveis.
+- Tarefas, subtarefas e microtarefas com caixas de seleção.
+- Critérios verificáveis de qualidade e entrega, com asserts que indiquem como
+  comprovar cada resultado, incluindo comandos ou verificações manuais apropriadas.
+- Pré-requisitos, artefatos esperados e condições de conclusão por fase.
+- Separação entre MVP confirmado, evolução futura e decisões ainda abertas.
+- Estado real do trabalho: não marcar como concluído o que não foi verificado.
+- Instruções de retomada: ler este brainstorming, identificar a primeira tarefa
+  desbloqueada, executar, verificar e atualizar o status com evidências.
+- Requisitos de conteúdo autoral, i18n, acessibilidade, sincronização musical,
+  qualidade do áudio, persistência SQLite e operação na Railway.
+
+## Próximos pontos da discussão
+
+1. Receber respostas para Q4, Q5 e Q6.
+2. Fechar os detalhes desbloqueados pelas respostas, incluindo critérios de áudio,
+   persistência local, exercícios e critérios de acessibilidade.
+3. Concluir a leitura conferida do livro e mapear suas seções para a documentação.
+4. Consolidar entendimento compartilhado e criar o roadmap final solicitado.
+
+## Método da entrevista
+
+Skill solicitada: [grill-me](https://github.com/mattpocock/skills/blob/main/skills/productivity/grill-me/SKILL.md),
+que encaminha para [grilling](https://github.com/mattpocock/skills/blob/main/skills/productivity/grilling/SKILL.md).
+As perguntas avançam por rodadas conforme suas dependências são resolvidas.
+
+A instrução original de criação do projeto continua válida; a mensagem adicional
+sobre documentação não respondeu à rodada 2 nem cancelou o objetivo original.
