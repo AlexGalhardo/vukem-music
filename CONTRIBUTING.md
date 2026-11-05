@@ -9,8 +9,7 @@ You need [Go](https://go.dev/dl/) (the version in `go.mod`) and the Vukem CLI
 ([installation](https://vukem.dev/docs/installation)). Then, from a clone:
 
 ```sh
-cp .env.example .env
-vukem key:generate
+bun run setup
 vukem migrate
 bun install
 vukem serve

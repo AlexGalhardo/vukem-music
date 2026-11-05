@@ -26,8 +26,7 @@ Requirements: Go 1.27.3 and Bun 1.4.4. No ElevenLabs key is required for the pre
 
 ```sh
 bun install --frozen-lockfile
-cp .env.example .env
-go run ./cmd/app key:generate
+bun run setup
 go run ./cmd/app migrate
 bun run build
 go run ./cmd/app
@@ -60,7 +59,9 @@ bun run test:e2e
 
 Playwright starts the application and runs migrations automatically. Configure a
 local `.env` and key first. To use an existing Chromium install, set
-`PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` to its executable. See the recorded results in
+`PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` to its executable. `E2E_PORT` selects an
+isolated test port; Playwright starts with a private ephemeral key when needed.
+See the recorded results in
 [verification](docs/verification.md).
 
 ## Project references

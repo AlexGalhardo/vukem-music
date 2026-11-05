@@ -16,10 +16,10 @@ Date: 2026-11-05. Toolchain: Go 1.27.3, Bun 1.4.4, Chromium through Playwright 1
 - `bun lint`: Biome v2 checks code and formatting; narrow SVG/scroll accessibility
   exceptions are documented next to the relevant attributes.
 - `bun lint:md`: 74 Markdown files, no findings at the last check.
-- `bun run test`: 9 unit tests, 132 assertions passed. Covers pitch/enharmonic
+- `bun run test`: 10 unit tests, 137 assertions passed. Covers pitch/enharmonic
   spelling, rational/dotted values, all lesson measure lengths, rests, timing,
   resume segments, corrupt progress, sample pitch audit, manifest validation and
-  mocked ElevenLabs success/error requests.
+  mocked ElevenLabs success/error requests and safe environment setup.
 - `bun run build`: production assets built successfully.
 - `go test ./...`: passed with curriculum routes/data/locale checks, missing-lesson
   handling, healthcheck, backup/restore integrity and overwrite refusal.
@@ -50,7 +50,13 @@ Date: 2026-11-05. Toolchain: Go 1.27.3, Bun 1.4.4, Chromium through Playwright 1
 
 Initial main-branch CI passed:
 [foundation run](https://github.com/AlexGalhardo/vukem-music/actions/runs/42022108308).
-The final implementation push and its remote CI result are being recorded.
+The studio implementation was pushed as `bcfb6b53965fd3bb71349b4ca482770117b1681b`.
+Its first CI run passed image/Go/security/vulnerability/Markdown jobs, but exposed a
+cold-start test setup issue: the app binary’s `key:generate` prints a key instead
+of writing `.env`. The follow-up fix adds private, idempotent `bun run setup` and
+an ephemeral Playwright-server key. A fresh server on an isolated port with an
+empty inherited APP_KEY passed all four browser journeys. The fixed CI run is
+being recorded; do not describe the earlier failed run as green.
 
 ## External checks not performed
 

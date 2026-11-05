@@ -17,7 +17,8 @@
     "test": "bun test tests/unit",
     "test:e2e": "playwright test",
     "audio:generate": "bun scripts/generate-piano.ts",
-    "verify": "bun check && bun lint && bun lint:md && bun run test && bun run build"
+    "verify": "bun check && bun lint && bun lint:md && bun run test && bun run build",
+    "setup": "bun scripts/setup-env.ts"
   },
   "dependencies": {
     "@inertiajs/react": "3.9.1",

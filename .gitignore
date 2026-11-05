@@ -1,6 +1,7 @@
 # Environment
 .env
 .env.local
+.env.tmp
 .env.*.local
 
 # Build output and caches
