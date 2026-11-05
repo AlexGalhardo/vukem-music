@@ -253,8 +253,11 @@ accounts/import/MIDI remain future scope. The maintainer reprioritized the score
 library and harmony introduction: see phase 6 and the research/content documents.
 
 Latest extension: the 50-work `/library` and eleven-topic `/harmony` introduction
-are implemented in EN/PT. Source PDFs remain outside Git; all five browser
-journeys, thirteen unit tests, build, type/lint and Go checks passed locally.
+are implemented in EN/PT and published as
+`69c837f81443defa6925157379dbbb8cfa3b6d6a`. All six remote CI jobs passed:
+[repertoire/harmony verification](https://github.com/AlexGalhardo/vukem-music/actions/runs/42084474571).
+Source PDFs remain outside Git; all five browser journeys, thirteen unit tests,
+build, type/lint and Go checks passed locally and in the applicable CI jobs.
 Language switching preserves the selected chord. Full-score conversion and graded
 advanced exercises remain unchecked in phase 6; no external service completion
 is implied. Research: [repertoire](docs/repertoire-50.md),
