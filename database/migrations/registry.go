@@ -1,11 +1,6 @@
-// Package migrations holds the schema migrations.
+// Package migrations holds schema and curriculum migrations.
 package migrations
 
 import "github.com/AlexGalhardo/vukem/schema"
 
-// All lists the migrations in order; vukem make:migration appends here.
-func All() []schema.Migration {
-	return []schema.Migration{
-		m20260101000000CreatePostsTable(),
-	}
-}
+func All() []schema.Migration { return []schema.Migration{createLessons()} }

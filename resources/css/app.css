@@ -1,33 +1,82 @@
 @import "tailwindcss";
-
-/* Inertia pages style themselves with Tailwind utilities. Dark mode follows
-   the "dark" class on <html> (set before paint in app.html), so a theme
-   toggle can override the system preference. */
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --sidebar: hsl(0 0% 98%);
-  --sidebar-foreground: hsl(240 5.3% 26.1%);
-  --sidebar-primary: hsl(240 5.9% 10%);
-  --sidebar-primary-foreground: hsl(0 0% 98%);
-  --sidebar-accent: hsl(240 4.8% 95.9%);
-  --sidebar-accent-foreground: hsl(240 5.9% 10%);
-  --sidebar-border: hsl(220 13% 91%);
-  --sidebar-ring: hsl(217.2 91.2% 59.8%);
+  --background: #fafaf8;
+  --foreground: #252c27;
+  --card: #ffffff;
+  --card-foreground: #252c27;
+  --popover: #ffffff;
+  --popover-foreground: #252c27;
+  --primary: #4c6b4b;
+  --primary-foreground: #ffffff;
+  --secondary: #eef1eb;
+  --secondary-foreground: #3d593d;
+  --muted: #f1f2ee;
+  --muted-foreground: #6c736b;
+  --accent: #e9eee5;
+  --accent-foreground: #3d593d;
+  --destructive: #b83d3d;
+  --border: #e6e8e1;
+  --input: #dcdfd6;
+  --ring: #6a8463;
+  --radius: 0.65rem;
+  --sidebar: #f5f6f2;
+  --sidebar-foreground: #4a5148;
+  --sidebar-primary: #4c6b4b;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #e5ebdf;
+  --sidebar-accent-foreground: #3b5737;
+  --sidebar-border: #e4e7dd;
+  --sidebar-ring: #6a8463;
 }
-
 .dark {
-  --sidebar: hsl(240 5.9% 10%);
-  --sidebar-foreground: hsl(240 4.8% 95.9%);
-  --sidebar-primary: hsl(224.3 76.3% 48%);
-  --sidebar-primary-foreground: hsl(0 0% 100%);
-  --sidebar-accent: hsl(240 3.7% 15.9%);
-  --sidebar-accent-foreground: hsl(240 4.8% 95.9%);
-  --sidebar-border: hsl(240 3.7% 15.9%);
-  --sidebar-ring: hsl(217.2 91.2% 59.8%);
+  --background: #161c18;
+  --foreground: #e7eae3;
+  --card: #1d2520;
+  --card-foreground: #e7eae3;
+  --popover: #1d2520;
+  --popover-foreground: #e7eae3;
+  --primary: #a8c898;
+  --primary-foreground: #172414;
+  --secondary: #2b382b;
+  --secondary-foreground: #c5ddba;
+  --muted: #263027;
+  --muted-foreground: #a0afa0;
+  --accent: #2e3b2d;
+  --accent-foreground: #d5e6cc;
+  --destructive: #f39494;
+  --border: #303c31;
+  --input: #374535;
+  --ring: #93b880;
+  --sidebar: #1a211b;
+  --sidebar-foreground: #bbc8b8;
+  --sidebar-primary: #a8c898;
+  --sidebar-primary-foreground: #172414;
+  --sidebar-accent: #2d3b29;
+  --sidebar-accent-foreground: #cae0bf;
+  --sidebar-border: #303c31;
+  --sidebar-ring: #93b880;
 }
-
 @theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
   --color-sidebar: var(--sidebar);
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar-primary: var(--sidebar-primary);
@@ -36,4 +85,189 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+  body {
+    margin: 0;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  button,
+  select,
+  a,
+  [role="button"],
+  input {
+    -webkit-tap-highlight-color: transparent;
+  }
+  button,
+  [role="button"] {
+    cursor: pointer;
+  }
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 4px;
+  }
+}
+.hero-title,
+.section-title {
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-weight: 400;
+}
+.eyebrow {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--primary);
+}
+.hero-panel {
+  background: linear-gradient(115deg, var(--secondary), var(--background));
+}
+.studio-card {
+  background: linear-gradient(150deg, var(--card), var(--secondary));
+}
+.hero-orbit {
+  position: absolute;
+  width: 225px;
+  height: 225px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--primary) 6%, transparent);
+  top: -75px;
+  left: -10px;
+}
+.hero-keyboard {
+  position: relative;
+  display: flex;
+  gap: 2px;
+  padding: 7px;
+  border-radius: 12px;
+  background: #344433;
+  transform: rotate(-15deg);
+  box-shadow: -12px 18px 30px #30452c18;
+}
+.hero-white {
+  position: relative;
+  width: 22px;
+  height: 105px;
+  background: #fffff8;
+  border-radius: 2px 2px 4px 4px;
+  border-bottom: 4px solid #e2e3d9;
+}
+.hero-black {
+  position: absolute;
+  width: 14px;
+  height: 65px;
+  z-index: 1;
+  right: -8px;
+  top: -1px;
+  background: #344433;
+  border-radius: 0 0 3px 3px;
+  box-shadow: 0 3px 0 #182617;
+}
+.staff-line,
+.ledger-line {
+  stroke: var(--muted-foreground);
+  stroke-width: 0.8;
+}
+.clef,
+.rest {
+  font-family: "Noto Music", "Bravura", "Segoe UI Symbol", serif;
+  fill: var(--foreground);
+}
+.time-signature {
+  font-family: Georgia, serif;
+  font-size: 27px;
+  font-weight: 700;
+  fill: var(--foreground);
+}
+.note-head,
+.accidental {
+  fill: var(--foreground);
+}
+.note-head {
+  stroke: var(--foreground);
+  stroke-width: 1.5;
+}
+.note-head.hollow {
+  fill: var(--card);
+}
+.note-stem {
+  stroke: var(--foreground);
+  stroke-width: 1.6;
+}
+.note-highlight {
+  fill: color-mix(in srgb, var(--primary) 13%, transparent);
+}
+.score-event.active .note-head,
+.score-event.active .accidental,
+.score-event.active .rest {
+  fill: var(--primary);
+  stroke: var(--primary);
+}
+.score-event.active .note-head.hollow {
+  fill: var(--card);
+}
+.score-event.active .note-stem {
+  stroke: var(--primary);
+}
+.piano-key {
+  outline: none;
+}
+.white-key rect {
+  fill: #fffffa;
+  stroke: #d9dcd2;
+  stroke-width: 0.7;
+}
+.black-key rect {
+  fill: #272d29;
+  stroke: #111612;
+  stroke-width: 1;
+}
+.white-key.active rect {
+  fill: #a1bc89;
+}
+.black-key.active rect {
+  fill: #62874e;
+}
+.piano-key:focus-visible rect {
+  stroke: #e8b24c;
+  stroke-width: 3;
+}
+.piano-key text {
+  fill: #5b6559;
+  font-size: 8px;
+  pointer-events: none;
+  user-select: none;
+}
+.skip-link {
+  position: fixed;
+  top: -80px;
+  left: 10px;
+  z-index: 100;
+  padding: 12px 18px;
+  background: var(--card);
+  border: 1px solid var(--ring);
+  border-radius: 6px;
+}
+.skip-link:focus {
+  top: 10px;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    /* biome-ignore lint/complexity/noImportantStyles: User reduced-motion preference overrides component animation utilities. */
+    transition-duration: 0.01ms !important;
+    /* biome-ignore lint/complexity/noImportantStyles: User reduced-motion preference overrides component animation utilities. */
+    animation-duration: 0.01ms !important;
+    /* biome-ignore lint/complexity/noImportantStyles: User reduced-motion preference disables animated scrolling. */
+    scroll-behavior: auto !important;
+  }
 }

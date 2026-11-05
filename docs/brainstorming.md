@@ -220,3 +220,33 @@ As perguntas avançam por rodadas conforme suas dependências são resolvidas.
 
 A instrução original de criação do projeto continua válida; a mensagem adicional
 sobre documentação não respondeu à rodada 2 nem cancelou o objetivo original.
+
+## Continuação — execução autorizada
+
+Em 2026-11-05, o mantenedor pediu: “Terminando a estrutura inicial, faça o push
+para o GitHub comece a implementação do ROADMAP.md até o fim”.
+
+Essa instrução autoriza execução e publicação no repositório, sem outra rodada de
+confirmação. As recomendações ainda sem resposta de Q4–Q6 foram adotadas como
+premissas de implementação para permitir avanço: amostras validadas com som
+sintetizado provisório identificado; piano de 88 teclas; sol/fá e fundamentos;
+visual sóbrio, claro/escuro, interação por toque, mouse e teclado. Elas continuam
+sendo premissas, não respostas individuais atribuídas ao usuário.
+
+### Entregas e fatos atualizados
+
+- Estrutura inicial publicada no commit `1589912177179630fd2f0b2848729b4d2d053e2b`.
+- `ROADMAP.md` criado na raiz, com fases, tarefas e critérios de aceite.
+- Leitura de todo o texto OCR das 424 páginas concluída na pesquisa; partituras,
+  diagramas e gabaritos continuam conferidos apenas por amostragem.
+- Referências autorais dos 58 capítulos e seções finais em `docs/study-*.md`.
+- Oito lições autorais EN/PT persistidas no SQLite, sem cadastro.
+- Dashboard shadcn/ui com sidebar, temas e preferências de idioma.
+- Partitura SVG, piano de 88 teclas e player Web Audio com destaque sincronizado.
+- Exercícios originais com respostas por nome ou pelo piano e progresso local.
+- Pipeline ElevenLabs no servidor/CLI, com cache, limite de chamadas e verificação
+  de afinação; sem geração cobrada durante reprodução no navegador.
+- Nenhuma credencial ElevenLabs/Railway/DNS foi disponibilizada neste ambiente.
+  Geração real de amostras e publicação do domínio dependem desses acessos.
+- Importação, contas, MIDI, microfone e notação avançada permanecem evolução futura,
+  conforme o escopo do MVP. O roadmap não transforma esse adiamento em entrega feita.

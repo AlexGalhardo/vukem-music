@@ -1,0 +1,986 @@
+[
+  {
+    "id": "sound-and-pitch",
+    "order": 1,
+    "minutes": 5,
+    "chapter": 1,
+    "title": {
+      "en": "Meet the sound",
+      "pt-BR": "Conheça o som"
+    },
+    "description": {
+      "en": "Four qualities. One musical idea.",
+      "pt-BR": "Quatro qualidades. Uma ideia musical."
+    },
+    "body": {
+      "en": [
+        "A sound has pitch, duration, intensity and timbre. Pitch tells us how high or low it sounds. Duration tells us how long it lasts. Intensity relates to loudness, while timbre helps us distinguish instruments.",
+        "The piano changes pitch when you choose a different key. Listen to the notes below: they rise while their written durations stay equal. In this course, A4 is tuned to 440 Hz and middle C is called C4.",
+        "Explore: play the example, then try the same notes on the piano. Listen before looking at their names. A higher frequency produces a higher pitch; it does not necessarily produce a louder sound."
+      ],
+      "pt-BR": [
+        "Um som tem altura, duração, intensidade e timbre. A altura permite perceber se ele é grave ou agudo. A duração indica quanto tempo ele permanece. A intensidade se relaciona ao volume, enquanto o timbre ajuda a distinguir instrumentos.",
+        "O piano muda de altura quando você escolhe outra tecla. Ouça as notas abaixo: elas sobem, mas suas durações escritas continuam iguais. Neste curso, Lá4 corresponde a 440 Hz e o dó central é chamado de Dó4 na convenção científica.",
+        "Explore: reproduza o exemplo e depois toque as mesmas notas no piano. Ouça antes de olhar os nomes. Uma frequência maior produz um som mais agudo, não necessariamente mais forte."
+      ]
+    },
+    "score": {
+      "id": "sound-and-pitch",
+      "clef": "treble",
+      "meter": [4, 4],
+      "events": [
+        {
+          "pitch": {
+            "step": "C",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "sound-and-pitch-0"
+        },
+        {
+          "pitch": {
+            "step": "D",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "sound-and-pitch-1"
+        },
+        {
+          "pitch": {
+            "step": "E",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "sound-and-pitch-2"
+        },
+        {
+          "pitch": {
+            "step": "F",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "sound-and-pitch-3"
+        },
+        {
+          "pitch": {
+            "step": "G",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "sound-and-pitch-4"
+        },
+        {
+          "pitch": {
+            "step": "E",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "sound-and-pitch-5"
+        },
+        {
+          "pitch": {
+            "step": "D",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "sound-and-pitch-6"
+        },
+        {
+          "pitch": {
+            "step": "C",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "sound-and-pitch-7"
+        }
+      ]
+    }
+  },
+  {
+    "id": "notes-and-staff",
+    "order": 2,
+    "minutes": 5,
+    "chapter": 2,
+    "title": {
+      "en": "Find your first notes",
+      "pt-BR": "Encontre suas primeiras notas"
+    },
+    "description": {
+      "en": "Turn five lines into a musical map.",
+      "pt-BR": "Transforme cinco linhas em um mapa musical."
+    },
+    "body": {
+      "en": [
+        "A staff has five lines and four spaces. Both are counted from the bottom. Moving from a line to the next space advances one note name: C, D, E, F, G, A, B, then C again.",
+        "Ledger lines extend the staff for notes above or below it. Middle C in treble clef sits on a short ledger line below the staff. The line extends only across that note, not across the entire measure.",
+        "The clef gives the staff its reference pitch. A note name alone does not identify a piano key: we also need its octave and any accidental. Follow middle C, D and E in this original eight-beat example."
+      ],
+      "pt-BR": [
+        "A pauta tem cinco linhas e quatro espaços, contados de baixo para cima. Passar de uma linha ao espaço seguinte avança um nome de nota: dó, ré, mi, fá, sol, lá, si e novamente dó.",
+        "Linhas suplementares ampliam a pauta para notas acima ou abaixo dela. Na clave de sol, o dó central ocupa uma pequena linha suplementar abaixo da pauta. Ela atravessa apenas a região da nota.",
+        "A clave estabelece a altura de referência. O nome da nota sozinho não identifica uma tecla: precisamos também da oitava e de possíveis alterações. Acompanhe dó central, ré e mi neste exemplo autoral de oito tempos."
+      ]
+    },
+    "score": {
+      "id": "notes-and-staff",
+      "clef": "treble",
+      "meter": [4, 4],
+      "events": [
+        {
+          "pitch": {
+            "step": "C",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "notes-and-staff-0"
+        },
+        {
+          "pitch": {
+            "step": "D",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "notes-and-staff-1"
+        },
+        {
+          "pitch": {
+            "step": "E",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "notes-and-staff-2"
+        },
+        {
+          "pitch": {
+            "step": "C",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "notes-and-staff-3"
+        },
+        {
+          "pitch": {
+            "step": "E",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "notes-and-staff-4"
+        },
+        {
+          "pitch": {
+            "step": "D",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "notes-and-staff-5"
+        },
+        {
+          "pitch": {
+            "step": "C",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "notes-and-staff-6"
+        },
+        {
+          "pitch": {
+            "step": "C",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "notes-and-staff-7"
+        }
+      ]
+    }
+  },
+  {
+    "id": "treble-clef",
+    "order": 3,
+    "minutes": 5,
+    "chapter": 3,
+    "title": {
+      "en": "Read the treble clef",
+      "pt-BR": "Leia a clave de sol"
+    },
+    "description": {
+      "en": "Use G as your anchor.",
+      "pt-BR": "Use o sol como referência."
+    },
+    "body": {
+      "en": [
+        "The treble clef marks G4 on the second line from the bottom. From there, read upward or downward by alternating lines and spaces rather than memorizing every position separately.",
+        "The five line notes are E4, G4, B4, D5 and F5. The four spaces are F4, A4, C5 and E5. Notice that each adjacent position still moves one letter name.",
+        "Practice: find G4, then read the neighboring A4 and B4. The score and piano highlight the same event while playing. Pause to inspect a position, or reduce the tempo to read ahead."
+      ],
+      "pt-BR": [
+        "A clave de sol marca o Sol4 na segunda linha de baixo para cima. A partir dele, leia para cima ou para baixo alternando linhas e espaços, em vez de decorar cada posição isoladamente.",
+        "As notas das cinco linhas são Mi4, Sol4, Si4, Ré5 e Fá5. Nos quatro espaços ficam Fá4, Lá4, Dó5 e Mi5. Cada posição vizinha avança um nome de nota.",
+        "Pratique: encontre Sol4 e depois leia Lá4 e Si4 nas posições vizinhas. Partitura e piano destacam o mesmo evento durante a execução. Pause para observar uma posição ou reduza o andamento para antecipar a leitura."
+      ]
+    },
+    "score": {
+      "id": "treble-clef",
+      "clef": "treble",
+      "meter": [4, 4],
+      "events": [
+        {
+          "pitch": {
+            "step": "G",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "treble-clef-0"
+        },
+        {
+          "pitch": {
+            "step": "A",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "treble-clef-1"
+        },
+        {
+          "pitch": {
+            "step": "B",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "treble-clef-2"
+        },
+        {
+          "pitch": {
+            "step": "C",
+            "octave": 5,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "treble-clef-3"
+        },
+        {
+          "pitch": {
+            "step": "B",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "treble-clef-4"
+        },
+        {
+          "pitch": {
+            "step": "A",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "treble-clef-5"
+        },
+        {
+          "pitch": {
+            "step": "G",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "treble-clef-6"
+        },
+        {
+          "pitch": {
+            "step": "G",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "treble-clef-7"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bass-clef",
+    "order": 4,
+    "minutes": 5,
+    "chapter": 3,
+    "title": {
+      "en": "Explore the lower register",
+      "pt-BR": "Explore a região grave"
+    },
+    "description": {
+      "en": "The same piano, a different reference.",
+      "pt-BR": "O mesmo piano, outra referência."
+    },
+    "body": {
+      "en": [
+        "The bass clef marks F3 on the fourth line from the bottom, between its two dots. It is commonly used for lower registers, including many left-hand piano parts.",
+        "The lines are G2, B2, D3, F3 and A3; the spaces are A2, C3, E3 and G3. Middle C remains the same sounding key, now written on a ledger line above the bass staff.",
+        "Changing clef changes how pitch is written, not automatically how it sounds. Listen to the lower-register example and identify C3 on the piano. Octave numbers here follow scientific pitch notation."
+      ],
+      "pt-BR": [
+        "A clave de fá marca o Fá3 na quarta linha de baixo para cima, entre seus dois pontos. Ela é frequente nos registros graves, incluindo muitas partes da mão esquerda do piano.",
+        "As linhas são Sol2, Si2, Ré3, Fá3 e Lá3; os espaços são Lá2, Dó3, Mi3 e Sol3. O dó central continua sendo a mesma tecla, agora escrito numa linha suplementar acima da pauta de fá.",
+        "Mudar a clave altera a escrita da altura, não automaticamente seu som. Ouça o exemplo grave e identifique Dó3 no piano. A numeração das oitavas aqui segue a convenção científica."
+      ]
+    },
+    "score": {
+      "id": "bass-clef",
+      "clef": "bass",
+      "meter": [4, 4],
+      "events": [
+        {
+          "pitch": {
+            "step": "C",
+            "octave": 3,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "bass-clef-0"
+        },
+        {
+          "pitch": {
+            "step": "D",
+            "octave": 3,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "bass-clef-1"
+        },
+        {
+          "pitch": {
+            "step": "E",
+            "octave": 3,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "bass-clef-2"
+        },
+        {
+          "pitch": {
+            "step": "F",
+            "octave": 3,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "bass-clef-3"
+        },
+        {
+          "pitch": {
+            "step": "G",
+            "octave": 3,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "bass-clef-4"
+        },
+        {
+          "pitch": {
+            "step": "E",
+            "octave": 3,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "bass-clef-5"
+        },
+        {
+          "pitch": {
+            "step": "D",
+            "octave": 3,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "bass-clef-6"
+        },
+        {
+          "pitch": {
+            "step": "C",
+            "octave": 3,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "bass-clef-7"
+        }
+      ]
+    }
+  },
+  {
+    "id": "rhythm-and-rests",
+    "order": 5,
+    "minutes": 7,
+    "chapter": 4,
+    "title": {
+      "en": "Give silence its place",
+      "pt-BR": "Dê espaço ao silêncio"
+    },
+    "description": {
+      "en": "Read durations, not just pitches.",
+      "pt-BR": "Leia durações, além das alturas."
+    },
+    "body": {
+      "en": [
+        "Note values describe relative durations. In 4/4 with a quarter-note pulse, a whole note lasts four beats, a half note two, a quarter note one and an eighth note half a beat.",
+        "A rest occupies time without a new pitched sound. Keep counting during rests. The player highlights a rest in the score while no piano key is active.",
+        "An augmentation dot adds half the original value. A dotted half note lasts three quarter-note beats. Articulation is different: a staccato may shorten the sounding part of a note without moving the next note earlier."
+      ],
+      "pt-BR": [
+        "As figuras indicam durações relativas. Em 4/4, com a semínima como pulsação, uma semibreve dura quatro tempos; uma mínima, dois; uma semínima, um; e uma colcheia, meio tempo.",
+        "A pausa ocupa tempo sem um novo som de altura definida. Continue contando durante ela. O player destaca a pausa na partitura enquanto nenhuma tecla fica ativa.",
+        "O ponto de aumento acrescenta metade do valor original. Uma mínima pontuada dura três tempos de semínima. Articulação é outro conceito: um staccato pode encurtar a parte sonora sem antecipar a próxima nota."
+      ]
+    },
+    "score": {
+      "id": "rhythm-and-rests",
+      "clef": "treble",
+      "meter": [4, 4],
+      "events": [
+        {
+          "pitch": {
+            "step": "C",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 2
+          },
+          "id": "rhythm-and-rests-0"
+        },
+        {
+          "pitch": null,
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "rhythm-and-rests-1"
+        },
+        {
+          "pitch": {
+            "step": "E",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "rhythm-and-rests-2"
+        },
+        {
+          "pitch": {
+            "step": "G",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "rhythm-and-rests-3"
+        },
+        {
+          "pitch": null,
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "rhythm-and-rests-4"
+        },
+        {
+          "pitch": {
+            "step": "C",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 2
+          },
+          "id": "rhythm-and-rests-5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "meter-and-pulse",
+    "order": 6,
+    "minutes": 6,
+    "chapter": 19,
+    "title": {
+      "en": "Feel the measure",
+      "pt-BR": "Sinta o compasso"
+    },
+    "description": {
+      "en": "Organize the pulse into groups.",
+      "pt-BR": "Organize a pulsação em grupos."
+    },
+    "body": {
+      "en": [
+        "In a 4/4 time signature, the top number specifies four units per measure; the bottom number identifies the quarter-note unit. This player always displays tempo in quarter notes per minute.",
+        "Bar lines group time, not sound quality. A long note can continue into another measure using a tie. Here each bar contains four quarter-note beats, and each note begins exactly on a pulse.",
+        "Count one, two, three, four through each measure. A metric accent is a relative position in the pattern; it is not a command to strike every first note as loudly as possible. Compound meters such as 6/8 group subdivisions differently."
+      ],
+      "pt-BR": [
+        "Na fórmula 4/4, o número superior indica quatro unidades por compasso; o inferior identifica a semínima como unidade. Este player mostra sempre o andamento em semínimas por minuto.",
+        "As barras organizam o tempo, não a qualidade do som. Uma nota longa pode continuar no próximo compasso usando ligadura de valor. Aqui, cada compasso contém quatro tempos e cada nota começa numa pulsação.",
+        "Conte um, dois, três, quatro em cada compasso. O acento métrico é uma posição relativa no padrão, não uma ordem para tocar cada primeira nota com volume máximo. Compassos compostos, como 6/8, agrupam subdivisões de outro modo."
+      ]
+    },
+    "score": {
+      "id": "meter-and-pulse",
+      "clef": "treble",
+      "meter": [4, 4],
+      "events": [
+        {
+          "pitch": {
+            "step": "C",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "meter-and-pulse-0"
+        },
+        {
+          "pitch": {
+            "step": "E",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "meter-and-pulse-1"
+        },
+        {
+          "pitch": {
+            "step": "G",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "meter-and-pulse-2"
+        },
+        {
+          "pitch": {
+            "step": "E",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "meter-and-pulse-3"
+        },
+        {
+          "pitch": {
+            "step": "G",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "meter-and-pulse-4"
+        },
+        {
+          "pitch": {
+            "step": "C",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "meter-and-pulse-5"
+        },
+        {
+          "pitch": {
+            "step": "E",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "meter-and-pulse-6"
+        },
+        {
+          "pitch": {
+            "step": "C",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "meter-and-pulse-7"
+        }
+      ]
+    }
+  },
+  {
+    "id": "accidentals",
+    "order": 7,
+    "minutes": 7,
+    "chapter": 5,
+    "title": {
+      "en": "Discover the black keys",
+      "pt-BR": "Descubra as teclas pretas"
+    },
+    "description": {
+      "en": "A semitone changes the sound.",
+      "pt-BR": "Um semitom transforma o som."
+    },
+    "body": {
+      "en": [
+        "In twelve-tone equal temperament, neighboring piano keys are one semitone apart, including E–F and B–C. A sharp raises a written note by one semitone; a flat lowers it by one. A natural cancels an alteration.",
+        "C-sharp and D-flat share a piano key in this tuning, but their spelling communicates different musical relationships. The model keeps the written note separate from its sounding MIDI pitch.",
+        "This example uses F-sharp with an explicit sharp each time. It has no key signature. The introductory player uses explicit accidentals instead of inferring a key signature or measure-wide accidental state."
+      ],
+      "pt-BR": [
+        "No temperamento igual de doze notas, teclas vizinhas estão a um semitom de distância, inclusive mi–fá e si–dó. O sustenido eleva uma nota escrita em um semitom; o bemol a abaixa em um. O bequadro cancela uma alteração.",
+        "Dó sustenido e ré bemol compartilham uma tecla nessa afinação, mas suas grafias comunicam relações musicais diferentes. O modelo mantém a nota escrita separada da altura MIDI que soa.",
+        "Este exemplo usa fá sustenido com alteração explícita a cada ocorrência. Não há armadura. O player introdutório usa alterações explícitas, sem inferir armadura ou o estado dos acidentes no compasso."
+      ]
+    },
+    "score": {
+      "id": "accidentals",
+      "clef": "treble",
+      "meter": [4, 4],
+      "events": [
+        {
+          "pitch": {
+            "step": "C",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "accidentals-0"
+        },
+        {
+          "pitch": {
+            "step": "D",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "accidentals-1"
+        },
+        {
+          "pitch": {
+            "step": "E",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "accidentals-2"
+        },
+        {
+          "pitch": {
+            "step": "F",
+            "octave": 4,
+            "alter": 1
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "accidentals-3"
+        },
+        {
+          "pitch": {
+            "step": "G",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "accidentals-4"
+        },
+        {
+          "pitch": {
+            "step": "F",
+            "octave": 4,
+            "alter": 1
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "accidentals-5"
+        },
+        {
+          "pitch": {
+            "step": "E",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "accidentals-6"
+        },
+        {
+          "pitch": {
+            "step": "C",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "accidentals-7"
+        }
+      ]
+    }
+  },
+  {
+    "id": "first-melody",
+    "order": 8,
+    "minutes": 8,
+    "chapter": 20,
+    "title": {
+      "en": "Put it all together",
+      "pt-BR": "Junte o que aprendeu"
+    },
+    "description": {
+      "en": "Read, listen, then play it yourself.",
+      "pt-BR": "Leia, ouça e depois toque."
+    },
+    "body": {
+      "en": [
+        "Reading music connects position, duration and context. Before playing, identify the clef and time signature. Then look ahead to the direction of the melody and any rests.",
+        "Our original study below has two measures in 4/4. A half note fills two beats; each quarter note fills one. Keep the pulse steady through the final rest.",
+        "Play it slowly, pause when needed, and answer the note-reading exercise. Completing a lesson records progress on this browser only. Accuracy comes before speed; return to any lesson whenever you need."
+      ],
+      "pt-BR": [
+        "Ler música conecta posição, duração e contexto. Antes de tocar, identifique a clave e a fórmula de compasso. Depois observe a direção da melodia e a presença de pausas.",
+        "Nosso estudo autoral tem dois compassos em 4/4. Uma mínima ocupa dois tempos; cada semínima ocupa um. Mantenha a pulsação durante a pausa final.",
+        "Toque devagar, pause quando precisar e responda ao exercício de leitura. A conclusão da lição fica salva apenas neste navegador. Priorize a precisão antes da velocidade e retorne às lições sempre que necessário."
+      ]
+    },
+    "score": {
+      "id": "first-melody",
+      "clef": "treble",
+      "meter": [4, 4],
+      "events": [
+        {
+          "pitch": {
+            "step": "C",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "first-melody-0"
+        },
+        {
+          "pitch": {
+            "step": "E",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "first-melody-1"
+        },
+        {
+          "pitch": {
+            "step": "G",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 2
+          },
+          "id": "first-melody-2"
+        },
+        {
+          "pitch": {
+            "step": "F",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "first-melody-3"
+        },
+        {
+          "pitch": {
+            "step": "E",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "first-melody-4"
+        },
+        {
+          "pitch": {
+            "step": "C",
+            "octave": 4,
+            "alter": 0
+          },
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "first-melody-5"
+        },
+        {
+          "pitch": null,
+          "duration": {
+            "n": 1,
+            "d": 4
+          },
+          "id": "first-melody-6"
+        }
+      ]
+    }
+  }
+]

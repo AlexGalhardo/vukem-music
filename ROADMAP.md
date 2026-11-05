@@ -37,54 +37,54 @@ This is the primary handoff file for future sessions and agents. Read this file,
 
 - [x] Generate the official Vukem React/Inertia starter.
   - [x] Pin framework and dependency versions; keep a Bun lockfile.
-  - [ ] Use SQLite and remove unrelated starter CRUD/demo features.
+  - [x] Use SQLite and remove unrelated starter CRUD/demo features.
   - [x] Assert: Go build/tests and frontend install/type checking pass.
-- [ ] Configure open source quality standards.
-  - [ ] Add MIT `LICENSE.md`, security policy, code of conduct and contribution guide.
-  - [ ] Add Biome v2, markdownlint, `bun check`, CI and dependency updates.
-  - [ ] Add `.env.example`, safe ignores and repeatable developer commands.
-  - [ ] Assert: no secrets, book assets, databases or local path replacements tracked.
-- [ ] Publish the initial structure.
-  - [ ] Initialize `main` and set the requested GitHub origin.
-  - [ ] Commit and push the validated foundation.
-  - [ ] Assert: remote `main` points to the initial commit; capture commit URL.
+- [x] Configure open source quality standards.
+  - [x] Add MIT `LICENSE.md`, security policy, code of conduct and contribution guide.
+  - [x] Add Biome v2, markdownlint, `bun check`, CI and dependency updates.
+  - [x] Add `.env.example`, safe ignores and repeatable developer commands.
+  - [x] Assert: no secrets, book assets, databases or local path replacements tracked.
+- [x] Publish the initial structure.
+  - [x] Initialize `main` and set the requested GitHub origin.
+  - [x] Commit and push the validated foundation.
+  - [x] Assert: remote `main` points to the initial commit; capture commit URL.
 
 ## Phase 2 — curriculum, SQLite and bilingual dashboard
 
-- [ ] Store and serve an original beginner curriculum through Vukem and SQLite.
-  - [ ] Add idempotent schema/data initialization and read-only lesson access.
-  - [ ] Supply EN/PT content for notes, staff, clefs, rhythm and meter.
-  - [ ] Assert: a clean database loads the same curriculum after restart.
-- [ ] Build shadcn/ui dashboard with responsive sidebar.
-  - [ ] Provide overview, lessons, piano practice and progress views.
-  - [ ] Add locale switch, English default and persisted light/dark preference.
-  - [ ] Add semantic controls, visible focus and accessible names.
-  - [ ] Assert: routes load directly and via Inertia; EN/PT flows have translated UI.
-- [ ] Save learner progress locally.
-  - [ ] Version and validate stored state; survive unavailable/corrupt storage.
-  - [ ] Track lesson completion and exercise results with a reset action.
-  - [ ] Assert: reload preserves progress; malformed data does not crash the app.
+- [x] Store and serve an original beginner curriculum through Vukem and SQLite.
+  - [x] Add idempotent schema/data initialization and read-only lesson access.
+  - [x] Supply EN/PT content for notes, staff, clefs, rhythm and meter.
+  - [x] Assert: a clean database loads the same curriculum after restart.
+- [x] Build shadcn/ui dashboard with responsive sidebar.
+  - [x] Provide overview, lessons, piano practice and progress views.
+  - [x] Add locale switch, English default and persisted light/dark preference.
+  - [x] Add semantic controls, visible focus and accessible names.
+  - [x] Assert: routes load directly and via Inertia; EN/PT flows have translated UI.
+- [x] Save learner progress locally.
+  - [x] Version and validate stored state; survive unavailable/corrupt storage.
+  - [x] Track lesson completion and exercise results with a reset action.
+  - [x] Assert: reload preserves progress; malformed data does not crash the app.
 
 ## Phase 3 — notation, piano and synchronized audio
 
-- [ ] Implement a tested musical event model.
-  - [ ] Separate written pitch/MIDI and rational duration.
-  - [ ] Define MIDI60=C4, A4=440Hz, 12-TET and quarter-note BPM explicitly.
-  - [ ] Assert: known frequencies, dotted values, rests and event boundaries pass.
-- [ ] Render original study scores and 88-key SVG piano.
-  - [ ] Render treble/bass staves, ledger lines, notes, rests and bar lines.
-  - [ ] Support touch, mouse, computer keyboard and accessible key labels.
-  - [ ] Assert: active score events and piano keys share the same event IDs/pitches.
-- [ ] Implement Web Audio transport.
-  - [ ] Schedule sound using AudioContext time; derive visual state from that clock.
-  - [ ] Add play/pause/resume/stop, tempo, replay and sample loading states.
-  - [ ] Cancel scheduled sounds on stop/navigation and release held notes on blur.
-  - [ ] Assert: transport timing, pause offset, rests and cleanup are tested.
-- [ ] Add ElevenLabs sample production and validation tooling.
-  - [ ] Keep API key server-side; cache files and bound generation/retries.
-  - [ ] Validate tuning and onset before a sample becomes playable.
-  - [ ] Mark synthesis fallback honestly; no billed generation on ordinary playback.
-  - [ ] Assert: generation request/error paths are tested without a real API key.
+- [x] Implement a tested musical event model.
+  - [x] Separate written pitch/MIDI and rational duration.
+  - [x] Define MIDI60=C4, A4=440Hz, 12-TET and quarter-note BPM explicitly.
+  - [x] Assert: known frequencies, dotted values, rests and event boundaries pass.
+- [x] Render original study scores and 88-key SVG piano.
+  - [x] Render treble/bass staves, ledger lines, notes, rests and bar lines.
+  - [x] Support touch, mouse, computer keyboard and accessible key labels.
+  - [x] Assert: active score events and piano keys share the same event IDs/pitches.
+- [x] Implement Web Audio transport.
+  - [x] Schedule sound using AudioContext time; derive visual state from that clock.
+  - [x] Add play/pause/resume/stop, tempo, replay and sample loading states.
+  - [x] Cancel scheduled sounds on stop/navigation and release held notes on blur.
+  - [x] Assert: transport timing, pause offset, rests and cleanup are tested.
+- [x] Add ElevenLabs sample production and validation tooling.
+  - [x] Keep API key server-side; cache files and bound generation/retries.
+  - [x] Validate tuning and onset before a sample becomes playable.
+  - [x] Mark synthesis fallback honestly; no billed generation on ordinary playback.
+  - [x] Assert: generation request/error paths are tested without a real API key.
 - [ ] Generate and approve real piano samples.
   - [ ] Supply ElevenLabs credential and agreed generation budget.
   - [ ] Generate, audit tuning/timbre, publish manifest and asset provenance.
@@ -93,26 +93,26 @@ This is the primary handoff file for future sessions and agents. Read this file,
 
 ## Phase 4 — learning interactions and product verification
 
-- [ ] Deliver beginner reading exercises with original questions.
-  - [ ] Match answers to score pitches and show explanations/feedback.
-  - [ ] Save results locally and surface meaningful progress.
-  - [ ] Assert: correct/incorrect answers and completion persist across reloads.
-- [ ] Verify full browser journeys.
-  - [ ] Exercise lessons, localization, theme, piano and transport.
-  - [ ] Test desktop/mobile layouts and keyboard interaction.
-  - [ ] Assert: browser tests, type checks, lint, build and Go checks pass together.
-- [ ] Document operation and limitations.
-  - [ ] Explain supported score subset and source-book review limitations.
-  - [ ] Document audio generation, restore, updates and troubleshooting.
-  - [ ] Assert: a contributor can start from README without undocumented local paths.
+- [x] Deliver beginner reading exercises with original questions.
+  - [x] Match answers to score pitches and show explanations/feedback.
+  - [x] Save results locally and surface meaningful progress.
+  - [x] Assert: correct/incorrect answers and completion persist across reloads.
+- [x] Verify full browser journeys.
+  - [x] Exercise lessons, localization, theme, piano and transport.
+  - [x] Test desktop/mobile layouts and keyboard interaction.
+  - [x] Assert: browser tests, type checks, lint, build and Go checks pass together.
+- [x] Document operation and limitations.
+  - [x] Explain supported score subset and source-book review limitations.
+  - [x] Document audio generation, restore, updates and troubleshooting.
+  - [x] Assert: a contributor can start from README without undocumented local paths.
 
 ## Phase 5 — Railway delivery and final publication
 
-- [ ] Prepare Railway deployment for SQLite.
-  - [ ] Build frontend and Go application in a multi-stage image.
-  - [ ] Configure persistent `/app/storage`, startup migrations and healthcheck.
-  - [ ] Document secrets, volume permissions, single-writer operation and backups.
-  - [ ] Assert: production build runs and healthcheck succeeds with a fresh DB.
+- [x] Prepare Railway deployment for SQLite.
+  - [x] Build frontend and Go application in a multi-stage image.
+  - [x] Configure persistent `/app/storage`, startup migrations and healthcheck.
+  - [x] Document secrets, volume permissions, single-writer operation and backups.
+  - [x] Assert: production build runs and healthcheck succeeds with a fresh DB.
 - [ ] Deploy at `music.vukem.dev`.
   - [ ] Use authorized Railway project/access and production secret values.
   - [ ] Mount the volume and configure the custom domain and DNS.
@@ -137,6 +137,15 @@ This is the primary handoff file for future sessions and agents. Read this file,
 
 ## Current handoff
 
-Implementation in progress. External sample generation and live deployment require
-service credentials that were not configured at initial inspection. Continue all
-local implementation and verification; preserve explicit blockers for external work.
+The local MVP implementation covers phases 0–4 except real ElevenLabs sample
+production. Initial structure was pushed as `1589912177179630fd2f0b2848729b4d2d053e2b`.
+Production Docker, persistence and backup checks passed locally. Final implementation
+publication and remote CI are being recorded.
+
+External blockers: no `ELEVENLABS_API_KEY`, Railway credential/project, or DNS
+management access was configured. Do not mark real audio generation or the live
+custom-domain deployment complete. Continue the first unblocked task above;
+accounts/import/MIDI/advanced lessons remain explicitly future scope.
+
+See [verification evidence](docs/verification.md), [audio operation](docs/audio.md),
+and [Railway operation](docs/deployment.md) for reproducible checks and next steps.

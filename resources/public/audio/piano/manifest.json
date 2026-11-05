@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "provider": "elevenlabs",
+  "tuning": "12-TET A4=440Hz",
+  "samples": []
+}

@@ -14,3 +14,15 @@ storage/
 # Vite: dev server marker; the image builds its own assets
 /resources/public/hot
 /resources/public/build/
+
+# Local test artifacts and reference documents
+/test-results/
+/playwright-report/
+*.pdf
+*.sqlite*
+
+# Not needed by either production build stage
+/docs/
+/tests/
+/playwright.config.ts
+*.md

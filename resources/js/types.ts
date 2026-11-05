@@ -1,24 +1,44 @@
-// Shapes of the props the Go controllers send.
-
-export interface Post {
-  id: number;
-  title: string;
-  body: string;
-  created_at: string;
-  updated_at: string;
+export type Locale = "en" | "pt-BR";
+export type Localized<T = string> = Record<Locale, T>;
+export interface Pitch {
+  step: "C" | "D" | "E" | "F" | "G" | "A" | "B";
+  octave: number;
+  alter: number;
 }
-
-export interface User {
-  id: number;
-  name: string;
-  email: string;
-  email_verified_at: string | null;
+export interface Fraction {
+  n: number;
+  d: number;
 }
-
+export interface ScoreEvent {
+  id: string;
+  pitch: Pitch | null;
+  duration: Fraction;
+}
+export interface Score {
+  id: string;
+  clef: "treble" | "bass";
+  meter: [number, number];
+  events: ScoreEvent[];
+}
+export interface Lesson {
+  id: string;
+  order: number;
+  minutes: number;
+  chapter: number;
+  title: Localized;
+  description: Localized;
+  body: Localized<string[]>;
+  score: Score;
+}
 export interface SharedProps {
   appName: string;
+  locale: Locale;
+  messages: Record<string, string>;
   errors: Record<string, string>;
-  // Present after vukem install:auth.
-  auth?: { user: User | null };
   [key: string]: unknown;
+}
+export interface StudyProps extends SharedProps {
+  lessons: Lesson[];
+  view: "overview" | "lessons" | "lesson" | "practice" | "progress";
+  selected: string;
 }

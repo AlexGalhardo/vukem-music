@@ -1,51 +1,35 @@
-# Production image: Vite assets, a static Go binary, a small non-root runtime.
-# Railway, Fly, Render and plain Docker build it as is:
-# https://vukem.dev/docs/deployment/docker-and-railway
-
+# syntax=docker/dockerfile:1
 FROM oven/bun:1.4.4-alpine AS assets
 WORKDIR /src
-COPY package.json bun.lock* ./
-# The lockfile is a required build input: the image installs exactly the
-# versions the repository tracks. Without one npm and pnpm refuse, while bun
-# and yarn resolve fresh versions and say nothing, so the requirement is
-# stated here and is the same for every package manager. Generate it with
-# "bun install" and commit it; .dockerignore must not exclude it.
-RUN if ! ls bun.lock* >/dev/null 2>&1; then \
-		echo "bun.lock not found: run 'bun install', commit it, then build again" >&2; \
-		exit 1; \
-	fi \
-	&& bun install --frozen-lockfile
 COPY . .
-RUN bun run build
+# Combine install/build to avoid duplicating node_modules in intermediate layers.
+# Optional public CA mounts support development proxies without embedding trust files.
+RUN --mount=type=secret,id=proxy_ca \
+    --mount=type=cache,target=/root/.bun/install/cache \
+    if [ -f /run/secrets/proxy_ca ]; then export NODE_EXTRA_CA_CERTS=/run/secrets/proxy_ca; fi; \
+    bun install --frozen-lockfile && bun run build
 
 FROM golang:1.27.3-alpine3.24 AS build
 WORKDIR /src
 ENV CGO_ENABLED=0
-COPY go.mod go.sum ./
-RUN go mod download
 COPY . .
 COPY --from=assets /src/resources/public/build resources/public/build
-# Same tags as vukem build: .buildtags lists them (one per line or
-# comma-separated, "#" comments); --minimal apps put vukem_nosqlite there.
-RUN tags="$(sed 's/#.*//' .buildtags 2>/dev/null | tr -s ', \t\r\n' ',' | sed 's/^,//; s/,$//')" \
-	&& go build -trimpath -ldflags="-s -w" -tags "$tags" -o /out/app ./cmd/app
+RUN --mount=type=secret,id=system_ca \
+    --mount=type=cache,target=/go/pkg/mod \
+    --mount=type=cache,target=/root/.cache/go-build \
+    if [ -f /run/secrets/system_ca ]; then export SSL_CERT_FILE=/run/secrets/system_ca; fi; \
+    go build -trimpath -ldflags="-s -w" -o /out/app ./cmd/app
 
 FROM alpine:3.24.2
-RUN apk add --no-cache ca-certificates tzdata \
-	&& adduser -D -H -u 10001 app \
-	&& mkdir -p /app/storage \
-	&& chown app:app /app/storage
+RUN --mount=type=secret,id=system_ca \
+    if [ -f /run/secrets/system_ca ]; then export SSL_CERT_FILE=/run/secrets/system_ca; fi; \
+    apk add --no-cache ca-certificates tzdata \
+    && adduser -D -H -u 10001 app \
+    && mkdir -p /app/storage && chown app:app /app/storage
 WORKDIR /app
 COPY --from=build /out/app /app/app
+COPY --chmod=755 scripts/start.sh /app/start.sh
 USER app
-# The platform's PORT overrides this one; HOST=0.0.0.0 makes the server
-# reachable from outside the container. Pass secrets at runtime, never here.
-# MAIL_MAILER=log keeps the image runnable: with APP_ENV=production an unset
-# mailer stops every command at boot, serve and `about` alike, as soon as a
-# route needs one. "log" writes each message to the JSON log, so nothing is
-# lost silently; set smtp, resend or mailtrap on the deploy to send for real.
-ENV APP_ENV=production HOST=0.0.0.0 PORT=3000 LOG_FORMAT=json MAIL_MAILER=log
-# A platform start command (Railway, Fly) replaces this entrypoint, so it has
-# to name the binary: "/app/app queue:work", never "queue:work".
+ENV APP_ENV=production APP_DEBUG=false HOST=0.0.0.0 PORT=3000 LOG_FORMAT=json MAIL_MAILER=log
 EXPOSE 3000
-ENTRYPOINT ["/app/app"]
+ENTRYPOINT ["/app/start.sh"]

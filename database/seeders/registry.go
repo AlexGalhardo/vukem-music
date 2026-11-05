@@ -1,11 +1,6 @@
-// Package seeders fills the database with demo data: vukem db:seed.
+// Package seeders holds optional development data; the course is installed by migration.
 package seeders
 
 import vukem "github.com/AlexGalhardo/vukem"
 
-// All lists the seeders run by vukem db:seed, in order; make:seeder appends here.
-func All() []vukem.Seeder {
-	return []vukem.Seeder{
-		PostsSeeder{},
-	}
-}
+func All() []vukem.Seeder { return nil }

@@ -15,11 +15,14 @@ import (
 
 // all: keeps build/.vite/manifest.json (a dot directory) in the binary.
 //
-//go:embed views all:public
+//go:embed views all:public lang
 var embedded embed.FS
 
 // Views returns the html/template views.
 func Views() fs.FS { return dirOrEmbedded("views") }
+
+// Lang returns the embedded translation catalogs.
+func Lang() fs.FS { return embeddedDir("lang") }
 
 // Public returns the static assets served at /.
 func Public() fs.FS { return dirOrEmbedded("public") }

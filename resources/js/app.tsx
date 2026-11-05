@@ -20,7 +20,7 @@ try {
 createInertiaApp({
   layout: () => AppLayout,
   nonce: document.querySelector<HTMLMetaElement>('meta[property="csp-nonce"]')?.nonce,
-  progress: { color: "#4f46e5" },
+  progress: { color: "#4c6b4b" },
 }).finally(() => {
   // app.html sets data-hydrating; style it (button:disabled, a pending hint)
   // for the gap before the app mounts.

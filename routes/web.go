@@ -20,15 +20,18 @@ func Web(r *router.Router, app *vukem.App) error {
 
 	r.UseServer(middleware.Gzip()) // proxies in front of the app may not compress
 	r.UseServer(middleware.StaticFS(resources.Public(), middleware.StaticConfig{Prefix: "/"}))
-	r.Use(app.Inertia.Middleware, shareProps(app))
+	r.Use(app.Inertia.Middleware, inertia.I18n("nav.", "ui."), shareProps(app))
 
 	db, err := app.DB()
 	if err != nil {
 		return err
 	}
 
-	r.Get("/", controllers.Home).Name("home")
-	r.Resource("posts", controllers.NewPostController(db))
+	r.Get("/", controllers.Study(db, "overview")).Name("home")
+	r.Get("/lessons", controllers.Study(db, "lessons")).Name("lessons")
+	r.Get("/lessons/{lesson}", controllers.Study(db, "lesson")).Name("lesson")
+	r.Get("/practice", controllers.Study(db, "practice")).Name("practice")
+	r.Get("/progress", controllers.Study(db, "progress")).Name("progress")
 
 	return nil
 }
