@@ -138,10 +138,10 @@ This is the primary handoff file for future sessions and agents. Read this file,
   - [ ] Verify HTTPS, persistence across redeploy and backup/restore.
   - [ ] Assert: live domain serves the app and data survives a deployment.
   - Dependency: Railway/DNS access; local configuration does not satisfy this task.
-- [ ] Push implementation and inspect remote CI.
+- [x] Push implementation and inspect remote CI.
   - [x] Commit verified changes and push to the requested repository.
-  - [ ] Review workflow results and fix failures in scope.
-  - [ ] Assert: remote SHA matches local HEAD and CI result is recorded accurately.
+  - [x] Review workflow results and fix failures in scope.
+  - [x] Assert: remote SHA matches local HEAD and CI result is recorded accurately.
 
 ## Future phases — explicitly outside the initial delivery
 
@@ -206,8 +206,11 @@ resolving the external MVP blockers or an explicit reprioritization by the maint
 
 The local MVP implementation covers phases 0–4 except real ElevenLabs sample
 production. Initial structure was pushed as `1589912177179630fd2f0b2848729b4d2d053e2b`.
-Production Docker, persistence and backup checks passed locally. Final implementation
-publication is complete; a cold-start CI setup fix is being verified remotely.
+Production Docker, persistence and backup checks passed locally. Implementation
+and the cold-start setup fix are published. All six CI jobs passed for
+`7937a2da5f9c1c0b8f0fdbe2105e7f0aa3e6791b`:
+[verified implementation run](https://github.com/AlexGalhardo/vukem-music/actions/runs/42027916487).
+Documentation-only handoff updates may follow this verified implementation.
 
 External blockers: no `ELEVENLABS_API_KEY`, Railway credential/project, or DNS
 management access was configured. Do not mark real audio generation or the live

@@ -250,3 +250,13 @@ sendo premissas, não respostas individuais atribuídas ao usuário.
   Geração real de amostras e publicação do domínio dependem desses acessos.
 - Importação, contas, MIDI, microfone e notação avançada permanecem evolução futura,
   conforme o escopo do MVP. O roadmap não transforma esse adiamento em entrega feita.
+
+### Encerramento da entrega local
+
+A implementação e o ajuste de setup foram publicados. Os seis jobs de CI passaram
+na revisão `7937a2da5f9c1c0b8f0fdbe2105e7f0aa3e6791b`. Foram validados o build
+Docker, inicialização em produção, persistência após reinício e backup/restauração
+com integridade SQLite. O `ROADMAP.md` distingue as entregas verificadas das duas
+dependências externas: banco real de amostras ElevenLabs e deploy Railway/DNS.
+As fases futuras estão detalhadas em tarefas, subtarefas, microtarefas e asserts,
+sem serem apresentadas como implementadas.
