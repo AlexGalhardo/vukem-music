@@ -1,0 +1,1352 @@
+[
+  {
+    "id": "reinagle-op1-01",
+    "order": 1,
+    "title": {
+      "en": "Minuetto No. 1",
+      "pt-BR": "Minuetto nº 1"
+    },
+    "composer": "Alexander Reinagle",
+    "catalogue": "Op. 1 No. 1",
+    "level": 1,
+    "goal": {
+      "en": "Read both clefs, identify phrase endings and keep a steady pulse.",
+      "pt-BR": "Leia as duas claves, identifique finais de frase e mantenha a pulsação."
+    },
+    "part": {
+      "en": "Piano solo; historical fingering uses x for the thumb.",
+      "pt-BR": "Piano solo; dedilhado histórico usa x para o polegar."
+    },
+    "pdfUrl": "https://archive.org/download/hartley00535538/hartley00535538.pdf#page=260",
+    "sourceUrl": "https://imslp.org/wiki/24_Short_and_Easy_Pieces_for_Keyboard,_Op.1_(Reinagle,_Alexander)",
+    "license": "Public Domain",
+    "editor": "J. Balls historical edition; Hartley anthology scan",
+    "sourceSha256": "8256edf52affc710dddd771731b993b2657fb3e01e4cbca4bf08a7660df8b080",
+    "pages": [260],
+    "playbackReady": false,
+    "downloadSha256": "2c215f77b45e1591a60522a3b088d4d09c334ee974aff01600673139625ddc56"
+  },
+  {
+    "id": "reinagle-op1-02",
+    "order": 2,
+    "title": {
+      "en": "Minuetto No. 2",
+      "pt-BR": "Minuetto nº 2"
+    },
+    "composer": "Alexander Reinagle",
+    "catalogue": "Op. 1 No. 2",
+    "level": 1,
+    "goal": {
+      "en": "Read both clefs, identify phrase endings and keep a steady pulse.",
+      "pt-BR": "Leia as duas claves, identifique finais de frase e mantenha a pulsação."
+    },
+    "part": {
+      "en": "Piano solo; historical fingering uses x for the thumb.",
+      "pt-BR": "Piano solo; dedilhado histórico usa x para o polegar."
+    },
+    "pdfUrl": "https://archive.org/download/hartley00535538/hartley00535538.pdf#page=260",
+    "sourceUrl": "https://imslp.org/wiki/24_Short_and_Easy_Pieces_for_Keyboard,_Op.1_(Reinagle,_Alexander)",
+    "license": "Public Domain",
+    "editor": "J. Balls historical edition; Hartley anthology scan",
+    "sourceSha256": "8256edf52affc710dddd771731b993b2657fb3e01e4cbca4bf08a7660df8b080",
+    "pages": [260],
+    "playbackReady": false,
+    "downloadSha256": "a6c87134b1a729fcfdbb851278c6c7b5356b51fe22cfb563aff6e3edaebd65c2"
+  },
+  {
+    "id": "reinagle-op1-03",
+    "order": 3,
+    "title": {
+      "en": "Allegro No. 3",
+      "pt-BR": "Allegro nº 3"
+    },
+    "composer": "Alexander Reinagle",
+    "catalogue": "Op. 1 No. 3",
+    "level": 1,
+    "goal": {
+      "en": "Read both clefs, identify phrase endings and keep a steady pulse.",
+      "pt-BR": "Leia as duas claves, identifique finais de frase e mantenha a pulsação."
+    },
+    "part": {
+      "en": "Piano solo; historical fingering uses x for the thumb.",
+      "pt-BR": "Piano solo; dedilhado histórico usa x para o polegar."
+    },
+    "pdfUrl": "https://archive.org/download/hartley00535538/hartley00535538.pdf#page=260",
+    "sourceUrl": "https://imslp.org/wiki/24_Short_and_Easy_Pieces_for_Keyboard,_Op.1_(Reinagle,_Alexander)",
+    "license": "Public Domain",
+    "editor": "J. Balls historical edition; Hartley anthology scan",
+    "sourceSha256": "8256edf52affc710dddd771731b993b2657fb3e01e4cbca4bf08a7660df8b080",
+    "pages": [260],
+    "playbackReady": false,
+    "downloadSha256": "2636594acd6fa583f87e0fa23086c42b9d9f522eeaf3761f621fc0ca13820e5b"
+  },
+  {
+    "id": "reinagle-op1-04",
+    "order": 4,
+    "title": {
+      "en": "Allegro No. 4",
+      "pt-BR": "Allegro nº 4"
+    },
+    "composer": "Alexander Reinagle",
+    "catalogue": "Op. 1 No. 4",
+    "level": 1,
+    "goal": {
+      "en": "Read both clefs, identify phrase endings and keep a steady pulse.",
+      "pt-BR": "Leia as duas claves, identifique finais de frase e mantenha a pulsação."
+    },
+    "part": {
+      "en": "Piano solo; historical fingering uses x for the thumb.",
+      "pt-BR": "Piano solo; dedilhado histórico usa x para o polegar."
+    },
+    "pdfUrl": "https://archive.org/download/hartley00535538/hartley00535538.pdf#page=260",
+    "sourceUrl": "https://imslp.org/wiki/24_Short_and_Easy_Pieces_for_Keyboard,_Op.1_(Reinagle,_Alexander)",
+    "license": "Public Domain",
+    "editor": "J. Balls historical edition; Hartley anthology scan",
+    "sourceSha256": "8256edf52affc710dddd771731b993b2657fb3e01e4cbca4bf08a7660df8b080",
+    "pages": [260],
+    "playbackReady": false,
+    "downloadSha256": "cef69022bfe038096fc93c5018425db27b88f83cdb8e535d309fb25ed63d5712"
+  },
+  {
+    "id": "reinagle-op1-05",
+    "order": 5,
+    "title": {
+      "en": "Allegretto No. 5",
+      "pt-BR": "Allegretto nº 5"
+    },
+    "composer": "Alexander Reinagle",
+    "catalogue": "Op. 1 No. 5",
+    "level": 2,
+    "goal": {
+      "en": "Read both clefs, identify phrase endings and keep a steady pulse.",
+      "pt-BR": "Leia as duas claves, identifique finais de frase e mantenha a pulsação."
+    },
+    "part": {
+      "en": "Piano solo; historical fingering uses x for the thumb.",
+      "pt-BR": "Piano solo; dedilhado histórico usa x para o polegar."
+    },
+    "pdfUrl": "https://archive.org/download/hartley00535538/hartley00535538.pdf#page=261",
+    "sourceUrl": "https://imslp.org/wiki/24_Short_and_Easy_Pieces_for_Keyboard,_Op.1_(Reinagle,_Alexander)",
+    "license": "Public Domain",
+    "editor": "J. Balls historical edition; Hartley anthology scan",
+    "sourceSha256": "8256edf52affc710dddd771731b993b2657fb3e01e4cbca4bf08a7660df8b080",
+    "pages": [261],
+    "playbackReady": false,
+    "downloadSha256": "accd5b3f1d876272711e3a067566ea9be4e7f77bbd05bc90a196c4c4ef4e9aee"
+  },
+  {
+    "id": "reinagle-op1-06",
+    "order": 6,
+    "title": {
+      "en": "Short piece No. 6",
+      "pt-BR": "Peça breve nº 6"
+    },
+    "composer": "Alexander Reinagle",
+    "catalogue": "Op. 1 No. 6",
+    "level": 2,
+    "goal": {
+      "en": "Read both clefs, identify phrase endings and keep a steady pulse.",
+      "pt-BR": "Leia as duas claves, identifique finais de frase e mantenha a pulsação."
+    },
+    "part": {
+      "en": "Piano solo; historical fingering uses x for the thumb.",
+      "pt-BR": "Piano solo; dedilhado histórico usa x para o polegar."
+    },
+    "pdfUrl": "https://archive.org/download/hartley00535538/hartley00535538.pdf#page=261",
+    "sourceUrl": "https://imslp.org/wiki/24_Short_and_Easy_Pieces_for_Keyboard,_Op.1_(Reinagle,_Alexander)",
+    "license": "Public Domain",
+    "editor": "J. Balls historical edition; Hartley anthology scan",
+    "sourceSha256": "8256edf52affc710dddd771731b993b2657fb3e01e4cbca4bf08a7660df8b080",
+    "pages": [261],
+    "playbackReady": false,
+    "downloadSha256": "1be8d3b4ae38bb2536af39f2d23d2ff85e31946ede0744967418117c7b412a9b"
+  },
+  {
+    "id": "reinagle-op1-07",
+    "order": 7,
+    "title": {
+      "en": "Short piece No. 7",
+      "pt-BR": "Peça breve nº 7"
+    },
+    "composer": "Alexander Reinagle",
+    "catalogue": "Op. 1 No. 7",
+    "level": 2,
+    "goal": {
+      "en": "Read both clefs, identify phrase endings and keep a steady pulse.",
+      "pt-BR": "Leia as duas claves, identifique finais de frase e mantenha a pulsação."
+    },
+    "part": {
+      "en": "Piano solo; historical fingering uses x for the thumb.",
+      "pt-BR": "Piano solo; dedilhado histórico usa x para o polegar."
+    },
+    "pdfUrl": "https://archive.org/download/hartley00535538/hartley00535538.pdf#page=261",
+    "sourceUrl": "https://imslp.org/wiki/24_Short_and_Easy_Pieces_for_Keyboard,_Op.1_(Reinagle,_Alexander)",
+    "license": "Public Domain",
+    "editor": "J. Balls historical edition; Hartley anthology scan",
+    "sourceSha256": "8256edf52affc710dddd771731b993b2657fb3e01e4cbca4bf08a7660df8b080",
+    "pages": [261],
+    "playbackReady": false,
+    "downloadSha256": "9e37680a4dfe902929b29ec34551ed1449a55577cfd1260b0705cc42f7ccbfb0"
+  },
+  {
+    "id": "reinagle-op1-08",
+    "order": 8,
+    "title": {
+      "en": "Short piece No. 8",
+      "pt-BR": "Peça breve nº 8"
+    },
+    "composer": "Alexander Reinagle",
+    "catalogue": "Op. 1 No. 8",
+    "level": 2,
+    "goal": {
+      "en": "Read both clefs, identify phrase endings and keep a steady pulse.",
+      "pt-BR": "Leia as duas claves, identifique finais de frase e mantenha a pulsação."
+    },
+    "part": {
+      "en": "Piano solo; historical fingering uses x for the thumb.",
+      "pt-BR": "Piano solo; dedilhado histórico usa x para o polegar."
+    },
+    "pdfUrl": "https://archive.org/download/hartley00535538/hartley00535538.pdf#page=261",
+    "sourceUrl": "https://imslp.org/wiki/24_Short_and_Easy_Pieces_for_Keyboard,_Op.1_(Reinagle,_Alexander)",
+    "license": "Public Domain",
+    "editor": "J. Balls historical edition; Hartley anthology scan",
+    "sourceSha256": "8256edf52affc710dddd771731b993b2657fb3e01e4cbca4bf08a7660df8b080",
+    "pages": [261],
+    "playbackReady": false,
+    "downloadSha256": "89f20675f4eb47f49c5db149a354e41c9706da8ab89f621bf3033f3a88228826"
+  },
+  {
+    "id": "reinagle-op1-09",
+    "order": 9,
+    "title": {
+      "en": "Short piece No. 9",
+      "pt-BR": "Peça breve nº 9"
+    },
+    "composer": "Alexander Reinagle",
+    "catalogue": "Op. 1 No. 9",
+    "level": 2,
+    "goal": {
+      "en": "Read both clefs, identify phrase endings and keep a steady pulse.",
+      "pt-BR": "Leia as duas claves, identifique finais de frase e mantenha a pulsação."
+    },
+    "part": {
+      "en": "Piano solo; historical fingering uses x for the thumb.",
+      "pt-BR": "Piano solo; dedilhado histórico usa x para o polegar."
+    },
+    "pdfUrl": "https://archive.org/download/hartley00535538/hartley00535538.pdf#page=262",
+    "sourceUrl": "https://imslp.org/wiki/24_Short_and_Easy_Pieces_for_Keyboard,_Op.1_(Reinagle,_Alexander)",
+    "license": "Public Domain",
+    "editor": "J. Balls historical edition; Hartley anthology scan",
+    "sourceSha256": "8256edf52affc710dddd771731b993b2657fb3e01e4cbca4bf08a7660df8b080",
+    "pages": [262],
+    "playbackReady": false,
+    "downloadSha256": "b2f6047686f80f453a4d551d1a6ec9ebedde3a19628ad8a7d211cc39a89b269d"
+  },
+  {
+    "id": "reinagle-op1-10",
+    "order": 10,
+    "title": {
+      "en": "Minuetto No. 10",
+      "pt-BR": "Minuetto nº 10"
+    },
+    "composer": "Alexander Reinagle",
+    "catalogue": "Op. 1 No. 10",
+    "level": 2,
+    "goal": {
+      "en": "Read both clefs, identify phrase endings and keep a steady pulse.",
+      "pt-BR": "Leia as duas claves, identifique finais de frase e mantenha a pulsação."
+    },
+    "part": {
+      "en": "Piano solo; historical fingering uses x for the thumb.",
+      "pt-BR": "Piano solo; dedilhado histórico usa x para o polegar."
+    },
+    "pdfUrl": "https://archive.org/download/hartley00535538/hartley00535538.pdf#page=262",
+    "sourceUrl": "https://imslp.org/wiki/24_Short_and_Easy_Pieces_for_Keyboard,_Op.1_(Reinagle,_Alexander)",
+    "license": "Public Domain",
+    "editor": "J. Balls historical edition; Hartley anthology scan",
+    "sourceSha256": "8256edf52affc710dddd771731b993b2657fb3e01e4cbca4bf08a7660df8b080",
+    "pages": [262],
+    "playbackReady": false,
+    "downloadSha256": "b35f72f8699ef0f790ce9473d7b7a1f16b0cf260d44dbb2e863e9e40c5829e73"
+  },
+  {
+    "id": "reinagle-op1-11",
+    "order": 11,
+    "title": {
+      "en": "Short piece No. 11",
+      "pt-BR": "Peça breve nº 11"
+    },
+    "composer": "Alexander Reinagle",
+    "catalogue": "Op. 1 No. 11",
+    "level": 2,
+    "goal": {
+      "en": "Read both clefs, identify phrase endings and keep a steady pulse.",
+      "pt-BR": "Leia as duas claves, identifique finais de frase e mantenha a pulsação."
+    },
+    "part": {
+      "en": "Piano solo; historical fingering uses x for the thumb.",
+      "pt-BR": "Piano solo; dedilhado histórico usa x para o polegar."
+    },
+    "pdfUrl": "https://archive.org/download/hartley00535538/hartley00535538.pdf#page=262",
+    "sourceUrl": "https://imslp.org/wiki/24_Short_and_Easy_Pieces_for_Keyboard,_Op.1_(Reinagle,_Alexander)",
+    "license": "Public Domain",
+    "editor": "J. Balls historical edition; Hartley anthology scan",
+    "sourceSha256": "8256edf52affc710dddd771731b993b2657fb3e01e4cbca4bf08a7660df8b080",
+    "pages": [262],
+    "playbackReady": false,
+    "downloadSha256": "72ac29dc97d0ef86d82f46a1c545cddee4e6debde8d19d2acc29390c4b5b8570"
+  },
+  {
+    "id": "reinagle-op1-12",
+    "order": 12,
+    "title": {
+      "en": "Short piece No. 12",
+      "pt-BR": "Peça breve nº 12"
+    },
+    "composer": "Alexander Reinagle",
+    "catalogue": "Op. 1 No. 12",
+    "level": 2,
+    "goal": {
+      "en": "Read both clefs, identify phrase endings and keep a steady pulse.",
+      "pt-BR": "Leia as duas claves, identifique finais de frase e mantenha a pulsação."
+    },
+    "part": {
+      "en": "Piano solo; historical fingering uses x for the thumb.",
+      "pt-BR": "Piano solo; dedilhado histórico usa x para o polegar."
+    },
+    "pdfUrl": "https://archive.org/download/hartley00535538/hartley00535538.pdf#page=262",
+    "sourceUrl": "https://imslp.org/wiki/24_Short_and_Easy_Pieces_for_Keyboard,_Op.1_(Reinagle,_Alexander)",
+    "license": "Public Domain",
+    "editor": "J. Balls historical edition; Hartley anthology scan",
+    "sourceSha256": "8256edf52affc710dddd771731b993b2657fb3e01e4cbca4bf08a7660df8b080",
+    "pages": [262],
+    "playbackReady": false,
+    "downloadSha256": "3fa72c2b1746875988461e6abb746669bb3c85f2dc4a78c76ebd163414635618"
+  },
+  {
+    "id": "beyer-op101-03",
+    "order": 13,
+    "title": {
+      "en": "Study No. 3",
+      "pt-BR": "Estudo nº 3"
+    },
+    "composer": "Ferdinand Beyer",
+    "catalogue": "Op. 101 No. 3",
+    "level": 0,
+    "goal": {
+      "en": "Five-finger reading, note lengths and coordination of both hands.",
+      "pt-BR": "Leitura em cinco dedos, durações e coordenação das mãos."
+    },
+    "part": {
+      "en": "Student primo with teacher secondo (four hands).",
+      "pt-BR": "Primo do aluno com secondo do professor (quatro mãos)."
+    },
+    "pdfUrl": "https://archive.org/download/imslp-im-klavierspiel-op101-beyer-ferdinand/PMLP31149-F_Beyer-Op101.pdf#page=19",
+    "sourceUrl": "https://imslp.org/wiki/Vorschule_im_Klavierspiel,_Op.101_(Beyer,_Ferdinand)",
+    "license": "Public Domain",
+    "editor": "Edition Peters; Adolf Ruthardt, historical edition",
+    "sourceSha256": "369d3800bc8ad42c97fb4312b92060060a6d42aee4e642c35de797fb65ff23c2",
+    "pages": [18, 19],
+    "playbackReady": false,
+    "downloadSha256": "db7f8cc6f0c8b5ad6dea45c8a2249cf2d3613ecf475bc4b1bba9fa22dd080baf"
+  },
+  {
+    "id": "beyer-op101-04",
+    "order": 14,
+    "title": {
+      "en": "Study No. 4",
+      "pt-BR": "Estudo nº 4"
+    },
+    "composer": "Ferdinand Beyer",
+    "catalogue": "Op. 101 No. 4",
+    "level": 0,
+    "goal": {
+      "en": "Five-finger reading, note lengths and coordination of both hands.",
+      "pt-BR": "Leitura em cinco dedos, durações e coordenação das mãos."
+    },
+    "part": {
+      "en": "Student primo with teacher secondo (four hands).",
+      "pt-BR": "Primo do aluno com secondo do professor (quatro mãos)."
+    },
+    "pdfUrl": "https://archive.org/download/imslp-im-klavierspiel-op101-beyer-ferdinand/PMLP31149-F_Beyer-Op101.pdf#page=19",
+    "sourceUrl": "https://imslp.org/wiki/Vorschule_im_Klavierspiel,_Op.101_(Beyer,_Ferdinand)",
+    "license": "Public Domain",
+    "editor": "Edition Peters; Adolf Ruthardt, historical edition",
+    "sourceSha256": "369d3800bc8ad42c97fb4312b92060060a6d42aee4e642c35de797fb65ff23c2",
+    "pages": [18, 19],
+    "playbackReady": false,
+    "downloadSha256": "408a589f77ba25716ef20851bca0da94942b66ebb40e11c8e90a17d0d0bfab89"
+  },
+  {
+    "id": "beyer-op101-05",
+    "order": 15,
+    "title": {
+      "en": "Study No. 5",
+      "pt-BR": "Estudo nº 5"
+    },
+    "composer": "Ferdinand Beyer",
+    "catalogue": "Op. 101 No. 5",
+    "level": 0,
+    "goal": {
+      "en": "Five-finger reading, note lengths and coordination of both hands.",
+      "pt-BR": "Leitura em cinco dedos, durações e coordenação das mãos."
+    },
+    "part": {
+      "en": "Student primo with teacher secondo (four hands).",
+      "pt-BR": "Primo do aluno com secondo do professor (quatro mãos)."
+    },
+    "pdfUrl": "https://archive.org/download/imslp-im-klavierspiel-op101-beyer-ferdinand/PMLP31149-F_Beyer-Op101.pdf#page=19",
+    "sourceUrl": "https://imslp.org/wiki/Vorschule_im_Klavierspiel,_Op.101_(Beyer,_Ferdinand)",
+    "license": "Public Domain",
+    "editor": "Edition Peters; Adolf Ruthardt, historical edition",
+    "sourceSha256": "369d3800bc8ad42c97fb4312b92060060a6d42aee4e642c35de797fb65ff23c2",
+    "pages": [18, 19],
+    "playbackReady": false,
+    "downloadSha256": "9ea27cd5c82f509702eec5ad5e04e0a40baa93a2fe5fab51a70cbfd551922e91"
+  },
+  {
+    "id": "beyer-op101-06",
+    "order": 16,
+    "title": {
+      "en": "Study No. 6",
+      "pt-BR": "Estudo nº 6"
+    },
+    "composer": "Ferdinand Beyer",
+    "catalogue": "Op. 101 No. 6",
+    "level": 0,
+    "goal": {
+      "en": "Five-finger reading, note lengths and coordination of both hands.",
+      "pt-BR": "Leitura em cinco dedos, durações e coordenação das mãos."
+    },
+    "part": {
+      "en": "Student primo with teacher secondo (four hands).",
+      "pt-BR": "Primo do aluno com secondo do professor (quatro mãos)."
+    },
+    "pdfUrl": "https://archive.org/download/imslp-im-klavierspiel-op101-beyer-ferdinand/PMLP31149-F_Beyer-Op101.pdf#page=19",
+    "sourceUrl": "https://imslp.org/wiki/Vorschule_im_Klavierspiel,_Op.101_(Beyer,_Ferdinand)",
+    "license": "Public Domain",
+    "editor": "Edition Peters; Adolf Ruthardt, historical edition",
+    "sourceSha256": "369d3800bc8ad42c97fb4312b92060060a6d42aee4e642c35de797fb65ff23c2",
+    "pages": [18, 19],
+    "playbackReady": false,
+    "downloadSha256": "6ac497127fb45e7eb36867e1a66c445a2982105db0bb83d344550cafd8ea666d"
+  },
+  {
+    "id": "beyer-op101-07",
+    "order": 17,
+    "title": {
+      "en": "Study No. 7",
+      "pt-BR": "Estudo nº 7"
+    },
+    "composer": "Ferdinand Beyer",
+    "catalogue": "Op. 101 No. 7",
+    "level": 0,
+    "goal": {
+      "en": "Five-finger reading, note lengths and coordination of both hands.",
+      "pt-BR": "Leitura em cinco dedos, durações e coordenação das mãos."
+    },
+    "part": {
+      "en": "Student primo with teacher secondo (four hands).",
+      "pt-BR": "Primo do aluno com secondo do professor (quatro mãos)."
+    },
+    "pdfUrl": "https://archive.org/download/imslp-im-klavierspiel-op101-beyer-ferdinand/PMLP31149-F_Beyer-Op101.pdf#page=21",
+    "sourceUrl": "https://imslp.org/wiki/Vorschule_im_Klavierspiel,_Op.101_(Beyer,_Ferdinand)",
+    "license": "Public Domain",
+    "editor": "Edition Peters; Adolf Ruthardt, historical edition",
+    "sourceSha256": "369d3800bc8ad42c97fb4312b92060060a6d42aee4e642c35de797fb65ff23c2",
+    "pages": [20, 21],
+    "playbackReady": false,
+    "downloadSha256": "4585f84cf031eb0d03c4687cfbab93092ab3741de2e45b2200e4b83c4d98f01b"
+  },
+  {
+    "id": "beyer-op101-08",
+    "order": 18,
+    "title": {
+      "en": "Study No. 8",
+      "pt-BR": "Estudo nº 8"
+    },
+    "composer": "Ferdinand Beyer",
+    "catalogue": "Op. 101 No. 8",
+    "level": 0,
+    "goal": {
+      "en": "Five-finger reading, note lengths and coordination of both hands.",
+      "pt-BR": "Leitura em cinco dedos, durações e coordenação das mãos."
+    },
+    "part": {
+      "en": "Student primo with teacher secondo (four hands).",
+      "pt-BR": "Primo do aluno com secondo do professor (quatro mãos)."
+    },
+    "pdfUrl": "https://archive.org/download/imslp-im-klavierspiel-op101-beyer-ferdinand/PMLP31149-F_Beyer-Op101.pdf#page=21",
+    "sourceUrl": "https://imslp.org/wiki/Vorschule_im_Klavierspiel,_Op.101_(Beyer,_Ferdinand)",
+    "license": "Public Domain",
+    "editor": "Edition Peters; Adolf Ruthardt, historical edition",
+    "sourceSha256": "369d3800bc8ad42c97fb4312b92060060a6d42aee4e642c35de797fb65ff23c2",
+    "pages": [20, 21],
+    "playbackReady": false,
+    "downloadSha256": "27ad37b3d5b869ea36dc4df10d1fa02bb41276f286b553300bc2228526dece9e"
+  },
+  {
+    "id": "beyer-op101-09",
+    "order": 19,
+    "title": {
+      "en": "Study No. 9",
+      "pt-BR": "Estudo nº 9"
+    },
+    "composer": "Ferdinand Beyer",
+    "catalogue": "Op. 101 No. 9",
+    "level": 0,
+    "goal": {
+      "en": "Five-finger reading, note lengths and coordination of both hands.",
+      "pt-BR": "Leitura em cinco dedos, durações e coordenação das mãos."
+    },
+    "part": {
+      "en": "Student primo with teacher secondo (four hands).",
+      "pt-BR": "Primo do aluno com secondo do professor (quatro mãos)."
+    },
+    "pdfUrl": "https://archive.org/download/imslp-im-klavierspiel-op101-beyer-ferdinand/PMLP31149-F_Beyer-Op101.pdf#page=21",
+    "sourceUrl": "https://imslp.org/wiki/Vorschule_im_Klavierspiel,_Op.101_(Beyer,_Ferdinand)",
+    "license": "Public Domain",
+    "editor": "Edition Peters; Adolf Ruthardt, historical edition",
+    "sourceSha256": "369d3800bc8ad42c97fb4312b92060060a6d42aee4e642c35de797fb65ff23c2",
+    "pages": [20, 21],
+    "playbackReady": false,
+    "downloadSha256": "69f16456c88ccce76132856e204404c6ecd55e155cfe8c5db47194f19a57a32b"
+  },
+  {
+    "id": "beyer-op101-10",
+    "order": 20,
+    "title": {
+      "en": "Child’s Song",
+      "pt-BR": "Canção infantil"
+    },
+    "composer": "Ferdinand Beyer",
+    "catalogue": "Op. 101 No. 10",
+    "level": 1,
+    "goal": {
+      "en": "Five-finger reading, note lengths and coordination of both hands.",
+      "pt-BR": "Leitura em cinco dedos, durações e coordenação das mãos."
+    },
+    "part": {
+      "en": "Student primo with teacher secondo (four hands).",
+      "pt-BR": "Primo do aluno com secondo do professor (quatro mãos)."
+    },
+    "pdfUrl": "https://archive.org/download/imslp-im-klavierspiel-op101-beyer-ferdinand/PMLP31149-F_Beyer-Op101.pdf#page=23",
+    "sourceUrl": "https://imslp.org/wiki/Vorschule_im_Klavierspiel,_Op.101_(Beyer,_Ferdinand)",
+    "license": "Public Domain",
+    "editor": "Edition Peters; Adolf Ruthardt, historical edition",
+    "sourceSha256": "369d3800bc8ad42c97fb4312b92060060a6d42aee4e642c35de797fb65ff23c2",
+    "pages": [22, 23],
+    "playbackReady": false,
+    "downloadSha256": "72eeba33d4c411d10dfc9893659021a034f657be05e5088f757ea46b22fc2bc0"
+  },
+  {
+    "id": "beyer-op101-11",
+    "order": 21,
+    "title": {
+      "en": "The Cuckoo",
+      "pt-BR": "O cuco"
+    },
+    "composer": "Ferdinand Beyer",
+    "catalogue": "Op. 101 No. 11",
+    "level": 1,
+    "goal": {
+      "en": "Five-finger reading, note lengths and coordination of both hands.",
+      "pt-BR": "Leitura em cinco dedos, durações e coordenação das mãos."
+    },
+    "part": {
+      "en": "Student primo with teacher secondo (four hands).",
+      "pt-BR": "Primo do aluno com secondo do professor (quatro mãos)."
+    },
+    "pdfUrl": "https://archive.org/download/imslp-im-klavierspiel-op101-beyer-ferdinand/PMLP31149-F_Beyer-Op101.pdf#page=23",
+    "sourceUrl": "https://imslp.org/wiki/Vorschule_im_Klavierspiel,_Op.101_(Beyer,_Ferdinand)",
+    "license": "Public Domain",
+    "editor": "Edition Peters; Adolf Ruthardt, historical edition",
+    "sourceSha256": "369d3800bc8ad42c97fb4312b92060060a6d42aee4e642c35de797fb65ff23c2",
+    "pages": [22, 23],
+    "playbackReady": false,
+    "downloadSha256": "95e94e10aec25b41f0596ee8d9581443e0afae311d18df1692f85469d5401dff"
+  },
+  {
+    "id": "beyer-op101-12",
+    "order": 22,
+    "title": {
+      "en": "Study No. 12",
+      "pt-BR": "Estudo nº 12"
+    },
+    "composer": "Ferdinand Beyer",
+    "catalogue": "Op. 101 No. 12",
+    "level": 1,
+    "goal": {
+      "en": "Five-finger reading, note lengths and coordination of both hands.",
+      "pt-BR": "Leitura em cinco dedos, durações e coordenação das mãos."
+    },
+    "part": {
+      "en": "Piano solo; both staves use treble clef in these studies.",
+      "pt-BR": "Piano solo; estas peças usam clave de sol nas duas pautas."
+    },
+    "pdfUrl": "https://archive.org/download/imslp-im-klavierspiel-op101-beyer-ferdinand/PMLP31149-F_Beyer-Op101.pdf#page=24",
+    "sourceUrl": "https://imslp.org/wiki/Vorschule_im_Klavierspiel,_Op.101_(Beyer,_Ferdinand)",
+    "license": "Public Domain",
+    "editor": "Edition Peters; Adolf Ruthardt, historical edition",
+    "sourceSha256": "369d3800bc8ad42c97fb4312b92060060a6d42aee4e642c35de797fb65ff23c2",
+    "pages": [24],
+    "playbackReady": false,
+    "downloadSha256": "fd34cbfc92089d0bd95c18a3a8ebff0a2c2a79218ecd244a53d6443bf314aedc"
+  },
+  {
+    "id": "beyer-op101-13",
+    "order": 23,
+    "title": {
+      "en": "Study No. 13",
+      "pt-BR": "Estudo nº 13"
+    },
+    "composer": "Ferdinand Beyer",
+    "catalogue": "Op. 101 No. 13",
+    "level": 1,
+    "goal": {
+      "en": "Five-finger reading, note lengths and coordination of both hands.",
+      "pt-BR": "Leitura em cinco dedos, durações e coordenação das mãos."
+    },
+    "part": {
+      "en": "Piano solo; both staves use treble clef in these studies.",
+      "pt-BR": "Piano solo; estas peças usam clave de sol nas duas pautas."
+    },
+    "pdfUrl": "https://archive.org/download/imslp-im-klavierspiel-op101-beyer-ferdinand/PMLP31149-F_Beyer-Op101.pdf#page=24",
+    "sourceUrl": "https://imslp.org/wiki/Vorschule_im_Klavierspiel,_Op.101_(Beyer,_Ferdinand)",
+    "license": "Public Domain",
+    "editor": "Edition Peters; Adolf Ruthardt, historical edition",
+    "sourceSha256": "369d3800bc8ad42c97fb4312b92060060a6d42aee4e642c35de797fb65ff23c2",
+    "pages": [24],
+    "playbackReady": false,
+    "downloadSha256": "64d4732e34938976f2196a524694946a90b8802e9c27b90d3d72629e94d1b57c"
+  },
+  {
+    "id": "beyer-op101-14",
+    "order": 24,
+    "title": {
+      "en": "Study No. 14",
+      "pt-BR": "Estudo nº 14"
+    },
+    "composer": "Ferdinand Beyer",
+    "catalogue": "Op. 101 No. 14",
+    "level": 1,
+    "goal": {
+      "en": "Five-finger reading, note lengths and coordination of both hands.",
+      "pt-BR": "Leitura em cinco dedos, durações e coordenação das mãos."
+    },
+    "part": {
+      "en": "Piano solo; both staves use treble clef in these studies.",
+      "pt-BR": "Piano solo; estas peças usam clave de sol nas duas pautas."
+    },
+    "pdfUrl": "https://archive.org/download/imslp-im-klavierspiel-op101-beyer-ferdinand/PMLP31149-F_Beyer-Op101.pdf#page=24",
+    "sourceUrl": "https://imslp.org/wiki/Vorschule_im_Klavierspiel,_Op.101_(Beyer,_Ferdinand)",
+    "license": "Public Domain",
+    "editor": "Edition Peters; Adolf Ruthardt, historical edition",
+    "sourceSha256": "369d3800bc8ad42c97fb4312b92060060a6d42aee4e642c35de797fb65ff23c2",
+    "pages": [24],
+    "playbackReady": false,
+    "downloadSha256": "99633e29afa78ab9dc2be712edd091cef62b79adf408f4225f7b4b7c0e3587bd"
+  },
+  {
+    "id": "beyer-op101-15",
+    "order": 25,
+    "title": {
+      "en": "Study No. 15",
+      "pt-BR": "Estudo nº 15"
+    },
+    "composer": "Ferdinand Beyer",
+    "catalogue": "Op. 101 No. 15",
+    "level": 1,
+    "goal": {
+      "en": "Five-finger reading, note lengths and coordination of both hands.",
+      "pt-BR": "Leitura em cinco dedos, durações e coordenação das mãos."
+    },
+    "part": {
+      "en": "Piano solo; both staves use treble clef in these studies.",
+      "pt-BR": "Piano solo; estas peças usam clave de sol nas duas pautas."
+    },
+    "pdfUrl": "https://archive.org/download/imslp-im-klavierspiel-op101-beyer-ferdinand/PMLP31149-F_Beyer-Op101.pdf#page=24",
+    "sourceUrl": "https://imslp.org/wiki/Vorschule_im_Klavierspiel,_Op.101_(Beyer,_Ferdinand)",
+    "license": "Public Domain",
+    "editor": "Edition Peters; Adolf Ruthardt, historical edition",
+    "sourceSha256": "369d3800bc8ad42c97fb4312b92060060a6d42aee4e642c35de797fb65ff23c2",
+    "pages": [24],
+    "playbackReady": false,
+    "downloadSha256": "14bcfa7c456e58f2fe4a39a3b25b2752e8fb8e30ba84674255abf298e15392bf"
+  },
+  {
+    "id": "beyer-op101-16",
+    "order": 26,
+    "title": {
+      "en": "Study No. 16",
+      "pt-BR": "Estudo nº 16"
+    },
+    "composer": "Ferdinand Beyer",
+    "catalogue": "Op. 101 No. 16",
+    "level": 1,
+    "goal": {
+      "en": "Five-finger reading, note lengths and coordination of both hands.",
+      "pt-BR": "Leitura em cinco dedos, durações e coordenação das mãos."
+    },
+    "part": {
+      "en": "Piano solo; both staves use treble clef in these studies.",
+      "pt-BR": "Piano solo; estas peças usam clave de sol nas duas pautas."
+    },
+    "pdfUrl": "https://archive.org/download/imslp-im-klavierspiel-op101-beyer-ferdinand/PMLP31149-F_Beyer-Op101.pdf#page=25",
+    "sourceUrl": "https://imslp.org/wiki/Vorschule_im_Klavierspiel,_Op.101_(Beyer,_Ferdinand)",
+    "license": "Public Domain",
+    "editor": "Edition Peters; Adolf Ruthardt, historical edition",
+    "sourceSha256": "369d3800bc8ad42c97fb4312b92060060a6d42aee4e642c35de797fb65ff23c2",
+    "pages": [25],
+    "playbackReady": false,
+    "downloadSha256": "645eeff788794761189f6c485debc8385ec00ae03c0d07ba7e6df1be4aba05fd"
+  },
+  {
+    "id": "beyer-op101-17",
+    "order": 27,
+    "title": {
+      "en": "Study No. 17",
+      "pt-BR": "Estudo nº 17"
+    },
+    "composer": "Ferdinand Beyer",
+    "catalogue": "Op. 101 No. 17",
+    "level": 1,
+    "goal": {
+      "en": "Five-finger reading, note lengths and coordination of both hands.",
+      "pt-BR": "Leitura em cinco dedos, durações e coordenação das mãos."
+    },
+    "part": {
+      "en": "Piano solo; both staves use treble clef in these studies.",
+      "pt-BR": "Piano solo; estas peças usam clave de sol nas duas pautas."
+    },
+    "pdfUrl": "https://archive.org/download/imslp-im-klavierspiel-op101-beyer-ferdinand/PMLP31149-F_Beyer-Op101.pdf#page=25",
+    "sourceUrl": "https://imslp.org/wiki/Vorschule_im_Klavierspiel,_Op.101_(Beyer,_Ferdinand)",
+    "license": "Public Domain",
+    "editor": "Edition Peters; Adolf Ruthardt, historical edition",
+    "sourceSha256": "369d3800bc8ad42c97fb4312b92060060a6d42aee4e642c35de797fb65ff23c2",
+    "pages": [25],
+    "playbackReady": false,
+    "downloadSha256": "892f4a311e292210df53998a9cdea07933ef89f2d28d2a4b9efcee1eaf5d0dc4"
+  },
+  {
+    "id": "beyer-op101-18",
+    "order": 28,
+    "title": {
+      "en": "Study No. 18",
+      "pt-BR": "Estudo nº 18"
+    },
+    "composer": "Ferdinand Beyer",
+    "catalogue": "Op. 101 No. 18",
+    "level": 1,
+    "goal": {
+      "en": "Five-finger reading, note lengths and coordination of both hands.",
+      "pt-BR": "Leitura em cinco dedos, durações e coordenação das mãos."
+    },
+    "part": {
+      "en": "Piano solo; both staves use treble clef in these studies.",
+      "pt-BR": "Piano solo; estas peças usam clave de sol nas duas pautas."
+    },
+    "pdfUrl": "https://archive.org/download/imslp-im-klavierspiel-op101-beyer-ferdinand/PMLP31149-F_Beyer-Op101.pdf#page=25",
+    "sourceUrl": "https://imslp.org/wiki/Vorschule_im_Klavierspiel,_Op.101_(Beyer,_Ferdinand)",
+    "license": "Public Domain",
+    "editor": "Edition Peters; Adolf Ruthardt, historical edition",
+    "sourceSha256": "369d3800bc8ad42c97fb4312b92060060a6d42aee4e642c35de797fb65ff23c2",
+    "pages": [25],
+    "playbackReady": false,
+    "downloadSha256": "2cba4ca8646a6e0275d4dfbb3ff15905f95d948454116fad2142a154afdecefd"
+  },
+  {
+    "id": "beyer-op101-19",
+    "order": 29,
+    "title": {
+      "en": "Study No. 19",
+      "pt-BR": "Estudo nº 19"
+    },
+    "composer": "Ferdinand Beyer",
+    "catalogue": "Op. 101 No. 19",
+    "level": 1,
+    "goal": {
+      "en": "Five-finger reading, note lengths and coordination of both hands.",
+      "pt-BR": "Leitura em cinco dedos, durações e coordenação das mãos."
+    },
+    "part": {
+      "en": "Piano solo; both staves use treble clef in these studies.",
+      "pt-BR": "Piano solo; estas peças usam clave de sol nas duas pautas."
+    },
+    "pdfUrl": "https://archive.org/download/imslp-im-klavierspiel-op101-beyer-ferdinand/PMLP31149-F_Beyer-Op101.pdf#page=26",
+    "sourceUrl": "https://imslp.org/wiki/Vorschule_im_Klavierspiel,_Op.101_(Beyer,_Ferdinand)",
+    "license": "Public Domain",
+    "editor": "Edition Peters; Adolf Ruthardt, historical edition",
+    "sourceSha256": "369d3800bc8ad42c97fb4312b92060060a6d42aee4e642c35de797fb65ff23c2",
+    "pages": [26],
+    "playbackReady": false,
+    "downloadSha256": "4369c9e875e6ba9170bf29b470a64e6433f500137da5454369c428e683436427"
+  },
+  {
+    "id": "beyer-op101-20",
+    "order": 30,
+    "title": {
+      "en": "Study No. 20",
+      "pt-BR": "Estudo nº 20"
+    },
+    "composer": "Ferdinand Beyer",
+    "catalogue": "Op. 101 No. 20",
+    "level": 1,
+    "goal": {
+      "en": "Five-finger reading, note lengths and coordination of both hands.",
+      "pt-BR": "Leitura em cinco dedos, durações e coordenação das mãos."
+    },
+    "part": {
+      "en": "Piano solo; both staves use treble clef in these studies.",
+      "pt-BR": "Piano solo; estas peças usam clave de sol nas duas pautas."
+    },
+    "pdfUrl": "https://archive.org/download/imslp-im-klavierspiel-op101-beyer-ferdinand/PMLP31149-F_Beyer-Op101.pdf#page=26",
+    "sourceUrl": "https://imslp.org/wiki/Vorschule_im_Klavierspiel,_Op.101_(Beyer,_Ferdinand)",
+    "license": "Public Domain",
+    "editor": "Edition Peters; Adolf Ruthardt, historical edition",
+    "sourceSha256": "369d3800bc8ad42c97fb4312b92060060a6d42aee4e642c35de797fb65ff23c2",
+    "pages": [26],
+    "playbackReady": false,
+    "downloadSha256": "4c0c4fd71223efe1e7fc66eaefea9178f6fca88cabd7a6a121b386a0720313af"
+  },
+  {
+    "id": "diabelli-op149-01",
+    "order": 31,
+    "title": {
+      "en": "Melodic Exercise No. 1",
+      "pt-BR": "Exercício melódico nº 1"
+    },
+    "composer": "Anton Diabelli",
+    "catalogue": "Op. 149 No. 1",
+    "level": 1,
+    "goal": {
+      "en": "Five-finger melody, listening to accompaniment and shared pulse.",
+      "pt-BR": "Melodia em cinco dedos, escuta do acompanhamento e pulsação conjunta."
+    },
+    "part": {
+      "en": "Four hands: beginner primo only; teacher plays the harder secondo.",
+      "pt-BR": "Quatro mãos: apenas o primo é para iniciante; professor toca o secondo mais difícil."
+    },
+    "pdfUrl": "https://www.mutopiaproject.org/ftp/DiabelliA/O149/diabeli.op149.1/diabeli.op149.1-a4.pdf",
+    "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=389",
+    "license": "Creative Commons Attribution-ShareAlike 3.0",
+    "editor": "Alberto Simões",
+    "sourceSha256": "25509af547e1fa93010b3bceff2bfcf4673da8bb0c17ed97780d89ffd52288ee",
+    "pages": [],
+    "playbackReady": false,
+    "downloadSha256": "25509af547e1fa93010b3bceff2bfcf4673da8bb0c17ed97780d89ffd52288ee"
+  },
+  {
+    "id": "diabelli-op149-02",
+    "order": 32,
+    "title": {
+      "en": "Melodic Exercise No. 2",
+      "pt-BR": "Exercício melódico nº 2"
+    },
+    "composer": "Anton Diabelli",
+    "catalogue": "Op. 149 No. 2",
+    "level": 1,
+    "goal": {
+      "en": "Five-finger melody, listening to accompaniment and shared pulse.",
+      "pt-BR": "Melodia em cinco dedos, escuta do acompanhamento e pulsação conjunta."
+    },
+    "part": {
+      "en": "Four hands: beginner primo only; teacher plays the harder secondo.",
+      "pt-BR": "Quatro mãos: apenas o primo é para iniciante; professor toca o secondo mais difícil."
+    },
+    "pdfUrl": "https://www.mutopiaproject.org/ftp/DiabelliA/O149/diabeli.op149.2/diabeli.op149.2-a4.pdf",
+    "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=402",
+    "license": "Creative Commons Attribution-ShareAlike 3.0",
+    "editor": "Alberto Simões",
+    "sourceSha256": "ebb7314449ff361bff98dd9936905deb7f6cf03ead44110bedb0ad692942e143",
+    "pages": [],
+    "playbackReady": false,
+    "downloadSha256": "ebb7314449ff361bff98dd9936905deb7f6cf03ead44110bedb0ad692942e143"
+  },
+  {
+    "id": "diabelli-op149-03",
+    "order": 33,
+    "title": {
+      "en": "Melodic Exercise No. 3",
+      "pt-BR": "Exercício melódico nº 3"
+    },
+    "composer": "Anton Diabelli",
+    "catalogue": "Op. 149 No. 3",
+    "level": 1,
+    "goal": {
+      "en": "Five-finger melody, listening to accompaniment and shared pulse.",
+      "pt-BR": "Melodia em cinco dedos, escuta do acompanhamento e pulsação conjunta."
+    },
+    "part": {
+      "en": "Four hands: beginner primo only; teacher plays the harder secondo.",
+      "pt-BR": "Quatro mãos: apenas o primo é para iniciante; professor toca o secondo mais difícil."
+    },
+    "pdfUrl": "https://www.mutopiaproject.org/ftp/DiabelliA/O149/op149-3/op149-3-a4.pdf",
+    "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=403",
+    "license": "Creative Commons Attribution-ShareAlike 3.0",
+    "editor": "Alberto Simões",
+    "sourceSha256": "e427e04f77891c9a3c69de8630840e4a2b7466c3f867cedca0e2e5018241e71e",
+    "pages": [],
+    "playbackReady": false,
+    "downloadSha256": "e427e04f77891c9a3c69de8630840e4a2b7466c3f867cedca0e2e5018241e71e"
+  },
+  {
+    "id": "diabelli-op149-04",
+    "order": 34,
+    "title": {
+      "en": "Melodic Exercise No. 4",
+      "pt-BR": "Exercício melódico nº 4"
+    },
+    "composer": "Anton Diabelli",
+    "catalogue": "Op. 149 No. 4",
+    "level": 1,
+    "goal": {
+      "en": "Five-finger melody, listening to accompaniment and shared pulse.",
+      "pt-BR": "Melodia em cinco dedos, escuta do acompanhamento e pulsação conjunta."
+    },
+    "part": {
+      "en": "Four hands: beginner primo only; teacher plays the harder secondo.",
+      "pt-BR": "Quatro mãos: apenas o primo é para iniciante; professor toca o secondo mais difícil."
+    },
+    "pdfUrl": "https://www.mutopiaproject.org/ftp/DiabelliA/O149/op149-4/op149-4-a4.pdf",
+    "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=404",
+    "license": "Creative Commons Attribution-ShareAlike 3.0",
+    "editor": "Alberto Simões",
+    "sourceSha256": "7fcfa719144acf28b752dff6f13c4b29689cb28d038ddb07d2f41e2a6f8b2616",
+    "pages": [],
+    "playbackReady": false,
+    "downloadSha256": "7fcfa719144acf28b752dff6f13c4b29689cb28d038ddb07d2f41e2a6f8b2616"
+  },
+  {
+    "id": "diabelli-op149-05",
+    "order": 35,
+    "title": {
+      "en": "Melodic Exercise No. 5",
+      "pt-BR": "Exercício melódico nº 5"
+    },
+    "composer": "Anton Diabelli",
+    "catalogue": "Op. 149 No. 5",
+    "level": 1,
+    "goal": {
+      "en": "Five-finger melody, listening to accompaniment and shared pulse.",
+      "pt-BR": "Melodia em cinco dedos, escuta do acompanhamento e pulsação conjunta."
+    },
+    "part": {
+      "en": "Four hands: beginner primo only; teacher plays the harder secondo.",
+      "pt-BR": "Quatro mãos: apenas o primo é para iniciante; professor toca o secondo mais difícil."
+    },
+    "pdfUrl": "https://www.mutopiaproject.org/ftp/DiabelliA/O149/op149-5/op149-5-a4.pdf",
+    "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=405",
+    "license": "Creative Commons Attribution-ShareAlike 3.0",
+    "editor": "Alberto Simões",
+    "sourceSha256": "3ab5adfe1930edd3ce6c4ceb8176c30520e23c388399734540c82826032913c0",
+    "pages": [],
+    "playbackReady": false,
+    "downloadSha256": "3ab5adfe1930edd3ce6c4ceb8176c30520e23c388399734540c82826032913c0"
+  },
+  {
+    "id": "diabelli-op149-06",
+    "order": 36,
+    "title": {
+      "en": "Melodic Exercise No. 6",
+      "pt-BR": "Exercício melódico nº 6"
+    },
+    "composer": "Anton Diabelli",
+    "catalogue": "Op. 149 No. 6",
+    "level": 2,
+    "goal": {
+      "en": "Five-finger melody, listening to accompaniment and shared pulse.",
+      "pt-BR": "Melodia em cinco dedos, escuta do acompanhamento e pulsação conjunta."
+    },
+    "part": {
+      "en": "Four hands: beginner primo only; teacher plays the harder secondo.",
+      "pt-BR": "Quatro mãos: apenas o primo é para iniciante; professor toca o secondo mais difícil."
+    },
+    "pdfUrl": "https://www.mutopiaproject.org/ftp/DiabelliA/O149/op149-6/op149-6-a4.pdf",
+    "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=408",
+    "license": "Creative Commons Attribution-ShareAlike 3.0",
+    "editor": "Alberto Simões",
+    "sourceSha256": "c32238eef00d7a337a5f8e01d9ff87500e9a932a1321b87931d070212e8891a0",
+    "pages": [],
+    "playbackReady": false,
+    "downloadSha256": "c32238eef00d7a337a5f8e01d9ff87500e9a932a1321b87931d070212e8891a0"
+  },
+  {
+    "id": "diabelli-op149-07",
+    "order": 37,
+    "title": {
+      "en": "Melodic Exercise No. 7",
+      "pt-BR": "Exercício melódico nº 7"
+    },
+    "composer": "Anton Diabelli",
+    "catalogue": "Op. 149 No. 7",
+    "level": 2,
+    "goal": {
+      "en": "Five-finger melody, listening to accompaniment and shared pulse.",
+      "pt-BR": "Melodia em cinco dedos, escuta do acompanhamento e pulsação conjunta."
+    },
+    "part": {
+      "en": "Four hands: beginner primo only; teacher plays the harder secondo.",
+      "pt-BR": "Quatro mãos: apenas o primo é para iniciante; professor toca o secondo mais difícil."
+    },
+    "pdfUrl": "https://www.mutopiaproject.org/ftp/DiabelliA/O149/op149-7/op149-7-a4.pdf",
+    "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=409",
+    "license": "Creative Commons Attribution-ShareAlike 3.0",
+    "editor": "Alberto Simões",
+    "sourceSha256": "fee972d578ec2939db9c563c2c155491c81157fcb16cf1a0fa12ebffc1c77133",
+    "pages": [],
+    "playbackReady": false,
+    "downloadSha256": "fee972d578ec2939db9c563c2c155491c81157fcb16cf1a0fa12ebffc1c77133"
+  },
+  {
+    "id": "diabelli-op149-08",
+    "order": 38,
+    "title": {
+      "en": "Melodic Exercise No. 8",
+      "pt-BR": "Exercício melódico nº 8"
+    },
+    "composer": "Anton Diabelli",
+    "catalogue": "Op. 149 No. 8",
+    "level": 2,
+    "goal": {
+      "en": "Five-finger melody, listening to accompaniment and shared pulse.",
+      "pt-BR": "Melodia em cinco dedos, escuta do acompanhamento e pulsação conjunta."
+    },
+    "part": {
+      "en": "Four hands: beginner primo only; teacher plays the harder secondo.",
+      "pt-BR": "Quatro mãos: apenas o primo é para iniciante; professor toca o secondo mais difícil."
+    },
+    "pdfUrl": "https://www.mutopiaproject.org/ftp/DiabelliA/O149/op149-8/op149-8-a4.pdf",
+    "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=410",
+    "license": "Creative Commons Attribution-ShareAlike 3.0",
+    "editor": "Alberto Simões",
+    "sourceSha256": "94763e379a5b988a3beae4d97733f238216b37941509e6766f9765e0ce12c72a",
+    "pages": [],
+    "playbackReady": false,
+    "downloadSha256": "94763e379a5b988a3beae4d97733f238216b37941509e6766f9765e0ce12c72a"
+  },
+  {
+    "id": "diabelli-op149-09",
+    "order": 39,
+    "title": {
+      "en": "Melodic Exercise No. 9",
+      "pt-BR": "Exercício melódico nº 9"
+    },
+    "composer": "Anton Diabelli",
+    "catalogue": "Op. 149 No. 9",
+    "level": 2,
+    "goal": {
+      "en": "Five-finger melody, listening to accompaniment and shared pulse.",
+      "pt-BR": "Melodia em cinco dedos, escuta do acompanhamento e pulsação conjunta."
+    },
+    "part": {
+      "en": "Four hands: beginner primo only; teacher plays the harder secondo.",
+      "pt-BR": "Quatro mãos: apenas o primo é para iniciante; professor toca o secondo mais difícil."
+    },
+    "pdfUrl": "https://www.mutopiaproject.org/ftp/DiabelliA/O149/op149-9/op149-9-a4.pdf",
+    "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=415",
+    "license": "Creative Commons Attribution-ShareAlike 3.0",
+    "editor": "Alberto Simões",
+    "sourceSha256": "407bb58c55497c23241dcc6df4de99a238e6c3f769e7f3f9e771943b77412344",
+    "pages": [],
+    "playbackReady": false,
+    "downloadSha256": "407bb58c55497c23241dcc6df4de99a238e6c3f769e7f3f9e771943b77412344"
+  },
+  {
+    "id": "diabelli-op149-10",
+    "order": 40,
+    "title": {
+      "en": "Melodic Exercise No. 10",
+      "pt-BR": "Exercício melódico nº 10"
+    },
+    "composer": "Anton Diabelli",
+    "catalogue": "Op. 149 No. 10",
+    "level": 2,
+    "goal": {
+      "en": "Five-finger melody, listening to accompaniment and shared pulse.",
+      "pt-BR": "Melodia em cinco dedos, escuta do acompanhamento e pulsação conjunta."
+    },
+    "part": {
+      "en": "Four hands: beginner primo only; teacher plays the harder secondo.",
+      "pt-BR": "Quatro mãos: apenas o primo é para iniciante; professor toca o secondo mais difícil."
+    },
+    "pdfUrl": "https://www.mutopiaproject.org/ftp/DiabelliA/O149/op149-10/op149-10-a4.pdf",
+    "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=416",
+    "license": "Creative Commons Attribution-ShareAlike 3.0",
+    "editor": "Alberto Simões",
+    "sourceSha256": "14745b78f8bc6751e7b9e34f7e1f1524c665729f97b285f3281a0b06bd8837f3",
+    "pages": [],
+    "playbackReady": false,
+    "downloadSha256": "14745b78f8bc6751e7b9e34f7e1f1524c665729f97b285f3281a0b06bd8837f3"
+  },
+  {
+    "id": "schumann-op68-01",
+    "order": 41,
+    "title": {
+      "en": "Melody",
+      "pt-BR": "Melodia"
+    },
+    "composer": "Robert Schumann",
+    "catalogue": "Op. 68 No. 1",
+    "level": 2,
+    "goal": {
+      "en": "Shape a phrase, balance melody and accompaniment, identify chord tones.",
+      "pt-BR": "Molde frases, equilibre melodia e acompanhamento e identifique notas dos acordes."
+    },
+    "part": {
+      "en": "Piano solo; requires independent hands and chord reading.",
+      "pt-BR": "Piano solo; exige independência das mãos e leitura de acordes."
+    },
+    "pdfUrl": "https://www.mutopiaproject.org/ftp/SchumannR/O68/schumann-op68-01-melodie/schumann-op68-01-melodie-a4.pdf",
+    "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=647",
+    "license": "Creative Commons Attribution-ShareAlike 2.5",
+    "editor": "Philippe Hézaine",
+    "sourceSha256": "be5fbd28ff8b3abf3c594b1562ef1808d4ef8d01634371d4730ca5f2b32f6f63",
+    "pages": [],
+    "playbackReady": false,
+    "downloadSha256": "be5fbd28ff8b3abf3c594b1562ef1808d4ef8d01634371d4730ca5f2b32f6f63"
+  },
+  {
+    "id": "schumann-op68-03",
+    "order": 42,
+    "title": {
+      "en": "Humming Song",
+      "pt-BR": "Canção de cantarolar"
+    },
+    "composer": "Robert Schumann",
+    "catalogue": "Op. 68 No. 3",
+    "level": 2,
+    "goal": {
+      "en": "Shape a phrase, balance melody and accompaniment, identify chord tones.",
+      "pt-BR": "Molde frases, equilibre melodia e acompanhamento e identifique notas dos acordes."
+    },
+    "part": {
+      "en": "Piano solo; requires independent hands and chord reading.",
+      "pt-BR": "Piano solo; exige independência das mãos e leitura de acordes."
+    },
+    "pdfUrl": "https://www.mutopiaproject.org/ftp/SchumannR/O68/schumann-op68-03-chanson-fredonnee/schumann-op68-03-chanson-fredonnee-a4.pdf",
+    "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=651",
+    "license": "Creative Commons Attribution-ShareAlike 3.0",
+    "editor": "Philippe Hézaine",
+    "sourceSha256": "fe4955c234d6170d9324166320b6d56af68a0d8e08cd783288bcb86f0d8ca811",
+    "pages": [],
+    "playbackReady": false,
+    "downloadSha256": "fe4955c234d6170d9324166320b6d56af68a0d8e08cd783288bcb86f0d8ca811"
+  },
+  {
+    "id": "schumann-op68-04",
+    "order": 43,
+    "title": {
+      "en": "Chorale",
+      "pt-BR": "Coral"
+    },
+    "composer": "Robert Schumann",
+    "catalogue": "Op. 68 No. 4",
+    "level": 3,
+    "goal": {
+      "en": "Shape a phrase, balance melody and accompaniment, identify chord tones.",
+      "pt-BR": "Molde frases, equilibre melodia e acompanhamento e identifique notas dos acordes."
+    },
+    "part": {
+      "en": "Piano solo; requires independent hands and chord reading.",
+      "pt-BR": "Piano solo; exige independência das mãos e leitura de acordes."
+    },
+    "pdfUrl": "https://www.mutopiaproject.org/ftp/SchumannR/O68/schumann-op68-04-choral/schumann-op68-04-choral-a4.pdf",
+    "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=782",
+    "license": "Creative Commons Attribution-ShareAlike 2.5",
+    "editor": "Philippe Hézaine",
+    "sourceSha256": "319037440382f8c0f5125b38be6c0399b2f734f42536b386fae81b932fba5fc1",
+    "pages": [],
+    "playbackReady": false,
+    "downloadSha256": "319037440382f8c0f5125b38be6c0399b2f734f42536b386fae81b932fba5fc1"
+  },
+  {
+    "id": "schumann-op68-05",
+    "order": 44,
+    "title": {
+      "en": "A Little Piece",
+      "pt-BR": "Pequena peça"
+    },
+    "composer": "Robert Schumann",
+    "catalogue": "Op. 68 No. 5",
+    "level": 3,
+    "goal": {
+      "en": "Shape a phrase, balance melody and accompaniment, identify chord tones.",
+      "pt-BR": "Molde frases, equilibre melodia e acompanhamento e identifique notas dos acordes."
+    },
+    "part": {
+      "en": "Piano solo; requires independent hands and chord reading.",
+      "pt-BR": "Piano solo; exige independência das mãos e leitura de acordes."
+    },
+    "pdfUrl": "https://www.mutopiaproject.org/ftp/SchumannR/O68/schumann-op68-05-petite-piece/schumann-op68-05-petite-piece-a4.pdf",
+    "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=653",
+    "license": "Creative Commons Attribution-ShareAlike 2.5",
+    "editor": "Philippe Hézaine",
+    "sourceSha256": "b621f17d0b23d082d1774823c2ca0f0696c22ba716c5449b2312e925aa3ef780",
+    "pages": [],
+    "playbackReady": false,
+    "downloadSha256": "b621f17d0b23d082d1774823c2ca0f0696c22ba716c5449b2312e925aa3ef780"
+  },
+  {
+    "id": "petzold-anh114",
+    "order": 45,
+    "title": {
+      "en": "Minuet in G major",
+      "pt-BR": "Minueto em Sol maior"
+    },
+    "composer": "Christian Petzold",
+    "catalogue": "BWV Anh. 114",
+    "level": 2,
+    "goal": {
+      "en": "Triple meter, two-voice reading, binary form and cadences.",
+      "pt-BR": "Compasso ternário, leitura a duas vozes, forma binária e cadências."
+    },
+    "part": {
+      "en": "Piano solo; attributed to Petzold, copied in the Bach family notebook.",
+      "pt-BR": "Piano solo; atribuído a Petzold, copiado no caderno da família Bach."
+    },
+    "pdfUrl": "https://www.mutopiaproject.org/ftp/BachJS/BWVAnh114/anna-magdalena-04/anna-magdalena-04-a4.pdf",
+    "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=75",
+    "license": "Public Domain",
+    "editor": "Allen Garvin",
+    "sourceSha256": "6b34ba44122d9694156a113c749eee0bf3232f54ead431a44be6f2a1b6f32c8b",
+    "pages": [],
+    "playbackReady": false,
+    "downloadSha256": "6b34ba44122d9694156a113c749eee0bf3232f54ead431a44be6f2a1b6f32c8b"
+  },
+  {
+    "id": "petzold-anh115",
+    "order": 46,
+    "title": {
+      "en": "Minuet in G minor",
+      "pt-BR": "Minueto em Sol menor"
+    },
+    "composer": "Christian Petzold",
+    "catalogue": "BWV Anh. 115",
+    "level": 2,
+    "goal": {
+      "en": "Triple meter, two-voice reading, binary form and cadences.",
+      "pt-BR": "Compasso ternário, leitura a duas vozes, forma binária e cadências."
+    },
+    "part": {
+      "en": "Piano solo; attributed to Petzold, copied in the Bach family notebook.",
+      "pt-BR": "Piano solo; atribuído a Petzold, copiado no caderno da família Bach."
+    },
+    "pdfUrl": "https://www.mutopiaproject.org/ftp/BachJS/BWVAnh115/anna-magdalena-05/anna-magdalena-05-a4.pdf",
+    "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=76",
+    "license": "Public Domain",
+    "editor": "Allen Garvin",
+    "sourceSha256": "77f284dc8d5e6b79f5ea93c37fb3df9b97e7dafe708a7c4d527ed53486275525",
+    "pages": [],
+    "playbackReady": false,
+    "downloadSha256": "77f284dc8d5e6b79f5ea93c37fb3df9b97e7dafe708a7c4d527ed53486275525"
+  },
+  {
+    "id": "mozart-k2",
+    "order": 47,
+    "title": {
+      "en": "Minuet in F major",
+      "pt-BR": "Minueto em Fá maior"
+    },
+    "composer": "Wolfgang Amadeus Mozart",
+    "catalogue": "K. 2",
+    "level": 2,
+    "goal": {
+      "en": "Key signature, triple meter and phrase structure.",
+      "pt-BR": "Armadura de clave, compasso ternário e estrutura da frase."
+    },
+    "part": {
+      "en": "Piano solo; learn each hand before combining.",
+      "pt-BR": "Piano solo; estude cada mão antes de juntar."
+    },
+    "pdfUrl": "https://www.mutopiaproject.org/ftp/MozartWA/KV2/menuet_k2/menuet_k2-a4.pdf",
+    "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=1770",
+    "license": "Public Domain",
+    "editor": "Nicolas Morant",
+    "sourceSha256": "921e441748a0b1a6e290508c76e054efc50d53f86611fb7815597d926fa76323",
+    "pages": [],
+    "playbackReady": false,
+    "downloadSha256": "921e441748a0b1a6e290508c76e054efc50d53f86611fb7815597d926fa76323"
+  },
+  {
+    "id": "tchaikovsky-op39-16",
+    "order": 48,
+    "title": {
+      "en": "Old French Song",
+      "pt-BR": "Antiga canção francesa"
+    },
+    "composer": "Pyotr Ilyich Tchaikovsky",
+    "catalogue": "Op. 39 No. 16",
+    "level": 3,
+    "goal": {
+      "en": "Minor tonality, legato, melodic projection and accompaniment balance.",
+      "pt-BR": "Tonalidade menor, legato, projeção melódica e equilíbrio do acompanhamento."
+    },
+    "part": {
+      "en": "Piano solo; consolidation after elementary reading.",
+      "pt-BR": "Piano solo; consolidação após leitura elementar."
+    },
+    "pdfUrl": "https://www.mutopiaproject.org/ftp/TchaikovskyPI/O39/16OldFrenchSong/16OldFrenchSong-a4.pdf",
+    "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=2080",
+    "license": "Public Domain",
+    "editor": "David McNamara",
+    "sourceSha256": "e051dabc69b63bf9e665ac8579273a5f2583768ea4c453de8ea138d55fae5c7e",
+    "pages": [],
+    "playbackReady": false,
+    "downloadSha256": "e051dabc69b63bf9e665ac8579273a5f2583768ea4c453de8ea138d55fae5c7e"
+  },
+  {
+    "id": "burgmuller-op100-01",
+    "order": 49,
+    "title": {
+      "en": "La Candeur",
+      "pt-BR": "A candura"
+    },
+    "composer": "Friedrich Burgmüller",
+    "catalogue": "Op. 100 No. 1",
+    "level": 3,
+    "goal": {
+      "en": "Chord reading, articulation, phrase shaping and harmonic reduction.",
+      "pt-BR": "Leitura de acordes, articulação, fraseado e redução harmônica."
+    },
+    "part": {
+      "en": "Piano solo; late-beginner / early-intermediate consolidation, not a first lesson.",
+      "pt-BR": "Piano solo; consolidação de iniciante avançado / intermediário inicial, não primeira aula."
+    },
+    "pdfUrl": "https://www.mutopiaproject.org/ftp/BurgmullerJFF/O100/25EF-01/25EF-01-a4.pdf",
+    "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=202",
+    "license": "Public Domain",
+    "editor": "Bas Wassink",
+    "sourceSha256": "d65e0d8132da464b7c2f1e2f1c7b649946f89b8596b95e7373c454d0d223d319",
+    "pages": [],
+    "playbackReady": false,
+    "downloadSha256": "d65e0d8132da464b7c2f1e2f1c7b649946f89b8596b95e7373c454d0d223d319"
+  },
+  {
+    "id": "burgmuller-op100-03",
+    "order": 50,
+    "title": {
+      "en": "Pastorale",
+      "pt-BR": "Pastoral"
+    },
+    "composer": "Friedrich Burgmüller",
+    "catalogue": "Op. 100 No. 3",
+    "level": 3,
+    "goal": {
+      "en": "Chord reading, articulation, phrase shaping and harmonic reduction.",
+      "pt-BR": "Leitura de acordes, articulação, fraseado e redução harmônica."
+    },
+    "part": {
+      "en": "Piano solo; late-beginner / early-intermediate consolidation, not a first lesson.",
+      "pt-BR": "Piano solo; consolidação de iniciante avançado / intermediário inicial, não primeira aula."
+    },
+    "pdfUrl": "https://www.mutopiaproject.org/ftp/BurgmullerJFF/O100/25EF-03/25EF-03-a4.pdf",
+    "sourceUrl": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=218",
+    "license": "Public Domain",
+    "editor": "Bas Wassink",
+    "sourceSha256": "278500ead2c9f578a6a7158fd382ecf7210cc89cf063b643026661044bddd43c",
+    "pages": [],
+    "playbackReady": false,
+    "downloadSha256": "278500ead2c9f578a6a7158fd382ecf7210cc89cf063b643026661044bddd43c"
+  }
+]

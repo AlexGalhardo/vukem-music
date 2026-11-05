@@ -57,3 +57,26 @@ locales, missing lessons and healthcheck. Browser journeys check navigation,
 progress reload, score/piano synchronization, rests and keyboard/mobile behavior.
 A browser test cannot replace a listening review of generated audio or a specialist
 review of educational notation. See the execution assertions in `ROADMAP.md`.
+
+## Repertoire and harmony extension
+
+`/library` and `/harmony` use the same Vukem/Inertia shell. Their original bilingual
+teaching data and edition metadata are bundled from `resources/js/data`; the eight
+foundational lesson records remain in SQLite. These extensions do not add writes,
+uploads or public audio-generation endpoints. Language changes use Inertia with
+state preservation so a chosen chord, inversion or library filter survives.
+
+The library contains fifty distinct work IDs, with source-edition hashes and page
+references. External PDF links open the identified edition. PDFs stay outside Git
+and are not accepted as player events. `bun scores:fetch --download` retrieves and
+checks the twenty-two unmodified source editions into ignored local storage.
+
+The harmony explorer builds correctly spelled stacked thirds before inverting
+voices. Written root and current bass remain distinct. Simultaneous notes share
+an AudioContext start time and scale gain by chord size. A separate SVG chord
+staff handles its explicit double alterations and ledger lines; this does not
+extend the monophonic score transport to arbitrary polyphonic repertoire.
+Stop, selection changes, blur, hidden tabs and unmount cancel chord playback;
+pending audio preparation is guarded so stale actions cannot restart a chord.
+Eleven original bilingual topics provide worked examples and open study tasks;
+these tasks do not update the foundational exercise counters or assert mastery.

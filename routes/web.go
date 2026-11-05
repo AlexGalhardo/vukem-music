@@ -31,6 +31,8 @@ func Web(r *router.Router, app *vukem.App) error {
 	r.Get("/lessons", controllers.Study(db, "lessons")).Name("lessons")
 	r.Get("/lessons/{lesson}", controllers.Study(db, "lesson")).Name("lesson")
 	r.Get("/practice", controllers.Study(db, "practice")).Name("practice")
+	r.Get("/library", controllers.Study(db, "library")).Name("library")
+	r.Get("/harmony", controllers.Study(db, "harmony")).Name("harmony")
 	r.Get("/progress", controllers.Study(db, "progress")).Name("progress")
 
 	return nil

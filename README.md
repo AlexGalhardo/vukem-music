@@ -12,6 +12,9 @@ SQLite. English is the default locale; Brazilian Portuguese is supported.
 - An interactive 88-key SVG piano with touch, mouse and computer-keyboard input.
 - Web Audio playback synchronized with score and piano highlighting, including
   pause/resume, stop, rests, tempo controls and horizontal following on small screens.
+- A searchable 50-work classical score library with difficulty, sources and edition licenses.
+- A chord explorer with simultaneous audio, staff and piano display, plus eleven
+  bilingual topics covering triads, inversions, sevenths, cadences and modulation.
 - Server/CLI ElevenLabs sample generation with bounded requests and tuning checks.
   Until an approved sample bank exists, the UI identifies its synthesized preview.
 - Railway deployment configuration, a multi-stage production image and SQLite backup.
@@ -68,6 +71,8 @@ See the recorded results in
 
 - [Brainstorming and decisions](docs/brainstorming.md).
 - [Architecture and supported score subset](docs/architecture.md).
+- [50-score research catalog](docs/repertoire-50.md).
+- [Harmony learning path](docs/harmony-learning-path.md).
 - [Piano sample generation](docs/audio.md).
 - [Railway, persistence, backups and restore](docs/deployment.md).
 - [Study references](docs/study-reference.md): original notes for all 58 chapters

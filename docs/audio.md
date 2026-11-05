@@ -12,6 +12,36 @@ Use Bun 1.4.4 on a trusted development machine or server. Configure
 `ELEVENLABS_API_KEY` in that process's environment or ignored `.env`; never put the
 key in frontend props, Vite variables, committed files or issue reports.
 
+### Configure the key in this workspace
+
+Open `/workspace/vukem-music/.env` in the environment editor and fill the existing
+`ELEVENLABS_API_KEY=` entry. Alternatively, use the environment's secret settings
+with that exact variable name. Bun automatically loads the project `.env` when
+running the CLI from the project directory. Never paste a key into chat or a
+shell command that will be retained in history. Do not use a `VITE_` prefix.
+
+A private terminal can also prompt without echoing the key or saving it in shell
+history for that process's subsequent commands:
+
+```sh
+read -r -s -p 'ElevenLabs API key: ' ELEVENLABS_API_KEY
+export ELEVENLABS_API_KEY
+```
+
+Verify presence without printing the value:
+
+```sh
+bun -e 'console.log(Boolean(process.env.ELEVENLABS_API_KEY) ? "configured" : "missing")'
+```
+
+The key enables requests; it does not approve an unlimited generation run.
+Agree a numeric request cap before running `--generate`. A request limit bounds
+attempts, not a guaranteed currency cost, which depends on the account's plan.
+On Railway, configure the key as a service variable only if performing generation
+there; ordinary browser playback does not need it.
+
+### Preview and generation
+
 Preview one request without billing:
 
 ```sh

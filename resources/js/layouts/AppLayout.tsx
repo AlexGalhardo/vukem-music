@@ -1,4 +1,4 @@
-import { Link, usePage } from "@inertiajs/react";
+import { Link, router, usePage } from "@inertiajs/react";
 import {
   BookOpen,
   ChartNoAxesCombined,
@@ -52,6 +52,8 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
       active: props.view === "lessons" || props.view === "lesson",
     },
     { path: "/practice", key: "nav.practice", icon: Piano, active: props.view === "practice" },
+    { path: "/library", key: "nav.library", icon: Music2, active: props.view === "library" },
+    { path: "/harmony", key: "nav.harmony", icon: Piano, active: props.view === "harmony" },
     { path: "/progress", key: "nav.progress", icon: ChartNoAxesCombined, active: props.view === "progress" },
   ];
   const completed = (props.lessons ?? []).filter((lesson) => progress.completed.includes(lesson.id)).length;
@@ -155,7 +157,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
               onChange={(event) => {
                 const next = new URL(url, window.location.origin);
                 next.searchParams.set("lang", event.target.value);
-                window.location.assign(next.pathname + next.search);
+                router.visit(next.pathname + next.search, { preserveState: true, preserveScroll: true });
               }}
               className="rounded-md border bg-background px-2 py-1.5 text-xs"
             >

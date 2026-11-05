@@ -151,6 +151,39 @@ resolving the external MVP blockers or an explicit reprioritization by the maint
 
 ### Phase 6 — curriculum beyond foundations
 
+The maintainer explicitly reprioritized the 50-score library and introductory
+harmony on 2026-11-05, before external generation/deployment blockers are resolved.
+These deliveries extend the MVP; the full advanced curriculum remains below.
+
+- [x] Research and acquire 50 distinct classical teaching works.
+  - [x] Select historical/open editions and identify student vs teacher parts.
+    - [x] Record source URLs, licenses, contributors, PDF pages and SHA-256 hashes.
+    - [x] Keep PDFs outside Git; prepare a local 50-file study bundle.
+  - [x] Assert: 50 distinct IDs, source attribution and bilingual teaching metadata.
+- [x] Deliver `/library` with bilingual search and difficulty filters.
+  - [x] Link to exact editions and disclose playback-conversion status.
+    - [x] Separate beginner student duet parts from harder accompaniment.
+  - [x] Assert: browser journey finds 50 works and filters by composer/difficulty.
+- [x] Introduce chords and advanced harmony in `/harmony`.
+  - [x] Add eleven original bilingual topics with worked examples and open tasks.
+    - [x] Teach triads, inversions, sevenths, functions, cadences and voice leading.
+    - [x] Introduce modes, secondary dominants, mixture, modulation and form.
+  - [x] Add simultaneous chord audio, staff spelling and multi-key piano highlights.
+    - [x] Preserve root vs bass, inversion and diminished-seventh double flats.
+  - [x] Assert: fixed chord fixtures and bilingual browser interaction pass.
+- [ ] Convert the selected repertoire to verified playable notation.
+  - [ ] Extend polyphonic score/event support before importing multi-voice piano works.
+    - [ ] Retain edition licenses; compare every converted note/rhythm with its PDF.
+    - [ ] Model ties, repeats, clefs, meter and simultaneous voices explicitly.
+  - [ ] Assert: source comparison, timing and piano/score/audio synchronization pass
+    for every published playable work; PDF availability alone does not pass.
+- [ ] Extend introductory harmony into a graded advanced learning sequence.
+  - [ ] Obtain specialist review and author semantic exercises with valid alternatives.
+    - [ ] Add ninth/altered chords, harmonic analysis and style-aware voice leading.
+    - [ ] Keep reading completion distinct from demonstrated mastery.
+  - [ ] Assert: reviewed bilingual explanations, contextual examples and meaningful
+    evaluators; open questions are not counted as validated mastery.
+
 - [ ] Add interval and scale modules (reference chapters 10–18, 21, 23–29, 31, 35).
   - [ ] Define original bilingual lessons and semantic evaluators.
     - [ ] Model interval number/quality independently from semitone distance.
@@ -216,7 +249,16 @@ Documentation-only handoff updates may follow this verified implementation.
 External blockers: no `ELEVENLABS_API_KEY`, Railway credential/project, or DNS
 management access was configured. Do not mark real audio generation or the live
 custom-domain deployment complete. Continue the first unblocked task above;
-accounts/import/MIDI/advanced lessons remain explicitly future scope.
+accounts/import/MIDI remain future scope. The maintainer reprioritized the score
+library and harmony introduction: see phase 6 and the research/content documents.
+
+Latest extension: the 50-work `/library` and eleven-topic `/harmony` introduction
+are implemented in EN/PT. Source PDFs remain outside Git; all five browser
+journeys, thirteen unit tests, build, type/lint and Go checks passed locally.
+Language switching preserves the selected chord. Full-score conversion and graded
+advanced exercises remain unchecked in phase 6; no external service completion
+is implied. Research: [repertoire](docs/repertoire-50.md),
+[advanced learning path](docs/harmony-learning-path.md).
 
 See [verification evidence](docs/verification.md), [audio operation](docs/audio.md),
 and [Railway operation](docs/deployment.md) for reproducible checks and next steps.

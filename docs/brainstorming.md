@@ -278,3 +278,111 @@ Essas escolhas passam de premissas a decisões aprovadas, sem exigir mudanças n
 MVP já implementado. Credenciais, orçamento de geração e acesso Railway/DNS
 continuam sendo dependências operacionais; a aprovação não significa que esses
 serviços foram configurados nem que as amostras reais ou o deploy foram concluídos.
+
+## Rodada 3 — decisões restantes em discussão
+
+Status: perguntas apresentadas; nenhuma resposta desta rodada foi recebida.
+Q1–Q6 permanecem aprovadas. As recomendações abaixo não alteram o escopo nem
+as condições de execução antes de o mantenedor responder.
+
+### Q7 — trabalho enquanto os serviços externos aguardam acesso
+
+Pergunta: podemos avançar no currículo completo e nos exercícios enquanto
+ElevenLabs, Railway e DNS aguardam configuração?
+
+Recomendação: sim; retirar a dependência de conclusão do deploy para começar a
+expansão didática. Preservar o status pendente das operações externas.
+
+### Q8 — organização do curso completo
+
+Pergunta: podemos organizar os conceitos do livro por pré-requisitos pedagógicos,
+em módulos curtos, mantendo referência aos 58 capítulos?
+
+Recomendação: sim; agrupar fundamentos, ritmo, intervalos, escalas/modos, harmonia,
+expressão/ornamentos e tópicos avançados. Evitar obrigar cada capítulo a virar uma
+única lição longa. Manter explicações e exemplos autorais EN/PT.
+
+### Q9 — liberdade de navegação
+
+Pergunta: todas as lições podem ficar acessíveis, com uma sequência recomendada,
+sem bloqueios obrigatórios por pontuação?
+
+Recomendação: sim; permitir consulta e revisão livre, destacando pré-requisitos.
+
+### Q10 — leitura e domínio como medidas diferentes
+
+Pergunta: podemos separar lição lida, marcada manualmente, de domínio demonstrado
+por exercícios, usando inicialmente pelo menos 80% em uma rodada de dez questões
+variadas como indicador de domínio?
+
+Recomendação: sim; guardar essas medidas separadamente e permitir novas tentativas.
+O critério mede desempenho no treino, sem prometer proficiência musical geral.
+
+### Q11 — perfil do piano e lote piloto
+
+Pergunta: podemos começar com 13 amostras de Dó4 a Dó5, usando piano acústico de
+cauda, som seco, intensidade média e sem pedal, e revisar esse piloto antes das
+88 notas?
+
+Recomendação: sim; validar afinação, ataque e timbre antes de ampliar o banco.
+O piloto não substitui o requisito de completar e revisar as 88 amostras.
+
+### Q12 — orçamento da geração
+
+Pergunta: qual teto total em US$ ou créditos deve ser aplicado ao piloto e às
+possíveis novas tentativas?
+
+Recomendação: definir um teto numérico antes de qualquer chamada cobrada, contabilizar
+novas tentativas dentro dele e parar ao atingir o limite. Não há orçamento autorizado
+por esta pergunta; responder somente “sim” não define um valor.
+
+### Q13 — publicação com o áudio provisório
+
+Pergunta: a primeira publicação em `music.vukem.dev` pode ser uma beta pública
+com o sintetizador identificado, enquanto as amostras reais são preparadas?
+
+Recomendação: sim; publicar a experiência funcional quando o acesso ao deploy
+estiver configurado, sem anunciar que o áudio ElevenLabs já foi entregue.
+
+### Q14 — portabilidade do progresso sem cadastro
+
+Pergunta: podemos adicionar exportação e importação de progresso em JSON para
+permitir backup e transferência manual entre navegadores?
+
+Recomendação: sim; validar versão e conteúdo na importação e manter a experiência
+sem conta. Não confundir isso com sincronização automática.
+
+### Ramos para rodadas seguintes
+
+Após as respostas, detalhar apenas os ramos desbloqueados: prioridades dos módulos,
+formatos dos exercícios, métricas de domínio e tentativas, critérios de revisão das
+amostras, tratamento do teto de geração, release beta e regras de importação/mescla
+do progresso. Não reabrir decisões já aprovadas nem pedir credenciais pelo chat.
+
+## Repriorização explícita — repertório e harmonia
+
+Em 2026-11-05, o mantenedor pediu pesquisa web e aquisição de cinquenta partituras
+clássicas acessíveis para ensinar iniciantes. Também reforçou que a aplicação
+precisa ensinar acordes e assuntos avançados, e pediu para continuar o desenvolvimento.
+Isso autoriza iniciar a biblioteca e a introdução harmônica antes de resolver as
+credenciais externas do MVP. Não equivale a aprovar automaticamente Q8–Q14.
+
+Decisões de implementação documentadas, sem nova exigência ao mantenedor:
+
+- Seleção progressiva de cinquenta obras, incluindo estudos clássicos e partes
+  de aluno em duetos; sem alegar ranking objetivo das cinquenta mais fáceis.
+- Dificuldade por edição/parte e distinção de consolidação intermediária inicial.
+- PDFs históricos/abertos fora do Git; registrar fontes, créditos, páginas e hashes.
+- Biblioteca navegável separada das oito lições iniciais; conversão para reprodução
+  integral é uma tarefa distinta, dependente de escrita polifônica e revisão.
+- Introdução original EN/PT de tríades até modulação, com explorador de acordes
+  simultâneos, grafia correta, pauta e piano SVG; atividades abertas sem nota de domínio.
+- Troca de idioma preserva o acorde/inversão e os filtros escolhidos via Inertia.
+
+O mantenedor perguntou como configurar a chave ElevenLabs. Documentamos a variável
+`ELEVENLABS_API_KEY` no `.env` ignorado ou nos segredos do ambiente. Não solicitar
+seu valor pelo chat. Configurar uma chave não define orçamento nem autoriza lotes
+ilimitados; Q12 continua aguardando um limite numérico antes da geração paga.
+
+Pesquisa detalhada: [50 partituras](repertoire-50.md). Conteúdo e evolução:
+[caminho de harmonia](harmony-learning-path.md).

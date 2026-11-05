@@ -71,7 +71,7 @@ export class PianoAudio {
     }
   }
 
-  play(midi: number, when: number, duration: number): () => void {
+  play(midi: number, when: number, duration: number, volume = 1): () => void {
     const context = this.context;
     if (!context || midi < 21 || midi > 108) return () => {};
     const gain = context.createGain();
@@ -103,8 +103,11 @@ export class PianoAudio {
       }
     }
     gain.gain.setValueAtTime(0, at);
-    gain.gain.linearRampToValueAtTime(0.32, at + 0.008);
-    gain.gain.exponentialRampToValueAtTime(0.12, at + Math.max(0.03, duration * 0.8));
+    gain.gain.linearRampToValueAtTime(0.32 * Math.max(0, Math.min(1, volume)), at + 0.008);
+    gain.gain.exponentialRampToValueAtTime(
+      Math.max(0.0001, 0.12 * Math.max(0, Math.min(1, volume))),
+      at + Math.max(0.03, duration * 0.8),
+    );
     gain.gain.exponentialRampToValueAtTime(0.0001, at + duration + 0.08);
     let stopped = false;
     const stop = () => {

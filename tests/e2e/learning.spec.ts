@@ -83,3 +83,45 @@ test("corrupt local state recovers without breaking the learning interface", asy
   await expect(page.getByRole("heading", { name: "Every small step counts." })).toBeVisible();
   await expect(page.getByText("0/8", { exact: true }).first()).toBeVisible();
 });
+
+test("score library filters 50 works and harmony plays spelled chord inversions", async ({ page }) => {
+  const errors: string[] = [];
+  page.on("pageerror", (error) => errors.push(error.message));
+  await page.goto("/library?lang=en");
+  await expect(page.getByTestId("repertoire-work")).toHaveCount(50);
+  await page.screenshot({ path: test.info().outputPath("library-desktop.png") });
+  await page.getByLabel("Search title or composer").fill("Petzold");
+  await expect(page.getByTestId("repertoire-work")).toHaveCount(2);
+  await expect(page.getByRole("link", { name: "Open score PDF" }).first()).toHaveAttribute(
+    "href",
+    /^https:\/\/www.mutopiaproject.org\//,
+  );
+  await page.getByLabel("Search title or composer").fill("");
+  await page.getByRole("combobox", { name: "Difficulty", exact: true }).selectOption("0");
+  await expect(page.getByTestId("repertoire-work")).toHaveCount(7);
+  await page.getByRole("link", { name: "Chords & harmony", exact: true }).click();
+  await expect(page.getByTestId("chord-notes")).toHaveText("C4 – E4 – G4");
+  await page.getByRole("combobox", { name: "Inversion", exact: true }).selectOption("2");
+  await expect(page.getByTestId("chord-notes")).toHaveText("G4 – C5 – E5");
+  await page.screenshot({ path: test.info().outputPath("harmony-desktop.png") });
+  await page.getByRole("button", { name: "Play chord", exact: true }).click();
+  await expect(page.locator('[data-piano-midi][data-active="true"]')).toHaveCount(3);
+  for (const midi of [67, 72, 76])
+    await expect(page.locator(`[data-piano-midi="${midi}"]`)).toHaveAttribute("data-active", "true");
+  await page.getByRole("button", { name: "Stop", exact: true }).click();
+  await expect(page.locator('[data-piano-midi][data-active="true"]')).toHaveCount(0);
+  await page.getByLabel("Chord quality").selectOption("diminished7");
+  await expect(page.getByTestId("chord-notes")).toHaveText("C4 – E♭4 – G♭4 – B𝄫4");
+  await page.getByLabel("Language", { exact: true }).selectOption("pt-BR");
+  await expect(page.getByTestId("chord-notes")).toHaveText("Dó4 – Mi♭4 – Sol♭4 – Si𝄫4");
+  await expect(page.getByRole("heading", { name: "Modulação com acorde pivô", exact: true })).toBeVisible();
+  await page.setViewportSize({ width: 390, height: 844 });
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await page.screenshot({ path: test.info().outputPath("harmony-mobile.png") });
+  await page.getByRole("combobox", { name: "Fundamental", exact: true }).selectOption("B");
+  await page.getByRole("combobox", { name: "Qualidade do acorde", exact: true }).selectOption("dominant7");
+  await page.getByRole("combobox", { name: "Inversão", exact: true }).selectOption("3");
+  await expect(page.getByTestId("chord-notes")).toHaveText("Lá5 – Si5 – Ré♯6 – Fá♯6");
+  await page.screenshot({ path: test.info().outputPath("harmony-high-chord.png") });
+  expect(errors).toEqual([]);
+});

@@ -45,3 +45,19 @@ not included or relicensed. Our educational prose and exercises are original.
 The sample manifest is currently empty; no third-party audio recordings are shipped.
 Record provenance and distribution terms before adding generated sample assets,
 as described in [audio.md](docs/audio.md).
+
+## Classical score editions
+
+The score library links to external historical scans and Mutopia editions.
+The project MIT license applies to our code and original teaching material;
+it does not replace edition-specific licenses. PDFs are not tracked in Git.
+`resources/js/data/repertoire.json` preserves the source, editor, license and
+SHA-256 for each selected work. See the [research catalog](docs/repertoire-50.md).
+
+Diabelli editions credit Alberto Simões under
+[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
+Schumann editions credit Philippe Hézaine under that license or
+[CC BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/) as stated per work.
+Other selected Mutopia editions are labeled Public Domain and retain their
+contributor credit. Historical Reinagle/Beyer source scans are identified in the
+manifest. Downloaded copies and page excerpts must retain these credits and links.

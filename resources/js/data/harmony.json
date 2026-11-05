@@ -1,0 +1,255 @@
+[
+  {
+    "id": "triads",
+    "title": {
+      "en": "Triads: build with thirds",
+      "pt-BR": "Tríades: construir com terças"
+    },
+    "level": {
+      "en": "Foundation",
+      "pt-BR": "Fundamento"
+    },
+    "body": {
+      "en": "A triad uses a root, third and fifth. Count letter names first, then semitones: major 0–4–7, minor 0–3–7, diminished 0–3–6, augmented 0–4–8. A third is not always four semitones.",
+      "pt-BR": "Uma tríade tem fundamental, terça e quinta. Conte primeiro os nomes das notas e depois os semitons: maior 0–4–7, menor 0–3–7, diminuta 0–3–6 e aumentada 0–4–8. Uma terça nem sempre tem quatro semitons."
+    },
+    "example": {
+      "en": "C major = C–E–G; C minor = C–E♭–G. Only the third changes. C diminished = C–E♭–G♭; C augmented = C–E–G♯.",
+      "pt-BR": "Dó maior = Dó–Mi–Sol; Dó menor = Dó–Mi♭–Sol. Só a terça muda. Dó diminuto = Dó–Mi♭–Sol♭; Dó aumentado = Dó–Mi–Sol♯."
+    },
+    "task": {
+      "en": "Compare major and minor in the explorer. Name the note that changes before listening.",
+      "pt-BR": "Compare maior e menor no explorador. Diga qual nota muda antes de ouvir."
+    }
+  },
+  {
+    "id": "inversions",
+    "title": {
+      "en": "Root, bass and inversion",
+      "pt-BR": "Fundamental, baixo e inversão"
+    },
+    "level": {
+      "en": "Foundation",
+      "pt-BR": "Fundamento"
+    },
+    "body": {
+      "en": "The root names the chord; the bass is the lowest sounding note. First inversion places the third in the bass; second inversion places the fifth there. Reordering upper voices changes voicing, but does not necessarily change inversion.",
+      "pt-BR": "A fundamental dá nome ao acorde; o baixo é a nota mais grave que soa. A primeira inversão coloca a terça no baixo; a segunda coloca a quinta. Reordenar vozes superiores muda a disposição, mas não necessariamente a inversão."
+    },
+    "example": {
+      "en": "C–E–G is root position; E–G–C is first inversion (C/E); G–C–E is second inversion (C/G). All remain C major.",
+      "pt-BR": "Dó–Mi–Sol está no estado fundamental; Mi–Sol–Dó é primeira inversão (C/E); Sol–Dó–Mi é segunda inversão (C/G). Todos continuam sendo Dó maior."
+    },
+    "task": {
+      "en": "Play all three positions and identify the bass without changing the root selector.",
+      "pt-BR": "Toque as três posições e identifique o baixo sem mudar o seletor da fundamental."
+    }
+  },
+  {
+    "id": "sevenths",
+    "title": {
+      "en": "Seventh chords and spelling",
+      "pt-BR": "Tétrades e grafia"
+    },
+    "level": {
+      "en": "Developing",
+      "pt-BR": "Desenvolvimento"
+    },
+    "body": {
+      "en": "Add a seventh above the root. A dominant seventh has a major triad and minor seventh; a major seventh has a major seventh. Half-diminished and fully diminished sevenths share a diminished triad but have different sevenths.",
+      "pt-BR": "Acrescente uma sétima à fundamental. A sétima de dominante combina tríade maior e sétima menor; a sétima maior usa sétima maior. Meio-diminuto e diminuto têm a mesma tríade diminuta, mas sétimas diferentes."
+    },
+    "example": {
+      "en": "C7 = C–E–G–B♭; Cmaj7 = C–E–G–B; Cm7 = C–E♭–G–B♭; Cø7 = C–E♭–G♭–B♭; C°7 = C–E♭–G♭–B𝄫. B𝄫 sounds like A in 12-TET but preserves the seventh spelling.",
+      "pt-BR": "C7 = Dó–Mi–Sol–Si♭; Cmaj7 = Dó–Mi–Sol–Si; Cm7 = Dó–Mi♭–Sol–Si♭; Cø7 = Dó–Mi♭–Sol♭–Si♭; C°7 = Dó–Mi♭–Sol♭–Si𝄫. Si𝄫 soa como Lá no temperamento igual, mas mantém a grafia de sétima."
+    },
+    "task": {
+      "en": "Compare C7 and Cmaj7, then half-diminished and diminished. Find the changed seventh.",
+      "pt-BR": "Compare C7 e Cmaj7, depois meio-diminuto e diminuto. Encontre a sétima que mudou."
+    }
+  },
+  {
+    "id": "function",
+    "title": {
+      "en": "Diatonic chords and function",
+      "pt-BR": "Campo harmônico e função"
+    },
+    "level": {
+      "en": "Developing",
+      "pt-BR": "Desenvolvimento"
+    },
+    "body": {
+      "en": "Stack thirds within a major scale: I ii iii IV V vi vii°. Roman-numeral case indicates chord quality. Tonic, predominant and dominant describe behavior in a tonal context, not an immutable label on a chord symbol.",
+      "pt-BR": "Empilhe terças dentro da escala maior: I ii iii IV V vi vii°. Maiúsculas e minúsculas indicam a qualidade. Tônica, predominante e dominante descrevem comportamento no contexto tonal, não um rótulo imutável de uma cifra."
+    },
+    "example": {
+      "en": "In C major: C, Dm, Em, F, G, Am, B°. Dm–G7–C is ii–V7–I; its predominant–dominant–tonic motion helps establish C.",
+      "pt-BR": "Em Dó maior: C, Dm, Em, F, G, Am, B°. Dm–G7–C é ii–V7–I; o movimento predominante–dominante–tônica ajuda a estabelecer Dó."
+    },
+    "task": {
+      "en": "Build I, IV and V in G major from G–A–B–C–D–E–F♯. Check each third.",
+      "pt-BR": "Construa I, IV e V em Sol maior usando Sol–Lá–Si–Dó–Ré–Mi–Fá♯. Confira cada terça."
+    }
+  },
+  {
+    "id": "cadences",
+    "title": {
+      "en": "Cadences and phrase endings",
+      "pt-BR": "Cadências e finais de frase"
+    },
+    "level": {
+      "en": "Developing",
+      "pt-BR": "Desenvolvimento"
+    },
+    "body": {
+      "en": "A cadence is an arrival shaped by harmony, rhythm and melodic placement. V–I is authentic, IV–I plagal, and an arrival on V is a half cadence. In common-practice terminology a perfect authentic cadence requires root-position V and I and scale degree 1 in the upper voice on I.",
+      "pt-BR": "Uma cadência é uma chegada definida por harmonia, ritmo e posição melódica. V–I é autêntica, IV–I plagal e a chegada à dominante é semicadência. Na terminologia tonal usual, a autêntica perfeita exige V e I no estado fundamental e grau 1 na voz superior sobre I."
+    },
+    "example": {
+      "en": "In C: G7–C suggests authentic motion; F–C plagal; G–Am deceptive (V–vi). Chord symbols alone do not prove a perfect authentic cadence.",
+      "pt-BR": "Em Dó: G7–C sugere movimento autêntico; F–C plagal; G–Am de engano (V–vi). Cifras isoladas não comprovam uma cadência autêntica perfeita."
+    },
+    "task": {
+      "en": "Compare an ending on G with one on C. Sing a melody that makes each arrival convincing.",
+      "pt-BR": "Compare um final em Sol com outro em Dó. Cante uma melodia que torne cada chegada convincente."
+    }
+  },
+  {
+    "id": "voice-leading",
+    "title": {
+      "en": "Voice leading and resolutions",
+      "pt-BR": "Condução de vozes e resoluções"
+    },
+    "level": {
+      "en": "Advanced",
+      "pt-BR": "Avançado"
+    },
+    "body": {
+      "en": "Follow each voice horizontally. Retain common tones and prefer small movements when the style calls for smooth connection. In common-practice dominant resolution the leading tone tends upward and a chordal seventh tends downward; voice doubling and style affect the details.",
+      "pt-BR": "Acompanhe cada voz horizontalmente. Mantenha notas comuns e prefira movimentos pequenos quando o estilo pede ligação suave. Na resolução tonal da dominante, a sensível tende a subir e a sétima do acorde tende a descer; dobramentos e estilo influenciam os detalhes."
+    },
+    "example": {
+      "en": "In G7–C, B tends to C and F tends to E. A classroom three-voice reduction B3–F4–G4 → C4–E4–G4 isolates these tendencies; it is not a complete four-part harmonization.",
+      "pt-BR": "Em G7–C, Si tende a Dó e Fá tende a Mi. A redução didática a três vozes Si3–Fá4–Sol4 → Dó4–Mi4–Sol4 isola essas tendências; não é uma harmonização completa a quatro vozes."
+    },
+    "task": {
+      "en": "Trace each voice, then compare a close-position connection with large leaps. Explain the audible difference.",
+      "pt-BR": "Siga cada voz e compare uma ligação próxima com grandes saltos. Explique a diferença que ouve."
+    }
+  },
+  {
+    "id": "modes",
+    "title": {
+      "en": "Modes and tonal center",
+      "pt-BR": "Modos e centro tonal"
+    },
+    "level": {
+      "en": "Advanced",
+      "pt-BR": "Avançado"
+    },
+    "body": {
+      "en": "A mode is heard through its tonal center and characteristic intervals. Playing the white keys starting on another note does not establish a mode unless the phrasing and harmony support that center. Dorian has a minor third and major sixth.",
+      "pt-BR": "Um modo é percebido pelo centro tonal e pelos intervalos característicos. Começar as teclas brancas em outra nota não estabelece um modo se fraseado e harmonia não sustentarem esse centro. O dórico tem terça menor e sexta maior."
+    },
+    "example": {
+      "en": "D Dorian: D–E–F–G–A–B–C–D. D natural minor uses B♭ instead. Sustain D as a reference and compare B with B♭.",
+      "pt-BR": "Ré dórico: Ré–Mi–Fá–Sol–Lá–Si–Dó–Ré. Ré menor natural usa Si♭. Sustente Ré como referência e compare Si com Si♭."
+    },
+    "task": {
+      "en": "Write a four-bar melody that returns to D and emphasizes B. Identify the minor third and major sixth.",
+      "pt-BR": "Escreva quatro compassos que retornem a Ré e destaquem Si. Identifique a terça menor e a sexta maior."
+    }
+  },
+  {
+    "id": "secondary",
+    "title": {
+      "en": "Secondary dominants",
+      "pt-BR": "Dominantes secundárias"
+    },
+    "level": {
+      "en": "Advanced",
+      "pt-BR": "Avançado"
+    },
+    "body": {
+      "en": "A secondary dominant temporarily points to a diatonic chord as if it were a tonic. The slash in V/V means dominant of the dominant; it is not the slash-bass notation used in C/E. Brief tonicization does not by itself establish a modulation.",
+      "pt-BR": "Uma dominante secundária aponta temporariamente para um acorde diatônico como se fosse tônica. A barra em V/V significa dominante da dominante; é diferente da barra que indica baixo em C/E. Uma tonicização breve não estabelece, sozinha, uma modulação."
+    },
+    "example": {
+      "en": "In C major, D7–G–C is V7/V–V–I. D7 contains F♯, which leads to G. The F♯ is chromatic relative to C major.",
+      "pt-BR": "Em Dó maior, D7–G–C é V7/V–V–I. D7 contém Fá♯, que conduz a Sol. Fá♯ é cromático em relação a Dó maior."
+    },
+    "task": {
+      "en": "Build A7 resolving to Dm in C major. Name its chromatic note and Roman-numeral function.",
+      "pt-BR": "Construa A7 resolvendo em Dm dentro de Dó maior. Nomeie a nota cromática e sua função em algarismos romanos."
+    }
+  },
+  {
+    "id": "borrowing",
+    "title": {
+      "en": "Modal mixture",
+      "pt-BR": "Empréstimo modal"
+    },
+    "level": {
+      "en": "Advanced",
+      "pt-BR": "Avançado"
+    },
+    "body": {
+      "en": "Modal mixture borrows colors from a parallel mode with the same tonic. A borrowed chord can alter the color while the tonal center remains stable. Identify the changed scale degree and its melodic handling rather than calling every chromatic chord a modulation.",
+      "pt-BR": "O empréstimo modal usa cores de um modo paralelo com a mesma tônica. Um acorde emprestado pode mudar a cor sem mudar o centro tonal. Identifique o grau alterado e sua condução melódica em vez de chamar todo cromatismo de modulação."
+    },
+    "example": {
+      "en": "In C major, F–Fm–C uses IV–iv–I. The A♭ in Fm comes from C minor; a possible inner line is A–A♭–G.",
+      "pt-BR": "Em Dó maior, F–Fm–C usa IV–iv–I. O Lá♭ de Fm vem de Dó menor; uma linha interna possível é Lá–Lá♭–Sol."
+    },
+    "task": {
+      "en": "Compare IV–I with IV–iv–I and sing the chromatic inner line.",
+      "pt-BR": "Compare IV–I com IV–iv–I e cante a linha interna cromática."
+    }
+  },
+  {
+    "id": "modulation",
+    "title": {
+      "en": "Modulation with a pivot chord",
+      "pt-BR": "Modulação com acorde pivô"
+    },
+    "level": {
+      "en": "Advanced",
+      "pt-BR": "Avançado"
+    },
+    "body": {
+      "en": "Modulation establishes a new tonal center across a phrase, often through a cadence and continued confirmation. A pivot chord can belong to both the original and destination keys; its function changes with context.",
+      "pt-BR": "A modulação estabelece outro centro tonal ao longo da frase, muitas vezes com cadência e confirmação posterior. Um acorde pivô pode pertencer à tonalidade inicial e à de chegada; sua função muda com o contexto."
+    },
+    "example": {
+      "en": "C–Am–D7–G can begin I–vi in C, reinterpret Am as ii in G, then move V7–I in G. A single progression is ambiguous: extend the phrase and cadence in G before claiming an established new key.",
+      "pt-BR": "C–Am–D7–G pode começar I–vi em Dó, reinterpretar Am como ii de Sol e seguir V7–I em Sol. A sequência isolada é ambígua: prolongue a frase e faça cadência em Sol antes de afirmar a nova tonalidade."
+    },
+    "task": {
+      "en": "Label Am in both keys. Add a second phrase in G that confirms the new center.",
+      "pt-BR": "Analise Am nas duas tonalidades. Acrescente outra frase em Sol que confirme o novo centro."
+    }
+  },
+  {
+    "id": "form",
+    "title": {
+      "en": "Form, ornament and interpretation",
+      "pt-BR": "Forma, ornamento e interpretação"
+    },
+    "level": {
+      "en": "Advanced",
+      "pt-BR": "Avançado"
+    },
+    "body": {
+      "en": "Map motives, phrases, cadences and returns before increasing tempo. Binary form has two principal sections; repeated signs describe execution, while slurs and articulation shape grouping. Ornament realization depends on period, source and musical context.",
+      "pt-BR": "Mapeie motivos, frases, cadências e retornos antes de aumentar o andamento. A forma binária tem duas seções principais; sinais de repetição descrevem execução, enquanto ligaduras de expressão e articulação organizam grupos. A realização de ornamentos depende da época, fonte e contexto."
+    },
+    "example": {
+      "en": "In a short minuet, mark A and B, their repeated passages and cadence points. Compare the last bass note with the melodic ending; neither alone proves the harmonic function.",
+      "pt-BR": "Em um minueto curto, marque A e B, repetições e cadências. Compare a última nota do baixo com o final melódico; nenhum deles isoladamente prova a função harmônica."
+    },
+    "task": {
+      "en": "Choose a Petzold minuet from the library. Mark phrases on a private copy and justify each section boundary.",
+      "pt-BR": "Escolha um minueto de Petzold na biblioteca. Marque frases em uma cópia privada e justifique cada divisão."
+    }
+  }
+]

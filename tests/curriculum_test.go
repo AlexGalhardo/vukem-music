@@ -13,7 +13,7 @@ func TestCurriculumRoutes(t *testing.T) {
 	t.Parallel()
 	app := vukemtest.New(t, bootstrap.New)
 	client := app.Client(t).Inertia("")
-	for _, path := range []string{"/", "/lessons", "/practice", "/progress", "/lessons/treble-clef"} {
+	for _, path := range []string{"/", "/lessons", "/practice", "/progress", "/library", "/harmony", "/lessons/treble-clef"} {
 		client.Get(path).AssertOK().AssertInertia("Study").HasProp("lessons", 8).
 			PropEquals("lessons.0.id", "sound-and-pitch").PropEquals("locale", "en")
 	}

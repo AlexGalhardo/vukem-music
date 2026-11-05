@@ -6,10 +6,12 @@ import { Button } from "../ui/button";
 const keyboard = "awsedftgyhujk";
 export function Piano({
   activeMidi,
+  activeMidis = [],
   onNote,
   onAnswer,
 }: {
   activeMidi?: number;
+  activeMidis?: number[];
   onNote: (midi: number) => Promise<() => void>;
   onAnswer?: (midi: number) => void;
 }) {
@@ -97,7 +99,7 @@ export function Piano({
   });
   const render = ({ midi, black, x }: (typeof geometry)[number]) => {
     const name = pitchName(pitchAt(midi), locale);
-    const active = activeMidi === midi || pressed.includes(midi);
+    const active = activeMidi === midi || activeMidis.includes(midi) || pressed.includes(midi);
     return (
       // biome-ignore lint/a11y/useSemanticElements: Native HTML buttons cannot be children of an SVG piano.
       <g

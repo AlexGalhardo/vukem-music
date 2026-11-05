@@ -2,7 +2,9 @@ import { Head, Link } from "@inertiajs/react";
 import { ArrowRight, BookOpen, Check, CircleCheck, Clock3, GraduationCap, Piano, Sparkles, Target } from "lucide-react";
 import { useCallback, useRef, useState } from "react";
 import { Exercise } from "../components/music/Exercise";
+import { Harmony } from "../components/music/Harmony";
 import { Player } from "../components/music/Player";
+import { Repertoire } from "../components/music/Repertoire";
 import { Badge } from "../components/ui/badge";
 import { Button } from "../components/ui/button";
 import { Card } from "../components/ui/card";
@@ -78,6 +80,8 @@ export default function Study({ lessons, view, selected }: StudyProps) {
   return (
     <>
       <Head title={`${title} · Vukem Music`} />
+      {view === "library" && <Repertoire />}
+      {view === "harmony" && <Harmony />}
       {view === "overview" && (
         <div className="space-y-9">
           <section className="hero-panel relative flex min-h-[258px] items-center overflow-hidden rounded-2xl border px-7 py-9 lg:px-10">

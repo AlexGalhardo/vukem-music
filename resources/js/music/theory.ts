@@ -15,7 +15,8 @@ export function pitchAt(midi: number): Pitch {
   return { step: names[pc], octave: Math.floor(midi / 12) - 1, alter: [1, 3, 6, 8, 10].includes(pc) ? 1 : 0 };
 }
 export function pitchName(pitch: Pitch, locale: Locale): string {
-  const accidental = pitch.alter === 1 ? "♯" : pitch.alter === -1 ? "♭" : pitch.alter === 2 ? "𝄪" : "";
+  const accidental =
+    pitch.alter === 1 ? "♯" : pitch.alter === -1 ? "♭" : pitch.alter === 2 ? "𝄪" : pitch.alter === -2 ? "𝄫" : "";
   return `${locale === "pt-BR" ? ptNames[pitch.step] : pitch.step}${accidental}${pitch.octave}`;
 }
 export function diatonic(pitch: Pitch): number {

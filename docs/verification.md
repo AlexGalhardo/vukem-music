@@ -77,3 +77,42 @@ The maintainer explicitly approved Q4–Q6. Updated `docs/brainstorming.md`,
 from the current approved decisions. This is a documentation-only change;
 Markdown lint and whitespace checks validate it. Existing runtime behavior and
 external-operation completion statuses are unchanged.
+
+## Repertoire and harmony delivery — 2026-11-05
+
+The maintainer explicitly reprioritized these features while service credentials
+remain unavailable. Research is documented in `docs/repertoire-50.md`.
+
+- Acquired 22 source PDFs and prepared a local bundle for 50 distinct works:
+  30 historical page excerpts and 20 individual Mutopia editions. All 50 files
+  open in PyMuPDF and match their recorded SHA-256. Source pages identify the
+  intended work; excerpts may contain neighboring pieces or teacher parts.
+- Checked edition-specific Mutopia footer credits/licenses against the source
+  metadata. No PDFs, book scans or generated excerpt bundles are tracked in Git.
+- `bun scores:fetch` reports 50 works / 22 editions without network access.
+  `bun scores:fetch --download` passed with 21 verified cached editions and one
+  real source download matching the pinned hash.
+- `bun check`, `bun lint`, `bun lint:md` and `git diff --check`: passed.
+- `bun run test`: 13 tests passed, 688 assertions, including root vs inversion,
+  written diminished sevenths with double flats and the 50-work provenance catalog.
+- `bun run build`: passed. `go test -race -count=1 ./...` and `go vet ./...`: passed,
+  including direct Vukem routes for `/library` and `/harmony`.
+- Final `bun run test:e2e`: all five journeys passed on isolated port 3101 in
+  18.4 seconds, with a fresh server. New coverage includes 50 works, composer and
+  level filtering, second-inversion C major sounding/highlighting three keys,
+  Stop cleanup, diminished-seventh spelling, preserved selection across EN/PT,
+  and the harmony layout at 390px without page-wide horizontal overflow.
+- A focused follow-up browser run passed after extending the SVG viewBox for
+  high inversions. It verifies B7 in third inversion (A5–B5–D♯6–F♯6); ledger
+  lines and stem remain inside the staff view.
+- Inspected desktop library/harmony screenshots and the Portuguese mobile view.
+  A first browser run identified an overly exact label query in the new test;
+  using the combobox's accessible name corrected it. Another run exposed that
+  the full language reload reset chord selection; Inertia state-preserving locale
+  navigation corrected the behavior before the final five-journey run.
+
+The fifty PDFs are available for reading, not yet converted for synchronized
+playback. Harmony tasks are original open questions, not graded mastery tests.
+External expert review, full-repertoire transcription, real ElevenLabs generation
+and Railway/DNS deployment remain unchecked. A presence-only key check reported
+`ELEVENLABS_API_KEY` missing; no secret value was printed or API charge incurred.

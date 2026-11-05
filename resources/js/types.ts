@@ -39,6 +39,6 @@ export interface SharedProps {
 }
 export interface StudyProps extends SharedProps {
   lessons: Lesson[];
-  view: "overview" | "lessons" | "lesson" | "practice" | "progress";
+  view: "overview" | "lessons" | "lesson" | "practice" | "progress" | "library" | "harmony";
   selected: string;
 }
