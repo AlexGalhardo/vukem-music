@@ -1,7 +1,8 @@
 # Vukem Music — brainstorming
 
 Data de início: 2026-11-05.
-Status: descoberta em andamento; implementação ainda não iniciada.
+Status atual: MVP implementado e publicado, com CI verificada. Amostras reais
+ElevenLabs e deploy Railway/DNS aguardam credenciais. Veja `ROADMAP.md`.
 
 Este arquivo registra o brainstorming, suas decisões e pendências. Uma sugestão
 não se torna requisito aprovado até receber uma resposta explícita do mantenedor.
@@ -204,7 +205,7 @@ O roadmap deverá conter:
 - Requisitos de conteúdo autoral, i18n, acessibilidade, sincronização musical,
   qualidade do áudio, persistência SQLite e operação na Railway.
 
-## Próximos pontos da discussão
+## Próximos pontos da discussão — registro da rodada inicial
 
 1. Receber respostas para Q4, Q5 e Q6.
 2. Fechar os detalhes desbloqueados pelas respostas, incluindo critérios de áudio,
