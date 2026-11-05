@@ -2,7 +2,7 @@ module github.com/AlexGalhardo/vukem-music
 
 go 1.27.3
 
-require github.com/AlexGalhardo/vukem v0.0.0-20261104204150-45a36f80e729
+require github.com/AlexGalhardo/vukem v0.36.0
 
 require (
 	github.com/dustin/go-humanize v1.1.0 // indirect
