@@ -458,3 +458,17 @@ encontrados durante o desenvolvimento e publicação na `main`. O documento reú
 Inclui critérios de aceite e recursos existentes que devem ser melhor documentados;
 não atribui problemas de infraestrutura, áudio ou código local ao core do Vukem.
 Não foram solicitadas mudanças no framework nem abertura de issues upstream.
+
+## Releases no padrão Vukem — 2026-11-06
+
+O mantenedor pediu publicar releases exatamente no padrão de
+<https://github.com/AlexGalhardo/vukem/releases>. A inspeção confirmou tags/títulos
+`vX.Y.Z`, notas categorizadas, seis arquivos para Linux/macOS/Windows em amd64/arm64,
+checksums, SBOMs SPDX, assinatura keyless e proveniência GitHub. A primeira versão
+será `v0.1.0`, compatível com a versão já declarada no projeto; não significa
+conclusão das revisões especializadas pendentes no roadmap.
+
+A automação exige CI aprovado no commit da tag e mantém o release em draft até
+concluir os artefatos, verificar assinatura e anexar proveniência. Não publicar
+áudios restritos, segredos, PDFs/OCR ou bancos de execução. Preparar apenas um
+release inicial real; não inventar versões históricas para preencher a página.

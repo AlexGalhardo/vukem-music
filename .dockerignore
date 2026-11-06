@@ -27,3 +27,5 @@ storage/
 /tests/
 /playwright.config.ts
 *.md
+
+/dist/

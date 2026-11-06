@@ -48,29 +48,29 @@ no Vukem. Não foram abertos issues nem enviados patches ao repositório do fram
 
 ## Priorização sugerida
 
-| ID | Prioridade | Área | Natureza principal |
-| --- | --- | --- | --- |
-| V01 | P1 | Preparação da chave e equivalência entre CLIs | Observado / DX |
-| V02 | P1 | Escrita segura de `.env` existente | Inspeção / hardening |
-| V03 | P2 | Diagnóstico do projeto pelo doctor | Inspeção / proposta |
-| V04 | P1 | Teste de clone limpo e jornada do starter | Observado / proposta |
-| V05 | P1 | Receita Railway com SQLite persistente | Observado / documentação |
-| V06 | P2 | Propriedade do volume e execução sem root | Observado / operação |
-| V07 | P2 | Docker portátil e otimizações opcionais | Observado na aplicação |
-| V08 | P2 | Assets gerados fora do diretório Vite | Observado / documentação |
-| V09 | P3 | Imagem do estágio de assets customizável | Necessidade da aplicação |
-| V10 | P2 | Backup e restauração de SQLite | Implementação local / proposta |
-| V11 | P2 | Portabilidade de testes entre Windows e Linux | Observado na aplicação |
-| V12 | P2 | Contratos tipados Go → Inertia → TypeScript | Trabalho manual / proposta |
-| V13 | P2 | i18n com navegação e estado preservados | Observado / receita |
-| V14 | P2 | Autenticação opcional e identificador customizado | Caso de uso / receita |
-| V15 | P2 | Descoberta de BindJSON e limites de corpo | Recurso existente / documentação |
-| V16 | P2 | Props sob demanda e orçamento de payload | Recurso existente / receita |
-| V17 | P3 | Preset React + shadcn/ui + sidebar | Integração manual / proposta |
-| V18 | P2 | Atualização dos standards e dependências | Observado no tooling externo |
-| V19 | P2 | Tratamento estreito de falsos positivos de secrets | Observado no tooling externo |
-| V20 | P2 | Compatibilidade CLI/runtime e documentação versionada | Experiência de atualização |
-| V21 | P2 | Lint respeitando arquivos privados e gerados | Observado no projeto |
+| ID  | Prioridade | Área                                                  | Natureza principal               |
+| --- | ---------- | ----------------------------------------------------- | -------------------------------- |
+| V01 | P1         | Preparação da chave e equivalência entre CLIs         | Observado / DX                   |
+| V02 | P1         | Escrita segura de `.env` existente                    | Inspeção / hardening             |
+| V03 | P2         | Diagnóstico do projeto pelo doctor                    | Inspeção / proposta              |
+| V04 | P1         | Teste de clone limpo e jornada do starter             | Observado / proposta             |
+| V05 | P1         | Receita Railway com SQLite persistente                | Observado / documentação         |
+| V06 | P2         | Propriedade do volume e execução sem root             | Observado / operação             |
+| V07 | P2         | Docker portátil e otimizações opcionais               | Observado na aplicação           |
+| V08 | P2         | Assets gerados fora do diretório Vite                 | Observado / documentação         |
+| V09 | P3         | Imagem do estágio de assets customizável              | Necessidade da aplicação         |
+| V10 | P2         | Backup e restauração de SQLite                        | Implementação local / proposta   |
+| V11 | P2         | Portabilidade de testes entre Windows e Linux         | Observado na aplicação           |
+| V12 | P2         | Contratos tipados Go → Inertia → TypeScript           | Trabalho manual / proposta       |
+| V13 | P2         | i18n com navegação e estado preservados               | Observado / receita              |
+| V14 | P2         | Autenticação opcional e identificador customizado     | Caso de uso / receita            |
+| V15 | P2         | Descoberta de BindJSON e limites de corpo             | Recurso existente / documentação |
+| V16 | P2         | Props sob demanda e orçamento de payload              | Recurso existente / receita      |
+| V17 | P3         | Preset React + shadcn/ui + sidebar                    | Integração manual / proposta     |
+| V18 | P2         | Atualização dos standards e dependências              | Observado no tooling externo     |
+| V19 | P2         | Tratamento estreito de falsos positivos de secrets    | Observado no tooling externo     |
+| V20 | P2         | Compatibilidade CLI/runtime e documentação versionada | Experiência de atualização       |
+| V21 | P2         | Lint respeitando arquivos privados e gerados          | Observado no projeto             |
 
 ## V01 — Tornar inequívoca a preparação da chave
 

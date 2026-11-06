@@ -33,3 +33,6 @@ node_modules/
 # ElevenLabs Sound Effects cannot be redistributed as a public sample bank
 /resources/public/audio/piano/*.wav
 /resources/public/audio/piano/provenance.json
+
+# GoReleaser binaries, archives and signing/provenance build output
+/dist/

@@ -308,3 +308,25 @@ upstream bug where the issue belongs to this application or its infrastructure.
 This is a documentation-only change, checked with Markdown lint and whitespace/
 local-link validation. No new deployment, framework patch, API generation or
 runtime test result is implied.
+
+## Release preparation — 2026-11-06
+
+Inspected Vukem's `v0.37.0` release, workflow and GoReleaser configuration. The Music
+pipeline adopts the same archive naming/platform matrix, categorized notes,
+checksums, archive SPDX SBOMs, keyless checksum signature and GitHub provenance.
+The initial version is `v0.1.0`; publication remains pending until observed.
+
+Added strict version-specific changelog extraction, package-version agreement,
+release documentation and binary `--version` build metadata. GoReleaser2.18.2 was
+downloaded from its official release and its archive SHA-256 verified. Config
+validation and release shell/YAML syntax validation passed. A Linux snapshot
+built and printed version/commit/date without loading application credentials.
+Windows-arm64 cross-compilation also passed; this was not a native Windows
+runtime test.
+
+Local frontend type check, production asset build, 27 unit tests/1,368 assertions,
+Go race tests and vet passed. Initial CI investigation found that Biome also
+formats Markdown tables: the earlier audio/feedback documents passed markdownlint
+but failed Biome formatting. Those tables were formatted before publication.
+Final local lint and exact-commit remote CI must pass before creating the release
+tag. No existing CI failure is described as a successful release check.

@@ -32,6 +32,11 @@ microphone exploration are implemented; see their documented support limits.
 The library publishes 20 playable source editions. Thirty new transcriptions
 remain review drafts outside production until notation/content review is complete.
 
+## Releases
+
+Prebuilt packages and verification instructions are documented in
+[releases](docs/releases.md). Release notes follow [CHANGELOG.md](CHANGELOG.md).
+
 ## Start locally
 
 Requirements: Go 1.27.3 and Bun 1.4.4. The score build downloads the pinned

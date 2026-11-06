@@ -155,6 +155,16 @@ This is the primary handoff file for future sessions and agents. Read this file,
   - [x] Review workflow results and fix failures in scope.
   - [x] Assert: remote SHA matches local HEAD and CI result is recorded accurately.
 
+## GitHub release delivery
+
+- [ ] Publish the initial release using the Vukem release pattern.
+  - [x] Inspect the reference release assets, workflow and categorized notes.
+  - [x] Prepare GoReleaser, changelog extraction, CI gate and release verification docs.
+  - [x] Exclude secrets, runtime data, PDFs/OCR and restricted generated audio.
+  - [ ] Build and verify all six platform archives, checksums, SBOMs, signature and provenance.
+  - [ ] Publish `v0.1.0` only after successful CI for its exact commit.
+  - [ ] Assert: observe the published release and its fifteen uploaded assets; record its URL.
+
 ## Extended delivery — now explicitly authorized
 
 The maintainer explicitly requested completion of the entire roadmap after the

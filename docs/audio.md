@@ -157,18 +157,18 @@ Every generation used `eleven_text_to_sound_v3`, `duration_seconds: 3`,
 repeating a prompt is not expected to reproduce identical audio. Raw source hashes,
 not the prompt alone, identify the recordings used by this bank.
 
-| Field | Initial pilots | Current source generation |
-| --- | --- | --- |
-| Method | POST | POST |
-| Endpoint | `/v1/sound-generation` | `/v1/sound-generation` |
-| Output query | `output_format=pcm_44100` | `output_format=wav_44100` |
-| Model | `eleven_text_to_sound_v3` | `eleven_text_to_sound_v3` |
-| Duration requested | 3 seconds | 3 seconds |
-| Prompt influence | 1 | 1 |
-| Loop | false | false |
-| Request timeout | 60 seconds | 60 seconds |
-| Authentication | Private `xi-api-key` header | Private `xi-api-key` header |
-| Content type sent | `application/json` | `application/json` |
+| Field              | Initial pilots              | Current source generation   |
+| ------------------ | --------------------------- | --------------------------- |
+| Method             | POST                        | POST                        |
+| Endpoint           | `/v1/sound-generation`      | `/v1/sound-generation`      |
+| Output query       | `output_format=pcm_44100`   | `output_format=wav_44100`   |
+| Model              | `eleven_text_to_sound_v3`   | `eleven_text_to_sound_v3`   |
+| Duration requested | 3 seconds                   | 3 seconds                   |
+| Prompt influence   | 1                           | 1                           |
+| Loop               | false                       | false                       |
+| Request timeout    | 60 seconds                  | 60 seconds                  |
+| Authentication     | Private `xi-api-key` header | Private `xi-api-key` header |
+| Content type sent  | `application/json`          | `application/json`          |
 
 The two initial PCM pilots both requested MIDI60/C4 using the same historical
 prompt below. Neither was admitted to the finished bank. The later WAV stage
@@ -321,25 +321,25 @@ selected for the final bank. The other three remained available as candidates.
 The table records the completed bank's provenance, not a promise about future
 model responses. Frequencies are estimator results rounded here to three decimals.
 
-| Requested MIDI | Requested note | Target Hz | Source measured Hz | Selection result | Final keys using source |
-| --- | --- | --- | --- | --- | --- |
-| 21 | A0 | 27.500 | — | No stable fundamental found | 0 |
-| 27 | E♭1 | 38.891 | — | Tuning rejected: -21.2 cents | 0 |
-| 33 | A1 | 55.000 | 439.084 | Candidate accepted | 0 |
-| 39 | E♭2 | 77.782 | 331.657 | Candidate accepted | 44 |
-| 45 | A2 | 110.000 | 440.471 | Candidate accepted | 0 |
-| 51 | E♭3 | 155.563 | — | No stable fundamental found | 0 |
-| 57 | A3 | 220.000 | 440.519 | Candidate accepted | 1 |
-| 60 | C4 | 261.626 | 527.622 | Candidate accepted | 4 |
-| 63 | E♭4 | 311.127 | 332.401 | Candidate accepted | 2 |
-| 69 | A4 | 440.000 | 440.519 | Candidate accepted | 0 |
-| 75 | E♭5 | 622.254 | 659.983 | Candidate accepted | 2 |
-| 81 | A5 | 880.000 | 439.852 | Candidate accepted | 1 |
-| 87 | E♭6 | 1244.508 | 660.223 | Candidate accepted | 32 |
-| 93 | A6 | 1760.000 | 436.612 | Candidate accepted | 2 |
-| 99 | E♭7 | 2489.016 | — | Changing source pitch rejected | 0 |
-| 105 | A7 | 3520.000 | — | No stable fundamental found | 0 |
-| 108 | C8 | 4186.009 | — | No stable fundamental found | 0 |
+| Requested MIDI | Requested note | Target Hz | Source measured Hz | Selection result               | Final keys using source |
+| -------------- | -------------- | --------- | ------------------ | ------------------------------ | ----------------------- |
+| 21             | A0             | 27.500    | —                  | No stable fundamental found    | 0                       |
+| 27             | E♭1            | 38.891    | —                  | Tuning rejected: -21.2 cents   | 0                       |
+| 33             | A1             | 55.000    | 439.084            | Candidate accepted             | 0                       |
+| 39             | E♭2            | 77.782    | 331.657            | Candidate accepted             | 44                      |
+| 45             | A2             | 110.000   | 440.471            | Candidate accepted             | 0                       |
+| 51             | E♭3            | 155.563   | —                  | No stable fundamental found    | 0                       |
+| 57             | A3             | 220.000   | 440.519            | Candidate accepted             | 1                       |
+| 60             | C4             | 261.626   | 527.622            | Candidate accepted             | 4                       |
+| 63             | E♭4            | 311.127   | 332.401            | Candidate accepted             | 2                       |
+| 69             | A4             | 440.000   | 440.519            | Candidate accepted             | 0                       |
+| 75             | E♭5            | 622.254   | 659.983            | Candidate accepted             | 2                       |
+| 81             | A5             | 880.000   | 439.852            | Candidate accepted             | 1                       |
+| 87             | E♭6            | 1244.508  | 660.223            | Candidate accepted             | 32                      |
+| 93             | A6             | 1760.000  | 436.612            | Candidate accepted             | 2                       |
+| 99             | E♭7            | 2489.016  | —                  | Changing source pitch rejected | 0                       |
+| 105            | A7             | 3520.000  | —                  | No stable fundamental found    | 0                       |
+| 108            | C8             | 4186.009  | —                  | No stable fundamental found    | 0                       |
 
 Actual cumulative resampling ratios range from 0.084295388 to 6.323047982, approximately
 −42.82 to +31.93 semitones. Forty-four keys use source39 and thirty-two use source87;
@@ -391,22 +391,22 @@ Source file names identify the requested MIDI, not the actual generated pitch.
 Samples are converted to floating point with `signedInt16 / 32768`. Levels refer
 to digital full scale, not physical loudspeaker volume.
 
-| Stage | Implemented threshold or window |
-| --- | --- |
-| Source clipping rejection | Absolute sample peak greater than 0.995 |
-| Onset search | Non-overlapping 64-sample blocks, RMS greater than 0.008 |
-| Onset block duration | About 1.45ms at 44100Hz |
-| Offline estimator silence gate | RMS below 0.004 produces no estimate |
-| Initial source analysis offsets | 30ms,120ms and240ms after onset |
-| Slice supplied per estimate | Up to one second of source audio |
-| Estimator comparison count | At most4096 samples, plus lag support |
-| Nominal lag search | About20–4500Hz |
-| YIN normalized-difference threshold | Below0.12, followed to a local minimum |
-| Source stability | Each offset estimate within 45 cents of the first |
-| Strict final-note audit | Absolute error no more than 20 cents |
-| Strict final-note attack | Onset no later than350ms, then trimmed |
-| Bank refinement goal | Return within 3 cents; last pass may accept up to 5 |
-| Offline refinement limit | Four processing passes; no additional API call |
+| Stage                               | Implemented threshold or window                          |
+| ----------------------------------- | -------------------------------------------------------- |
+| Source clipping rejection           | Absolute sample peak greater than 0.995                  |
+| Onset search                        | Non-overlapping 64-sample blocks, RMS greater than 0.008 |
+| Onset block duration                | About 1.45ms at 44100Hz                                  |
+| Offline estimator silence gate      | RMS below 0.004 produces no estimate                     |
+| Initial source analysis offsets     | 30ms,120ms and240ms after onset                          |
+| Slice supplied per estimate         | Up to one second of source audio                         |
+| Estimator comparison count          | At most4096 samples, plus lag support                    |
+| Nominal lag search                  | About20–4500Hz                                           |
+| YIN normalized-difference threshold | Below0.12, followed to a local minimum                   |
+| Source stability                    | Each offset estimate within 45 cents of the first        |
+| Strict final-note audit             | Absolute error no more than 20 cents                     |
+| Strict final-note attack            | Onset no later than350ms, then trimmed                   |
+| Bank refinement goal                | Return within 3 cents; last pass may accept up to 5      |
+| Offline refinement limit            | Four processing passes; no additional API call           |
 
 The estimator uses the cumulative normalized squared difference between samples
 separated by a candidate lag, then parabolic interpolation around its minimum.
@@ -517,11 +517,11 @@ are runtime defenses. Do not claim runtime cryptographic sample verification.
 The preview builds four sine oscillators per note:
 
 | Harmonic number | Frequency | Relative gain |
-| --- | --- | --- |
-| 1 | `hz` | 0.55 |
-| 2 | `2 * hz` | 0.24 |
-| 3 | `3 * hz` | 0.10 |
-| 4 | `4 * hz` | 0.04 |
+| --------------- | --------- | ------------- |
+| 1               | `hz`      | 0.55          |
+| 2               | `2 * hz`  | 0.24          |
+| 3               | `3 * hz`  | 0.10          |
+| 4               | `4 * hz`  | 0.04          |
 
 Each partial connects to the note's gain node. A sampled voice instead uses an
 `AudioBufferSourceNode` connected to that same gain node. Both pass through the
@@ -546,12 +546,12 @@ clicks but is not a guarantee of click-free output for every waveform/device.
 Volume scales amplitude; MIDI velocity does not select different timbre layers.
 
 | Compressor parameter | Value |
-| --- | --- |
-| Threshold | −9dB |
-| Knee | 6dB |
-| Ratio | 20:1 |
-| Attack | 1ms |
-| Release | 150ms |
+| -------------------- | ----- |
+| Threshold            | −9dB  |
+| Knee                 | 6dB   |
+| Ratio                | 20:1  |
+| Attack               | 1ms   |
+| Release              | 150ms |
 
 This is Web Audio dynamics compression, not a measured true-peak brickwall limiter,
 a loudness-normalization pass or a sound-pressure safety guarantee. Output level
@@ -657,18 +657,18 @@ tokens handle permission responses arriving after cancellation.
 
 ## Reproduction, troubleshooting and change control
 
-| Symptom | Inspection and action |
-| --- | --- |
-| No sound on first load | Use an explicit play/key gesture; check context suspension, browser/OS mute and device output |
-| UI says synthesized preview | Expected publicly; the private bank is not installed. Also inspect completeness/fetch/decode failures for a permitted bank |
-| Wrong generated pitch | Inspect measured frequency/provenance; prompts are not tuning guarantees. Reprocess cached input before requesting another paid source |
-| Slow/dull low notes or short/bright high notes | Inspect resampling ratio and source frequency; this bank uses large register shifts. Review by listening, not cents alone |
-| Timing differs on Bluetooth | Compare wired output; record hardware latency separately from the audio-clock scheduler |
-| Microphone shows no estimate | Check permission, level, range, monophonic input and three-update confidence gate |
-| Stuck MIDI highlight/sound | Use All notes off; inspect pedal state, repeated notes, focus and disconnect cleanup |
-| Raw response fails decoding | Keep the cached original; inspect WAV fmt/channels/rate/chunk sizes instead of guessing raw PCM layout |
-| Hash verification fails | Do not use that bank; compare manifest/provenance and restore or rebuild from exact cached sources |
-| API401/403/429 | Stop new generation and resolve credentials/permissions/quota; do not blindly retry billed calls |
+| Symptom                                        | Inspection and action                                                                                                                  |
+| ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| No sound on first load                         | Use an explicit play/key gesture; check context suspension, browser/OS mute and device output                                          |
+| UI says synthesized preview                    | Expected publicly; the private bank is not installed. Also inspect completeness/fetch/decode failures for a permitted bank             |
+| Wrong generated pitch                          | Inspect measured frequency/provenance; prompts are not tuning guarantees. Reprocess cached input before requesting another paid source |
+| Slow/dull low notes or short/bright high notes | Inspect resampling ratio and source frequency; this bank uses large register shifts. Review by listening, not cents alone              |
+| Timing differs on Bluetooth                    | Compare wired output; record hardware latency separately from the audio-clock scheduler                                                |
+| Microphone shows no estimate                   | Check permission, level, range, monophonic input and three-update confidence gate                                                      |
+| Stuck MIDI highlight/sound                     | Use All notes off; inspect pedal state, repeated notes, focus and disconnect cleanup                                                   |
+| Raw response fails decoding                    | Keep the cached original; inspect WAV fmt/channels/rate/chunk sizes instead of guessing raw PCM layout                                 |
+| Hash verification fails                        | Do not use that bank; compare manifest/provenance and restore or rebuild from exact cached sources                                     |
+| API401/403/429                                 | Stop new generation and resolve credentials/permissions/quota; do not blindly retry billed calls                                       |
 
 Use `bun run audio:bank` for a dry run. `bun run audio:bank --generate --limit 17`
 can make paid requests only for missing source WAVs; retain the cache to avoid
@@ -677,22 +677,22 @@ without calling ElevenLabs. The generated private ZIP contains the source WAVs,
 final WAVs, manifests, report and README, but no environment files or API key.
 Do not publish those assets while the provider's distribution restriction applies.
 
-| Source file | Responsibility |
-| --- | --- |
-| [scripts/lib/piano-samples.ts](../scripts/lib/piano-samples.ts) | Request template/settings, WAV codec, pitch estimator and strict audit |
-| [scripts/lib/piano-processing.ts](../scripts/lib/piano-processing.ts) | Onset/source stability, iterative offline tuning and FFmpeg invocation |
-| [scripts/produce-piano-bank.ts](../scripts/produce-piano-bank.ts) | Anchor budget/cache, source selection, 88-key staging and provenance |
-| [scripts/generate-piano.ts](../scripts/generate-piano.ts) | Controlled individual-note generation/retuning and private results |
-| [scripts/verify-piano-bank.ts](../scripts/verify-piano-bank.ts) | Complete-bank integrity/pitch verification report |
-| [resources/js/music/audio.ts](../resources/js/music/audio.ts) | Browser sample loading, synthesis, envelope, compressor and voice lifecycle |
-| [resources/js/music/use-transport.ts](../resources/js/music/use-transport.ts) | Original lesson timeline transport |
-| [resources/js/music/use-performance.ts](../resources/js/music/use-performance.ts) | Advanced polyphonic scheduling and active-state calculation |
-| [resources/js/music/musicxml.ts](../resources/js/music/musicxml.ts) | Rational event execution, gates, ties, repeats and performance limits |
-| [resources/js/music/tuning.ts](../resources/js/music/tuning.ts) | Equal/fixed-C alternative frequency mappings |
-| [resources/js/music/instruments.ts](../resources/js/music/instruments.ts) | MIDI message decoding and live microphone estimator |
-| [resources/js/components/music/Instruments.tsx](../resources/js/components/music/Instruments.tsx) | Permissions, device lifecycle, sustain and microphone UI gates |
-| [tests/unit/audio.test.ts](../tests/unit/audio.test.ts) | Signal/audit/WAV/API-request/manifest fixtures |
-| [tests/e2e/extended.spec.ts](../tests/e2e/extended.spec.ts) | Browser import/score/MIDI/microphone interaction checks |
+| Source file                                                                                       | Responsibility                                                              |
+| ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| [scripts/lib/piano-samples.ts](../scripts/lib/piano-samples.ts)                                   | Request template/settings, WAV codec, pitch estimator and strict audit      |
+| [scripts/lib/piano-processing.ts](../scripts/lib/piano-processing.ts)                             | Onset/source stability, iterative offline tuning and FFmpeg invocation      |
+| [scripts/produce-piano-bank.ts](../scripts/produce-piano-bank.ts)                                 | Anchor budget/cache, source selection, 88-key staging and provenance        |
+| [scripts/generate-piano.ts](../scripts/generate-piano.ts)                                         | Controlled individual-note generation/retuning and private results          |
+| [scripts/verify-piano-bank.ts](../scripts/verify-piano-bank.ts)                                   | Complete-bank integrity/pitch verification report                           |
+| [resources/js/music/audio.ts](../resources/js/music/audio.ts)                                     | Browser sample loading, synthesis, envelope, compressor and voice lifecycle |
+| [resources/js/music/use-transport.ts](../resources/js/music/use-transport.ts)                     | Original lesson timeline transport                                          |
+| [resources/js/music/use-performance.ts](../resources/js/music/use-performance.ts)                 | Advanced polyphonic scheduling and active-state calculation                 |
+| [resources/js/music/musicxml.ts](../resources/js/music/musicxml.ts)                               | Rational event execution, gates, ties, repeats and performance limits       |
+| [resources/js/music/tuning.ts](../resources/js/music/tuning.ts)                                   | Equal/fixed-C alternative frequency mappings                                |
+| [resources/js/music/instruments.ts](../resources/js/music/instruments.ts)                         | MIDI message decoding and live microphone estimator                         |
+| [resources/js/components/music/Instruments.tsx](../resources/js/components/music/Instruments.tsx) | Permissions, device lifecycle, sustain and microphone UI gates              |
+| [tests/unit/audio.test.ts](../tests/unit/audio.test.ts)                                           | Signal/audit/WAV/API-request/manifest fixtures                              |
+| [tests/e2e/extended.spec.ts](../tests/e2e/extended.spec.ts)                                       | Browser import/score/MIDI/microphone interaction checks                     |
 
 Before updating a bank, preserve raw originals and both source/final hashes; record
 model, exact prompt, request settings, source measurement and processing revision.
