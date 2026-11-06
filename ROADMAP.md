@@ -102,11 +102,17 @@ This is the primary handoff file for future sessions and agents. Read this file,
   - [x] Mark synthesis fallback honestly; no billed generation on ordinary playback.
   - [x] Assert: generation request/error paths are tested without a real API key.
 - [ ] Generate and approve real piano samples.
-  - [ ] Supply ElevenLabs credential and agreed generation budget.
-    - [ ] Configure the key outside Git; dry-run MIDI range and request limit.
-  - [ ] Generate, audit tuning/timbre, publish manifest and asset provenance.
+  - [x] Supply the private credential and authorize the bounded audio task.
+    - [x] Configure the key outside Git; dry-run MIDI range and request limit.
+  - [x] Create all 88 private WAVs; audit tuning/integrity and record provenance.
+    - [x] Generate/cache17 source anchors; select 11 usable sources and tune all keys.
+    - [x] Verify all 88 hashes/pitches; maximum measured error 2.998 cents.
+  - [ ] Complete the listening/timbre review.
+  - [ ] Resolve distribution permission before publishing isolated sample assets.
   - [ ] Assert: all declared samples pass pitch checks and a listening review.
-  - Dependency: ElevenLabs access; do not substitute synthetic audio as completion.
+  - Dependency: human listening review and permission for sample distribution.
+    ElevenCreative Exhibit 4 §2 restricts isolated samples/libraries; the bank is
+    private and the public application retains its identified synthesis preview.
 
 ## Phase 4 — learning interactions and product verification
 
@@ -276,10 +282,10 @@ Remaining work in dependency order:
    checking both hands, key/clef, rhythm, ties, repeat traversal and omissions.
 2. Obtain independent specialist review of the bilingual advanced content and
    evaluators; do not present technical fixtures as that review.
-3. Finish ElevenLabs format/tuning handling, then generate/audit the real bank.
-   The maintainer supplied a private credential and explicitly authorized all
-   application audio on2026-11-06; two pilots returned200 but were not accepted.
-   Bound requests/cache responses; synthesis preview does not complete this task.
+3. Review the completed private ElevenLabs-derived 88-key bank by listening.
+   All 88 WAVs now pass automated tuning/hash checks (maximum 2.998 cents).
+   Preserve the private ZIP/source cache. Resolve the provider's explicit sample
+   redistribution restriction before publishing or activating a public bank.
 4. Deploy after authorized Railway project/access and DNS management are available;
    verify HTTPS, persistent volume, redeploy persistence and backup restore.
 

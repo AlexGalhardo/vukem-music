@@ -195,3 +195,45 @@ channel fundamentals were around441Hz despite requesting MIDI60/C4. Neither
 pilot was accepted as a tuned piano sample. The production manifest remains
 unchanged; do not describe these responses as the finished 88-note bank. Format,
 resampling and musical-quality handling need to be addressed before a large batch.
+
+## Private ElevenLabs audio creation — 2026-11-06
+
+The maintainer reiterated the request to create all application sounds with the
+configured key. The observed account plan was Creator. Seventeen source anchors
+were generated/cached; eleven passed source selection. The final private bank
+contains 88 WAV PCM16 mono files at 44.1kHz, A0–C8/MIDI21–108. Each key derives from
+an identified generated source using downmix, onset trim and libsoxr pitch
+correction; no synthetic replacement was used. Subsequent processing reused all
+cached responses with zero further billed generation requests.
+
+`bun run audio:verify` re-read every final WAV, checked SHA-256 against provenance,
+validated all 88 unique MIDI values and re-measured pitch/silence/clipping. Maximum
+absolute measured deviation was 2.997680080749316 cents. WAV data totals28,202,880
+bytes. Human listening review of timbre, noise and extreme-transposition artifacts
+is still pending; these measurements are not a listening approval.
+
+Outputs remain in ignored `storage/audio-bank/elevenlabs-piano`; raw sources are
+in ignored `storage/audio-sources/elevenlabs-v3-wav`. The workspace artifact
+`vukem-music-elevenlabs-piano-private.zip` includes the88 WAVs, original sources,
+manifest, provenance, verification and a private-use README. No credential or
+personal account identity is included.
+
+The current [ElevenCreative terms, Exhibit 4 §2](https://elevenlabs.io/creative-terms)
+explicitly restrict isolated audio/sample and sound-library distribution. The
+bank is therefore private, outside Git and not MIT licensed. The public app's
+empty manifest/synthesis preview remains unchanged. Do not interpret generation
+as permission to publish a sample library; obtain the provider's written permission
+or an appropriately licensed alternative before that public distribution.
+
+The pipeline now decodes explicit WAV channel headers, preserves raw responses,
+accepts offline reconstruction from cache and bounds generation to 17 anchors with
+no automatic billed retries. The individual-note CLI also writes private output.
+Tests cover stereo timing/downmix, malformed chunks, preserved-buffer isolation,
+auth/rate errors and the existing pitch/manifest behavior. Source/private artifact
+verification was performed on the actual generated files, not mocked API output.
+
+Local checks:26 unit tests passed; type checking, Biome, Markdown lint, production
+frontend/engraving build, Go tests and vet passed. Remote deployment changes up to
+`c49abb8872131eb8b4fb7601624453f627b4f1de` were fast-forwarded without overwriting
+those changes. The earlier extension CI run42145353944 was cancelled, not green;
+record a new run's actual result separately.

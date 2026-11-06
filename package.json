@@ -20,7 +20,9 @@
     "verify": "bun check && bun lint && bun lint:md && bun run test && bun run build",
     "setup": "bun scripts/setup-env.ts",
     "scores:fetch": "bun scripts/fetch-repertoire.ts",
-    "scores:build": "bun scripts/build-scores.ts"
+    "scores:build": "bun scripts/build-scores.ts",
+    "audio:bank": "bun scripts/produce-piano-bank.ts",
+    "audio:verify": "bun scripts/verify-piano-bank.ts"
   },
   "dependencies": {
     "@inertiajs/react": "3.9.1",

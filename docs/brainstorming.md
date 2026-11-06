@@ -424,3 +424,18 @@ permissão para a tarefa. A chave fica somente no `.env` ignorado. Duas chamadas
 piloto foram aceitas pela API, mas o formato/tamanho e a afinação não passaram
 pela validação atual. Nenhuma amostra foi publicada como aprovada. Resolver o
 tratamento do áudio e manter a revisão de timbre/afinação antes de ativar o banco.
+
+## Entrega privada dos sons — 2026-11-06
+
+O mantenedor reiterou a geração dos sons com a chave fornecida. Foram geradas
+17 fontes; 11 passaram pela seleção e originaram88 WAVs afinados por reamostragem,
+com hashes e desvio máximo medido de2,998 cents. As respostas originais são
+reaproveitadas; não houve substituição por síntese nesses arquivos. A revisão
+auditiva de timbre ainda não ocorreu.
+
+A pesquisa dos termos atuais encontrou restrição explícita em ElevenCreative,
+Exhibit4 §2, para disponibilização de efeitos como arquivos isolados ou bibliotecas
+de samples. Por isso, o ZIP e os WAVs ficam privados/ignorados; não receberam
+licença MIT nem entraram no Git. O código continua aberto e o app público mantém
+o sintetizador identificado. Não apresentar o banco privado como integração
+pública concluída. Referência: <https://elevenlabs.io/creative-terms>

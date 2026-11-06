@@ -19,7 +19,8 @@ SQLite. English is the default locale; Brazilian Portuguese is supported.
 - Local MusicXML engraving/polyphonic playback, transposition and tuning comparisons.
 - Optional account synchronization, JSON backup, opt-in MIDI and local microphone estimates.
 - Server/CLI ElevenLabs sample generation with bounded requests and tuning checks.
-  Until an approved sample bank exists, the UI identifies its synthesized preview.
+  An 88-key bank was generated privately; provider terms restrict public sample
+  redistribution. The public UI retains its identified synthesized preview.
 - Railway deployment configuration, a multi-stage production image and SQLite backup.
 
 [ROADMAP.md](ROADMAP.md) is the primary execution/handoff file. External sample

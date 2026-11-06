@@ -94,11 +94,46 @@ export interface GenerateOptions {
   apiKey: string;
   midi: number;
   request?: (url: string, options: RequestInit) => Promise<Response>;
+  preserve?: (bytes: Uint8Array) => Promise<void>;
 }
-export async function generatePcm({ apiKey, midi, request = fetch }: GenerateOptions): Promise<Uint8Array> {
+/** Decode an explicit WAV header instead of guessing raw PCM channel count. */
+export function pcmFromWav(bytes: Uint8Array): Uint8Array {
+  const view = new DataView(bytes.buffer, bytes.byteOffset, bytes.byteLength);
+  const tag = (offset: number) => new TextDecoder().decode(bytes.slice(offset, offset + 4));
+  if (bytes.length < 44 || tag(0) !== "RIFF" || tag(8) !== "WAVE" || view.getUint32(4, true) + 8 !== bytes.length)
+    throw new Error("Invalid generated WAV container");
+  let channels = 0;
+  let rate = 0;
+  let data: Uint8Array | null = null;
+  for (let at = 12, chunks = 0; at + 8 <= bytes.length; chunks++) {
+    if (chunks > 64) throw new Error("Too many WAV chunks");
+    const size = view.getUint32(at + 4, true);
+    if (at + 8 + size > bytes.length) throw new Error("Truncated WAV chunk");
+    if (tag(at) === "fmt ") {
+      if (size < 16 || view.getUint16(at + 8, true) !== 1 || view.getUint16(at + 22, true) !== 16)
+        throw new Error("Expected 16-bit PCM WAV");
+      channels = view.getUint16(at + 10, true);
+      rate = view.getUint32(at + 12, true);
+    }
+    if (tag(at) === "data") data = bytes.slice(at + 8, at + 8 + size);
+    at += 8 + size + (size % 2);
+  }
+  if (!data || ![1, 2].includes(channels) || rate !== 44100 || data.length % (channels * 2))
+    throw new Error("Expected mono/stereo 44.1kHz WAV");
+  const frames = data.length / (channels * 2);
+  if (frames < 2205 || frames > 44100 * 8) throw new Error("Unexpected generated WAV duration");
+  if (channels === 1) return data;
+  const input = new DataView(data.buffer, data.byteOffset, data.byteLength);
+  const mono = new Uint8Array(frames * 2);
+  const output = new DataView(mono.buffer);
+  for (let i = 0; i < frames; i++)
+    output.setInt16(i * 2, Math.round((input.getInt16(i * 4, true) + input.getInt16(i * 4 + 2, true)) / 2), true);
+  return mono;
+}
+export async function generatePcm({ apiKey, midi, request = fetch, preserve }: GenerateOptions): Promise<Uint8Array> {
   if (!apiKey) throw new Error("ELEVENLABS_API_KEY is required");
   if (!Number.isInteger(midi) || midi < 21 || midi > 108) throw new Error("MIDI outside piano range");
-  const response = await request("https://api.elevenlabs.io/v1/sound-generation?output_format=pcm_44100", {
+  const response = await request("https://api.elevenlabs.io/v1/sound-generation?output_format=wav_44100", {
     method: "POST",
     signal: AbortSignal.timeout(60000),
     headers: { "xi-api-key": apiKey, "Content-Type": "application/json" },
@@ -107,11 +142,13 @@ export async function generatePcm({ apiKey, midi, request = fetch }: GenerateOpt
       duration_seconds: 3,
       prompt_influence: 1,
       loop: false,
-      text: `One single isolated classical acoustic grand piano key, MIDI note ${midi}, fundamental exactly ${frequency(midi).toFixed(4)} Hz, tuned A4=440Hz. Immediate clean attack, natural decay. No chords, melody, voices, pedal, background noise or reverb.`,
+      text: `One isolated acoustic concert grand piano note: ${["C", "C sharp", "D", "E flat", "E", "F", "F sharp", "G", "A flat", "A", "B flat", "B"][midi % 12]}${Math.floor(midi / 12) - 1}, fundamental ${frequency(midi).toFixed(3)} Hz. A single key struck once at the very beginning, followed only by its natural decay. Dry close microphone, classical piano timbre. Absolutely no other notes, melody, chords, voice, pedal, noise or reverb.`,
     }),
   });
   if (!response.ok) throw new Error(`ElevenLabs request failed (${response.status}); no automatic billed retry`);
   const buffer = await response.arrayBuffer();
-  if (buffer.byteLength > 44100 * 2 * 5 || buffer.byteLength < 44100) throw new Error("Unexpected generated PCM size");
-  return new Uint8Array(buffer);
+  if (buffer.byteLength > 2 * 1024 * 1024 || buffer.byteLength < 44) throw new Error("Unexpected generated WAV size");
+  const bytes = new Uint8Array(buffer);
+  await preserve?.(bytes.slice());
+  return pcmFromWav(bytes);
 }

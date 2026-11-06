@@ -42,7 +42,10 @@ frontend bundles and links the Go dependencies.
 
 The reference book is cited in [study-reference.md](docs/study-reference.md) and is
 not included or relicensed. Our educational prose and exercises are original.
-The sample manifest is currently empty; no third-party audio recordings are shipped.
+The public sample manifest remains empty; no generated recordings are shipped
+in Git. A private 88-key ElevenLabs-derived bank exists outside the repository.
+ElevenCreative Exhibit 4 §2 restricts isolated samples/sound libraries; these
+recordings are not MIT. See [audio.md](docs/audio.md) before distribution.
 Record provenance and distribution terms before adding generated sample assets,
 as described in [audio.md](docs/audio.md).
 

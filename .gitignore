@@ -29,3 +29,7 @@ node_modules/
 
 # Reproducible engraving assets; generated from licensed score sources
 /resources/public/generated-scores/
+
+# ElevenLabs Sound Effects cannot be redistributed as a public sample bank
+/resources/public/audio/piano/*.wav
+/resources/public/audio/piano/provenance.json
