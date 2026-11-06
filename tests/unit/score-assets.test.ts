@@ -11,7 +11,6 @@ test("curated sources are unique, licensed, hashed and mapped to a researched ed
   expect(new Set(sources.map((source) => source.id)).size).toBe(sources.length);
   for (const source of sources) {
     const entry = repertoire.find((work) => work.id === source.id);
-    expect(entry).toBeDefined();
     if (!entry) throw new Error(`Missing research entry: ${source.id}`);
     expect(source.file).toMatch(/^[a-z0-9-]+\.ly$/);
     expect(source.license).toMatch(/Public Domain|Attribution|MIT/);
@@ -29,7 +28,7 @@ test("ninth inversions keep every voice ascending without losing pitch classes",
       .sort();
     for (let inversion = 0; inversion < 5; inversion++) {
       const midis = chordPitches(root, "dominant9", inversion).map(toMidi);
-      expect(midis.every((midi, i) => i === 0 || midi > midis[i - 1])).toBe(true);
+      expect(midis.every((midi, i) => i === 0 || midi > (midis[i - 1] ?? -Infinity))).toBe(true);
       expect(midis.map((midi) => midi % 12).sort()).toEqual(base);
     }
   }

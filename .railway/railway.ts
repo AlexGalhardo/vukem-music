@@ -7,7 +7,6 @@ export default defineRailway(() => {
     replicas: 1,
     healthcheck: "/up?checks=1",
     start: "/app/start.sh",
-    domains: ["music.vukem.dev"],
     volumeMounts: { "/app/storage": storage },
     env: {
       APP_NAME: "Vukem Music",

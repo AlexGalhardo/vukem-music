@@ -3,10 +3,7 @@ FROM oven/bun:1.4.4-slim AS assets
 WORKDIR /src
 COPY . .
 # Combine install/build to avoid duplicating node_modules in intermediate layers.
-# Optional public CA mounts support development proxies without embedding trust files.
-RUN --mount=type=secret,id=proxy_ca \
-    --mount=type=cache,target=/root/.bun/install/cache \
-    if [ -f /run/secrets/proxy_ca ]; then export NODE_EXTRA_CA_CERTS=/run/secrets/proxy_ca; fi; \
+RUN --mount=type=cache,target=/root/.bun/install/cache \
     bun install --frozen-lockfile && bun run build
 
 FROM golang:1.27.3-alpine3.24 AS build
@@ -15,16 +12,12 @@ ENV CGO_ENABLED=0
 COPY . .
 COPY --from=assets /src/resources/public/build resources/public/build
 COPY --from=assets /src/resources/public/generated-scores resources/public/generated-scores
-RUN --mount=type=secret,id=system_ca \
-    --mount=type=cache,target=/go/pkg/mod \
+RUN --mount=type=cache,target=/go/pkg/mod \
     --mount=type=cache,target=/root/.cache/go-build \
-    if [ -f /run/secrets/system_ca ]; then export SSL_CERT_FILE=/run/secrets/system_ca; fi; \
     go build -trimpath -ldflags="-s -w" -o /out/app ./cmd/app
 
 FROM alpine:3.24.2
-RUN --mount=type=secret,id=system_ca \
-    if [ -f /run/secrets/system_ca ]; then export SSL_CERT_FILE=/run/secrets/system_ca; fi; \
-    apk add --no-cache ca-certificates tzdata \
+RUN apk add --no-cache ca-certificates tzdata \
     && adduser -D -H -u 10001 app \
     && mkdir -p /app/storage && chown app:app /app/storage
 WORKDIR /app
