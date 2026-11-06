@@ -128,6 +128,9 @@ This is the primary handoff file for future sessions and agents. Read this file,
   - [x] Assert: browser tests, type checks, lint, build and Go checks pass together.
 - [x] Document operation and limitations.
   - [x] Explain supported score subset and source-book review limitations.
+  - [x] Document exact ElevenLabs prompts and the complete audio signal pipeline.
+    - [x] Compare all 17 WAV prompts with the request builder; record the historical
+      PCM prompt, source/retuning limits and private-bank distribution boundary.
   - [x] Document audio generation, restore, updates and troubleshooting.
   - [x] Assert: a contributor can start from README without undocumented local paths.
 

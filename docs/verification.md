@@ -278,3 +278,20 @@ record a new run's actual result separately.
   `bun run build` requires the pinned Linux LilyPond binary. The remote
   [CI run](https://github.com/AlexGalhardo/vukem-music/actions/runs/42145857402)
   for `c49abb8` passed the Linux build and Go checks.
+
+## Audio engineering documentation — 2026-11-06
+
+Expanded `docs/audio.md` into the prompt ledger and sound-engine reference. It
+includes both historical PCM requests' exact common prompt and all 17 current WAV
+source prompts, API settings, the 17→11→8→88 source-selection facts, measured
+register/transposition limitations, WAV/downmix/onset/YIN/resampling parameters,
+browser synthesis/gain/compression, sample loading, transport, alternate tuning,
+MIDI, microphone gating, memory estimates, failure behavior and remaining reviews.
+
+Compared every expanded WAV prompt byte-for-byte with text captured from the
+current request builder using a local stub; all 17 match. Source counts, frequency
+range, selection counts, resampling extremes and file durations were checked
+against the existing private bank/provenance without generating more audio.
+Runtime parameters were checked against the implementation at `3e04910`.
+Markdown lint is the applicable check for this documentation-only update; no
+new audio generation, application behavior or listening approval is claimed.

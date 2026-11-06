@@ -439,3 +439,13 @@ de samples. Por isso, o ZIP e os WAVs ficam privados/ignorados; não receberam
 licença MIT nem entraram no Git. O código continua aberto e o app público mantém
 o sintetizador identificado. Não apresentar o banco privado como integração
 pública concluída. Referência: <https://elevenlabs.io/creative-terms>
+
+## Registro completo de áudio — 2026-11-06
+
+O mantenedor pediu concentrar em `docs/audio.md` todos os prompts usados e a
+engenharia de som da aplicação. O documento passou a registrar o prompt histórico
+PCM usado duas vezes, os 17 prompts WAV expandidos, parâmetros da API, resultados
+medidos por fonte, limites do banco, DSP, reprodução, transporte, MIDI/microfone,
+cache, licenciamento e reprodução dos resultados. Os prompts atuais foram
+conferidos contra o construtor de requisições com stub local, sem novas chamadas
+à ElevenLabs. Não confundir afinação automática com aprovação auditiva.
