@@ -264,7 +264,10 @@ build, Go race tests and vet passed for this extension. Final lint/image checks
 and publication evidence are recorded in [verification](docs/verification.md).
 The previous published implementation was `69c837f81443defa6925157379dbbb8cfa3b6d6a`;
 its six CI jobs passed in [this run](https://github.com/AlexGalhardo/vukem-music/actions/runs/42084474571).
-This extension needs a new commit/run before claiming remote completion.
+The extension was pushed as `0a1a06148d4f1337bf35510bab988b05f73506c1`.
+Its image, Go, vulnerability, secret and Markdown jobs passed. Frontend type
+checking found a test lookup needing an explicit guard; a correction is being
+published. Record the follow-up CI result before claiming all jobs green.
 
 Remaining work in dependency order:
 
@@ -273,8 +276,10 @@ Remaining work in dependency order:
    checking both hands, key/clef, rhythm, ties, repeat traversal and omissions.
 2. Obtain independent specialist review of the bilingual advanced content and
    evaluators; do not present technical fixtures as that review.
-3. Generate/audit real ElevenLabs samples after credential and numeric request
-   budget are provided; synthesis preview does not complete this task.
+3. Finish ElevenLabs format/tuning handling, then generate/audit the real bank.
+   The maintainer supplied a private credential and explicitly authorized all
+   application audio on2026-11-06; two pilots returned200 but were not accepted.
+   Bound requests/cache responses; synthesis preview does not complete this task.
 4. Deploy after authorized Railway project/access and DNS management are available;
    verify HTTPS, persistent volume, redeploy persistence and backup restore.
 

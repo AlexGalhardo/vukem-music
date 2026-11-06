@@ -176,3 +176,22 @@ or independent musical specialist review occurred in these checks. See the
 remaining quality gates and exact supported-feature contracts in `ROADMAP.md`,
 [extended learning](extended-learning.md), [score build](score-build.md) and
 [accounts](accounts.md).
+
+### Published extension and CI correction
+
+Extension commit `0a1a06148d4f1337bf35510bab988b05f73506c1` was pushed to `main`.
+[Its CI run](https://github.com/AlexGalhardo/vukem-music/actions/runs/42144683251)
+passed the production image build, Go format/vet/race tests, vulnerability scan,
+secret scanning and Markdown lint. Frontend type checking exposed an optional
+research lookup in the new source-integrity test. The lookup now has an explicit
+missing-entry guard before the hash assertion; the corrected local `bun check`
+passes. A follow-up run must verify this correction before claiming all jobs green.
+
+The maintainer subsequently supplied an ElevenLabs credential and explicitly
+requested all application audio. It was configured only in the ignored private
+`.env`, never committed. Two pilot requests returned HTTP200; the second raw
+response was cached outside Git. The response was stereo-sized PCM, and its
+channel fundamentals were around441Hz despite requesting MIDI60/C4. Neither
+pilot was accepted as a tuned piano sample. The production manifest remains
+unchanged; do not describe these responses as the finished 88-note bank. Format,
+resampling and musical-quality handling need to be addressed before a large batch.

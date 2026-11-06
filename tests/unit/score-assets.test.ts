@@ -12,9 +12,10 @@ test("curated sources are unique, licensed, hashed and mapped to a researched ed
   for (const source of sources) {
     const entry = repertoire.find((work) => work.id === source.id);
     expect(entry).toBeDefined();
+    if (!entry) throw new Error(`Missing research entry: ${source.id}`);
     expect(source.file).toMatch(/^[a-z0-9-]+\.ly$/);
     expect(source.license).toMatch(/Public Domain|Attribution|MIT/);
-    expect(source.sourcePdfSha256).toBe(entry?.sourceSha256);
+    expect(source.sourcePdfSha256).toBe(entry.sourceSha256);
     const bytes = await Bun.file(new URL(`../../scores/sources/${source.file}`, import.meta.url)).bytes();
     expect(createHash("sha256").update(bytes).digest("hex")).toBe(source.sha256);
   }

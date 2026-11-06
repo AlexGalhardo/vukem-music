@@ -414,3 +414,13 @@ manuais ficam fora de produção até conferência com o PDF; compilar SVG/MIDI 
 prova fidelidade ao scan. Reinagle nº5, compasso12, tem leitura de baixo ainda
 ambígua e pausa editorial explicitamente marcada. Corrigimos também a referência
 de Beyer nº7 para PDF18–19. Nenhuma dessas pendências conta como entrega verificada.
+
+## Áudio autorizado pelo mantenedor
+
+Em 2026-11-06, o mantenedor forneceu uma chave ElevenLabs e pediu explicitamente
+criar todos os áudios necessários. Isso autoriza a geração do banco de piano,
+com solicitações limitadas e reaproveitamento de respostas; não pedir novamente
+permissão para a tarefa. A chave fica somente no `.env` ignorado. Duas chamadas
+piloto foram aceitas pela API, mas o formato/tamanho e a afinação não passaram
+pela validação atual. Nenhuma amostra foi publicada como aprovada. Resolver o
+tratamento do áudio e manter a revisão de timbre/afinação antes de ativar o banco.
