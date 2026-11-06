@@ -3,8 +3,7 @@ FROM oven/bun:1.4.4-slim AS assets
 WORKDIR /src
 COPY . .
 # Combine install/build to avoid duplicating node_modules in intermediate layers.
-RUN --mount=type=cache,id=bun-install,target=/root/.bun/install/cache \
-    bun install --frozen-lockfile && bun run build
+RUN bun install --frozen-lockfile && bun run build
 
 FROM golang:1.27.3-alpine3.24 AS build
 WORKDIR /src
@@ -12,9 +11,7 @@ ENV CGO_ENABLED=0
 COPY . .
 COPY --from=assets /src/resources/public/build resources/public/build
 COPY --from=assets /src/resources/public/generated-scores resources/public/generated-scores
-RUN --mount=type=cache,id=go-modules,target=/go/pkg/mod \
-    --mount=type=cache,id=go-build,target=/root/.cache/go-build \
-    go build -trimpath -ldflags="-s -w" -o /out/app ./cmd/app
+RUN go build -trimpath -ldflags="-s -w" -o /out/app ./cmd/app
 
 FROM alpine:3.24.2
 RUN apk add --no-cache ca-certificates tzdata \
