@@ -44,7 +44,8 @@ Date: 2026-11-05. Toolchain: Go 1.27.3, Bun 1.4.4, Chromium through Playwright 1
 - `db:backup` produced consistent snapshots before/after restart; restored copies
   each passed `PRAGMA integrity_check` with eight lesson records.
 - The local-image test covered production packaging, migration, persistence and
-  backup. The final source is also built by remote CI; live Railway remains untested.
+  backup. The final source was also built by remote CI; live Railway was untested
+  at this stage.
 
 ## Publication
 
@@ -62,13 +63,13 @@ production image, Markdown, reachable-vulnerability checks and secret scanning.
 Remote main matched local HEAD at verification; subsequent changes document the
 handoff and preserve third-party attribution.
 
-## External checks not performed
+## External checks pending at the initial handoff
 
 - ElevenLabs recording generation, timbre listening review and approved sample-bank distribution.
 - Railway project application, DNS changes, public HTTPS and persistence across a live deploy.
 
-These require the maintainer's service access. Local code/configuration and mocked
-API tests do not establish that the external operations were completed.
+These were pending at the initial handoff. The Railway deployment and DNS checks
+were completed later; see the live deployment evidence below.
 
 ## Round-2 approval update
 
@@ -171,8 +172,9 @@ installed dependencies and compiled initial source editions. Do not report this 
 an entirely verified final image. The new remote image job must validate the final
 Dockerfile and lockfile; record its actual result after publication.
 
-No real ElevenLabs generation, listening approval, Railway deployment, DNS update
-or independent musical specialist review occurred in these checks. See the
+At this stage, no real ElevenLabs generation, listening approval, Railway
+deployment, DNS update or independent musical specialist review had occurred.
+See the
 remaining quality gates and exact supported-feature contracts in `ROADMAP.md`,
 [extended learning](extended-learning.md), [score build](score-build.md) and
 [accounts](accounts.md).
@@ -237,3 +239,42 @@ frontend/engraving build, Go tests and vet passed. Remote deployment changes up 
 `c49abb8872131eb8b4fb7601624453f627b4f1de` were fast-forwarded without overwriting
 those changes. The earlier extension CI run42145353944 was cancelled, not green;
 record a new run's actual result separately.
+
+## Live Railway deployment — 2026-11-06
+
+- Project `cdc6c85c-775d-4923-bd02-2f4f01140bc3`, production environment
+  `80c707e2-9003-4025-b793-232c427e2d85`, service
+  `7f6187ef-ae65-46cf-b8d2-800acf4bdd3c`. The service has one replica and
+  volume `c226849b-b812-44d4-bd1b-512418b71b45` at `/app/storage`.
+- A private generated `APP_KEY` was supplied through Railway stdin, without
+  printing or committing it. IaC applied the production variables, GitHub source,
+  healthcheck and volume. A subsequent `railway config plan` found no changes.
+- The first attempts failed Dockerfile validation because Railway's builder did
+  not accept the optional BuildKit mounts. The portable Dockerfile was pushed as
+  `c49abb8872131eb8b4fb7601624453f627b4f1de`. Deployment
+  `b5b285f5-ddd7-4e2d-81f1-7f3b600e98f8` reached `SUCCESS` and its
+  `/up?checks=1` healthcheck passed. The app reported SQLite migrations for
+  lessons and learners and listened on Railway's runtime port 8080.
+- Railway required `music.vukem.dev` to be registered separately from IaC. Its
+  actual CNAME target is `dbuyirpj.up.railway.app`; Vercel DNS has that CNAME and
+  the required `_railway-verify.music` TXT record. Railway reports the domain
+  verified, the certificate valid and the target port set to 8080. The CNAME
+  resolved through the authoritative Vercel server, Cloudflare, Google and Quad9.
+- HTTPS with public DNS returned 200 for `/up?checks=1`, `/`, `/lessons`,
+  `/library` and `/harmony`. The health response was
+  `{"status":"ok","checks":{"db":"ok"}}`. A local Windows resolver still
+  returned a cached Vercel wildcard address during verification; public DNS and
+  DNS-over-HTTPS reached Railway correctly. That stale local cache will expire.
+- The production `db:backup` command created a consistent snapshot on the volume.
+  It was downloaded outside the repository, copied to a separate restore path
+  and opened with SQLite: `integrity_check=ok`, eight lessons, two migrations.
+  After deployment `6030df4e-bb18-4b97-82ad-89e1405e7c8b` reached `SUCCESS`,
+  the same mounted database and first backup were still present. A fresh backup
+  again had `integrity_check=ok`, eight lessons and two migrations. Production
+  cutover to a restored volume was not exercised.
+- Local `bun check`, `bun lint`, `bun lint:md` and `bun run test` passed; the
+  production Docker image built successfully. `go vet ./...` passed. On Windows,
+  `go test ./...` failed only the POSIX `0600` permission assertion, and
+  `bun run build` requires the pinned Linux LilyPond binary. The remote
+  [CI run](https://github.com/AlexGalhardo/vukem-music/actions/runs/42145857402)
+  for `c49abb8` passed the Linux build and Go checks.

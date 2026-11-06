@@ -23,8 +23,10 @@ SQLite. English is the default locale; Brazilian Portuguese is supported.
   redistribution. The public UI retains its identified synthesized preview.
 - Railway deployment configuration, a multi-stage production image and SQLite backup.
 
-[ROADMAP.md](ROADMAP.md) is the primary execution/handoff file. External sample
-production and live Railway/DNS setup remain explicitly blocked on service access.
+[ROADMAP.md](ROADMAP.md) is the primary execution/handoff file. The application is
+deployed at [music.vukem.dev](https://music.vukem.dev) with persistent Railway SQLite.
+The private 88-key piano bank passed tuning checks; listening review and public
+distribution permission are still pending. The public UI uses its labeled preview.
 The extended course, browser-local MusicXML import, optional accounts, MIDI and
 microphone exploration are implemented; see their documented support limits.
 The library publishes 20 playable source editions. Thirty new transcriptions

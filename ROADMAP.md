@@ -139,13 +139,12 @@ This is the primary handoff file for future sessions and agents. Read this file,
     - [x] Use one SQLite replica; run migrations in the volume-mounted service.
   - [x] Document secrets, volume permissions, single-writer operation and backups.
   - [x] Assert: production build runs and healthcheck succeeds with a fresh DB.
-- [ ] Deploy at `music.vukem.dev`.
-  - [ ] Use authorized Railway project/access and production secret values.
-  - [ ] Mount the volume and configure the custom domain and DNS.
-    - [ ] Obtain Railway’s actual target; configure its DNS record and verify HTTPS.
-  - [ ] Verify HTTPS, persistence across redeploy and backup/restore.
-  - [ ] Assert: live domain serves the app and data survives a deployment.
-  - Dependency: Railway/DNS access; local configuration does not satisfy this task.
+- [x] Deploy at `music.vukem.dev`.
+  - [x] Use authorized Railway project/access and production secret values.
+  - [x] Mount the volume and configure the custom domain and DNS.
+    - [x] Obtain Railway’s actual target; configure its DNS record and verify HTTPS.
+  - [x] Verify HTTPS, persistence across redeploy and backup/restore.
+  - [x] Assert: live domain serves the app and data survives a deployment.
 - [x] Push implementation and inspect remote CI.
   - [x] Commit verified changes and push to the requested repository.
   - [x] Review workflow results and fix failures in scope.

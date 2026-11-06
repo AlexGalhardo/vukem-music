@@ -8,10 +8,20 @@ Node/Bun runtime. `/app/start.sh` migrates SQLite, then uses `exec` to run Vukem
 A local production-image smoke test is recorded in [verification](verification.md).
 
 [.railway/railway.ts](../.railway/railway.ts) defines one web replica, a persistent
-1GB volume mounted at `/app/storage`, the intended custom domain, healthcheck and
-production settings. It uses Railway Infrastructure as Code, not the deprecated
-`railway.json`/`railway.toml` files. This configuration has not been applied to a
-live Railway project without credentials.
+1GB volume mounted at `/app/storage`, the healthcheck and production settings. It
+uses Railway Infrastructure as Code. Railway does not register custom domains from
+this IaC file; `music.vukem.dev` was added to the service separately.
+
+## Live deployment
+
+The production project is `cdc6c85c-775d-4923-bd02-2f4f01140bc3`, with service
+`7f6187ef-ae65-46cf-b8d2-800acf4bdd3c` and environment
+`80c707e2-9003-4025-b793-232c427e2d85`. The volume `music-storage` is mounted
+at `/app/storage`. A private `APP_KEY` is set in Railway variables. The domain
+routes to port 8080, the port assigned by Railway at runtime. Vercel DNS has a
+`music` CNAME to `dbuyirpj.up.railway.app` and the Railway ownership TXT record.
+Keep both records when updating the service. See [verification](verification.md)
+for the observed deployment, HTTPS, database and backup checks.
 
 ## First production deployment
 
@@ -28,7 +38,8 @@ live Railway project without credentials.
 6. Verify `/up?checks=1`. Confirm that the configured trusted proxy range matches
    actual Railway peers before relying on forwarded IP/scheme headers.
 7. Add `music.vukem.dev` to the service, obtain Railway's exact DNS target, then set
-   that record at the DNS provider. Do not invent a CNAME target. Wait for HTTPS.
+   that record at the DNS provider. Match the domain target port to the app's
+   runtime port. Wait for HTTPS.
 8. Open lessons and the piano over HTTPS, then redeploy and verify lesson records
    remain unchanged. Record the deployed SHA, live URL and checks in the roadmap.
 
@@ -62,7 +73,8 @@ This database backup does not include browser-local learner progress.
 4. Check health, lessons and persistence after restart before switching traffic.
 
 The backup/restore test verifies schema, lesson records, integrity and refusal to
-overwrite. A real Railway disaster-recovery drill remains part of live deployment.
+overwrite. The production snapshot was downloaded and restored into a separate local
+copy on 2026-11-06. A full production cutover restore drill remains outstanding.
 
 References: [Vukem deployment](https://vukem.dev/docs/deployment/docker-and-railway),
 [Railway volumes](https://docs.railway.com/volumes/reference),
