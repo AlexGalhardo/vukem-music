@@ -14,6 +14,7 @@ storage/
 # Vite: dev server marker; the image builds its own assets
 /resources/public/hot
 /resources/public/build/
+/resources/public/generated-scores/
 
 # Local test artifacts and reference documents
 /test-results/

@@ -15,9 +15,10 @@ This is the primary handoff file for future sessions and agents. Read this file,
   The maintainer subsequently approved all three round-2 proposals explicitly:
   validated ElevenLabs samples with an identified synthesis fallback, the proposed
   learning progression and 88-key piano, and a conservatory-style light/dark
-  interface with touch, mouse and computer keyboard. MIDI/microphone remain future scope.
-- MVP includes local progress and original scores; accounts, score import, MIDI
-  input and microphone recognition are future scope, not hidden MVP requirements.
+  interface with touch, mouse and computer keyboard. The subsequent full-roadmap
+  instruction also authorizes MIDI/microphone and the other extended phases.
+- MVP includes local progress and original scores. Extended phases are explicitly
+  authorized while preserving anonymous use as the default.
 
 ## Phase 0 — discovery and reference
 
@@ -144,10 +145,12 @@ This is the primary handoff file for future sessions and agents. Read this file,
   - [x] Review workflow results and fix failures in scope.
   - [x] Assert: remote SHA matches local HEAD and CI result is recorded accurately.
 
-## Future phases — explicitly outside the initial delivery
+## Extended delivery — now explicitly authorized
 
-These are planned extensions, not implemented MVP features. Start them only after
-resolving the external MVP blockers or an explicit reprioritization by the maintainer.
+The maintainer explicitly requested completion of the entire roadmap after the
+repertoire delivery. All remaining software phases are now authorized, including
+optional accounts/import/instrument input. Anonymous learning remains the default.
+Continue independent work while service access and external reviews are pending.
 
 ### Phase 6 — curriculum beyond foundations
 
@@ -165,103 +168,118 @@ These deliveries extend the MVP; the full advanced curriculum remains below.
     - [x] Separate beginner student duet parts from harder accompaniment.
   - [x] Assert: browser journey finds 50 works and filters by composer/difficulty.
 - [x] Introduce chords and advanced harmony in `/harmony`.
-  - [x] Add eleven original bilingual topics with worked examples and open tasks.
+  - [x] Add twelve original bilingual topics with worked examples and open tasks.
     - [x] Teach triads, inversions, sevenths, functions, cadences and voice leading.
     - [x] Introduce modes, secondary dominants, mixture, modulation and form.
   - [x] Add simultaneous chord audio, staff spelling and multi-key piano highlights.
     - [x] Preserve root vs bass, inversion and diminished-seventh double flats.
   - [x] Assert: fixed chord fixtures and bilingual browser interaction pass.
 - [ ] Convert the selected repertoire to verified playable notation.
-  - [ ] Extend polyphonic score/event support before importing multi-voice piano works.
-    - [ ] Retain edition licenses; compare every converted note/rhythm with its PDF.
-    - [ ] Model ties, repeats, clefs, meter and simultaneous voices explicitly.
+  - [x] Extend polyphonic score/event support before importing multi-voice piano works.
+  - [ ] Retain edition licenses; compare every converted note/rhythm with its PDF.
+    - [x] Model ties, repeats, clefs, meter and simultaneous voices explicitly.
   - [ ] Assert: source comparison, timing and piano/score/audio synchronization pass
     for every published playable work; PDF availability alone does not pass.
 - [ ] Extend introductory harmony into a graded advanced learning sequence.
   - [ ] Obtain specialist review and author semantic exercises with valid alternatives.
-    - [ ] Add ninth/altered chords, harmonic analysis and style-aware voice leading.
-    - [ ] Keep reading completion distinct from demonstrated mastery.
+    - [x] Add ninth/altered chords, harmonic-analysis examples and a contextual
+      voice-leading evaluator.
+    - [x] Keep reading completion distinct from demonstrated mastery.
   - [ ] Assert: reviewed bilingual explanations, contextual examples and meaningful
     evaluators; open questions are not counted as validated mastery.
 
 - [ ] Add interval and scale modules (reference chapters 10–18, 21, 23–29, 31, 35).
-  - [ ] Define original bilingual lessons and semantic evaluators.
-    - [ ] Model interval number/quality independently from semitone distance.
-    - [ ] Generate correctly spelled scales; preserve modal and tonal context.
+  - [x] Define original bilingual lessons and semantic evaluators.
+    - [x] Model interval number/quality independently from semitone distance.
+    - [x] Generate correctly spelled scales; preserve modal and tonal context.
   - [ ] Assert: known interval/scale fixtures pass in EN/PT with expert content review.
 - [ ] Add rhythm and expression modules (chapters 6–9, 19–20, 22, 28, 30, 32–39).
-  - [ ] Introduce features only after the score/player can represent them.
-    - [ ] Separate ties, slurs, articulations, tuplets and BPM-reference values.
-    - [ ] Teach interpretive conventions without claiming universal execution rules.
-  - [ ] Assert: examples preserve measure duration and clearly identify unsupported symbols.
+  - [x] Introduce features only after the score/player can represent them.
+    - [x] Separate ties, slurs, articulations, tuplets and BPM-reference values.
+    - [x] Teach interpretive conventions without claiming universal execution rules.
+  - [x] Assert: original rhythm fixture preserves duration; unsupported execution
+    features are reported. The broader specialist review remains pending.
 - [ ] Add harmony, ornaments and notation modules (chapters 40–58).
-  - [ ] Use the original chapter references to plan independent exercises.
-    - [ ] Separate chord root, bass, inversion, voicing and tonal function.
-    - [ ] Accept musically equivalent answers where multiple solutions are valid.
+  - [x] Use the original chapter references to plan independent exercises.
+    - [x] Separate chord root, bass, inversion, voicing and tonal function.
+    - [x] Accept musically equivalent answers where multiple solutions are valid.
   - [ ] Assert: all new topics have original EN/PT content, reviewed examples and evaluator tests.
 
 ### Phase 7 — score import
 
-- [ ] Add MusicXML import with explicit supported-feature reporting.
-  - [ ] Design a bounded parsing and validation pipeline.
-    - [ ] Enforce size/resource limits and reject unsafe XML/external entities.
-    - [ ] Preserve written/concert pitch, voices and rational duration on parse.
-  - [ ] Assert: malformed inputs fail safely; unsupported notation is reported before playback.
+- [x] Add MusicXML import with explicit supported-feature reporting.
+  - [x] Design a bounded parsing and validation pipeline.
+    - [x] Enforce size/resource limits and reject unsafe XML/external entities.
+    - [x] Preserve written/concert pitch, voices and rational duration on parse.
+  - [x] Assert: malformed inputs fail safely; unsupported notation is reported before playback.
 
 ### Phase 8 — optional accounts and progress sync
 
-- [ ] Add authentication and cross-device progress without losing local progress.
-  - [ ] Design identity, ownership and migration semantics.
-    - [ ] Define local/server merge rules, deletion/export and conflict handling.
-    - [ ] Add authorized progress endpoints with CSRF and isolation checks.
-  - [ ] Assert: one learner cannot read another’s progress; offline/local migration is tested.
+- [x] Add authentication and cross-device progress without losing local progress.
+  - [x] Design identity, ownership and migration semantics.
+    - [x] Define local/server merge rules, deletion/export and conflict handling.
+    - [x] Add authorized progress endpoints with CSRF and isolation checks.
+  - [x] Assert: one learner cannot read another’s progress; offline/local migration is tested.
 
 ### Phase 9 — instrument input
 
-- [ ] Add MIDI input and sustain/velocity support.
-  - [ ] Design permission-based device connection and note lifecycle.
-    - [ ] Handle disconnects, all-notes-off, repeated note-ons and pedal release.
-  - [ ] Assert: no stuck notes after blur/disconnect; unsupported browsers retain manual input.
-- [ ] Explore optional microphone-based exercises.
-  - [ ] Define latency, tuning and privacy requirements before requesting access.
-    - [ ] Validate pitch detection against noise, octave errors and polyphony.
-  - [ ] Assert: explicit permission, reliable confidence reporting and no false correctness claim.
+- [x] Add MIDI input and sustain/velocity support.
+  - [x] Design permission-based device connection and note lifecycle.
+    - [x] Handle disconnects, all-notes-off, repeated note-ons and pedal release.
+  - [x] Assert: no stuck notes after blur/disconnect; unsupported browsers retain manual input.
+- [x] Explore optional microphone-based exercises.
+  - [x] Define latency, tuning and privacy requirements before requesting access.
+    - [x] Validate pitch detection against noise, octave errors and polyphony.
+  - [x] Assert: explicit permission, reliable confidence reporting and no false correctness claim.
 
 ### Phase 10 — advanced playback and engraving
 
-- [ ] Add polyphony, repeats, transposition and alternate tuning.
-  - [ ] Extend notation and execution as independent representations.
-    - [ ] Bound repeat/jump execution to prevent loops; preserve event/voice identity.
-    - [ ] Separate written and concert pitch and model tuning beyond integer MIDI.
-  - [ ] Assert: reference scores, timing and voice-leading fixtures pass; unsupported
+- [x] Add polyphony, repeats, transposition and alternate tuning.
+  - [x] Extend notation and execution as independent representations.
+    - [x] Bound repeat/jump execution to prevent loops; preserve event/voice identity.
+    - [x] Separate written and concert pitch and model tuning beyond integer MIDI.
+  - [x] Assert: reference scores, timing and voice-leading fixtures pass; unsupported
     features remain visible instead of silently producing incorrect sound.
 
 ## Current handoff
 
-The local MVP implementation covers phases 0–4 except real ElevenLabs sample
-production. Initial structure was pushed as `1589912177179630fd2f0b2848729b4d2d053e2b`.
-Production Docker, persistence and backup checks passed locally. Implementation
-and the cold-start setup fix are published. All six CI jobs passed for
-`7937a2da5f9c1c0b8f0fdbe2105e7f0aa3e6791b`:
-[verified implementation run](https://github.com/AlexGalhardo/vukem-music/actions/runs/42027916487).
-Documentation-only handoff updates may follow this verified implementation.
+The full-roadmap instruction supersedes earlier future-scope limits. The extended
+implementation adds the 58-topic bilingual course, semantic evaluators, MusicXML
+import/engraving, polyphonic transport/transposition/tuning, optional SQLite account
+sync, JSON portability, MIDI sustain/velocity and local microphone exploration.
+Support limits are in [extended learning](docs/extended-learning.md) and
+[account semantics](docs/accounts.md). Reading and review scores stay separate.
 
-External blockers: no `ELEVENLABS_API_KEY`, Railway credential/project, or DNS
-management access was configured. Do not mark real audio generation or the live
-custom-domain deployment complete. Continue the first unblocked task above;
-accounts/import/MIDI remain future scope. The maintainer reprioritized the score
-library and harmony introduction: see phase 6 and the research/content documents.
+The library contains fifty researched works and twenty published study editions from
+licensed Mutopia notation. Thirty Beyer/Reinagle transcriptions now exist as
+review drafts, excluded from production assets and routes. Their source review
+is unfinished; Reinagle No.5 bar12 has a documented unresolved bass reading.
+Compiled editions pass MIDI/engraved-onset consistency checks, but that does not
+satisfy the remaining source-PDF comparison for all fifty works. See
+[score build](docs/score-build.md). Beyer No.7's PDF reference was corrected to
+pages18–19; metadata and the outside-Git study bundle were updated.
 
-Latest extension: the 50-work `/library` and eleven-topic `/harmony` introduction
-are implemented in EN/PT and published as
-`69c837f81443defa6925157379dbbb8cfa3b6d6a`. All six remote CI jobs passed:
-[repertoire/harmony verification](https://github.com/AlexGalhardo/vukem-music/actions/runs/42084474571).
-Source PDFs remain outside Git; all five browser journeys, thirteen unit tests,
-build, type/lint and Go checks passed locally and in the applicable CI jobs.
-Language switching preserves the selected chord. Full-score conversion and graded
-advanced exercises remain unchecked in phase 6; no external service completion
-is implied. Research: [repertoire](docs/repertoire-50.md),
-[advanced learning path](docs/harmony-learning-path.md).
+Local validation: 24 unit tests/1,408 assertions, eleven browser journeys, frontend
+build, Go race tests and vet passed for this extension. Final lint/image checks
+and publication evidence are recorded in [verification](docs/verification.md).
+The previous published implementation was `69c837f81443defa6925157379dbbb8cfa3b6d6a`;
+its six CI jobs passed in [this run](https://github.com/AlexGalhardo/vukem-music/actions/runs/42084474571).
+This extension needs a new commit/run before claiming remote completion.
 
-See [verification evidence](docs/verification.md), [audio operation](docs/audio.md),
-and [Railway operation](docs/deployment.md) for reproducible checks and next steps.
+Remaining work in dependency order:
+
+1. Resolve Reinagle No.5 bar12 and review all thirty draft transcriptions.
+   Compare every playable edition with its cited PDF,
+   checking both hands, key/clef, rhythm, ties, repeat traversal and omissions.
+2. Obtain independent specialist review of the bilingual advanced content and
+   evaluators; do not present technical fixtures as that review.
+3. Generate/audit real ElevenLabs samples after credential and numeric request
+   budget are provided; synthesis preview does not complete this task.
+4. Deploy after authorized Railway project/access and DNS management are available;
+   verify HTTPS, persistent volume, redeploy persistence and backup restore.
+
+Do not mark external generation/deployment or independent reviews complete using
+local configuration or automated consistency checks. Current service questions
+are pending; never ask the maintainer to paste credentials in the chat. See
+[audio](docs/audio.md), [deployment](docs/deployment.md) and the quality assertions
+above before continuing. The entire roadmap is not yet complete.

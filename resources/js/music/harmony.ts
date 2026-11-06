@@ -11,6 +11,10 @@ export const qualities = {
   minor7: [0, 3, 7, 10],
   halfDiminished7: [0, 3, 6, 10],
   diminished7: [0, 3, 6, 9],
+  dominant9: [0, 4, 7, 10, 14],
+  major9: [0, 4, 7, 11, 14],
+  minor9: [0, 3, 7, 10, 14],
+  dominant7Sharp5: [0, 4, 8, 10],
 } as const;
 export type ChordQuality = keyof typeof qualities;
 export const rootSteps = ["C", "D", "E", "F", "G", "A", "B"] as const;
@@ -30,8 +34,11 @@ export function chordPitches(root: Pitch, quality: ChordQuality, inversion = 0):
     };
     return { ...natural, alter: toMidi(root) + interval - toMidi(natural) };
   });
-  return [
-    ...pitches.slice(inversion),
-    ...pitches.slice(0, inversion).map((pitch) => ({ ...pitch, octave: pitch.octave + 1 })),
-  ];
+  const voiced = [...pitches.slice(inversion), ...pitches.slice(0, inversion)];
+  return voiced.map((pitch, index) => {
+    const result = { ...pitch };
+    if (index) while (toMidi(result) <= toMidi(voiced[index - 1])) result.octave++;
+    voiced[index] = result;
+    return result;
+  });
 }

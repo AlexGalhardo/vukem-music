@@ -52,8 +52,17 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
       active: props.view === "lessons" || props.view === "lesson",
     },
     { path: "/practice", key: "nav.practice", icon: Piano, active: props.view === "practice" },
-    { path: "/library", key: "nav.library", icon: Music2, active: props.view === "library" },
+    {
+      path: "/library",
+      key: "nav.library",
+      icon: Music2,
+      active: props.view === "library" || props.view === "library-work",
+    },
     { path: "/harmony", key: "nav.harmony", icon: Piano, active: props.view === "harmony" },
+    { path: "/course", key: "nav.course", icon: BookOpen, active: props.view === "course" },
+    { path: "/import", key: "nav.import", icon: Music2, active: props.view === "import" },
+    { path: "/instruments", key: "nav.instruments", icon: Piano, active: props.view === "instruments" },
+    { path: "/account", key: "nav.account", icon: House, active: props.view === "account" },
     { path: "/progress", key: "nav.progress", icon: ChartNoAxesCombined, active: props.view === "progress" },
   ];
   const completed = (props.lessons ?? []).filter((lesson) => progress.completed.includes(lesson.id)).length;

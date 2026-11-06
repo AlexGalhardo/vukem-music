@@ -1,7 +1,7 @@
 # Acordes e caminho para teoria avançada
 
 O mantenedor priorizou expressamente acordes e assuntos avançados na aplicação em
-2026-11-05. `/harmony` agora contém onze unidades de estudo autorais em EN/PT,
+2026-11-05. `/harmony` agora contém doze unidades de estudo autorais em EN/PT,
 com explicação, exemplo e atividade aberta. Este arquivo registra a progressão;
 o conteúdo bilíngue executado pela interface está em `resources/js/data/harmony.json`.
 
@@ -151,3 +151,10 @@ Atividade: Escolha um minueto de Petzold na biblioteca. Marque frases em uma có
   após introduzir os pré-requisitos e exemplos auditivos correspondentes.
 - Polifonia de partituras, ligaduras e repetições antes de prometer reprodução
   integral dos cinquenta PDFs. Toda transcrição exige comparação com sua fonte.
+
+## Extended delivery
+
+The twelve-topic explorer now includes ninths and altered dominants. The 58-topic
+course adds original review questions and semantic interval/scale construction.
+See [extended learning](extended-learning.md) for evaluator boundaries and pending
+independent specialist review.

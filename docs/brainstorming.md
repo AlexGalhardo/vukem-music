@@ -386,3 +386,31 @@ ilimitados; Q12 continua aguardando um limite numérico antes da geração paga.
 
 Pesquisa detalhada: [50 partituras](repertoire-50.md). Conteúdo e evolução:
 [caminho de harmonia](harmony-learning-path.md).
+
+## Execução de todo o roadmap — autorização atualizada
+
+O mantenedor pediu explicitamente: “Vc já terminou todo o roadmap? Se não, termine”.
+Essa instrução prioriza também as fases antes classificadas como futuras: currículo
+completo, importação, contas opcionais/sincronização, MIDI/microfone e execução
+avançada. A experiência sem cadastro continua como padrão; autenticação será
+optativa. Não pedir nova autorização para implementar essas fases.
+
+Critérios de resultado continuam válidos: não marcar operação externa, revisão
+especializada ou transcrição conferida como concluída sem evidência. Solicitações
+de configuração da chave/orçamento ElevenLabs e acesso Railway/DNS foram
+apresentadas; o desenvolvimento independente continua enquanto aguardamos.
+
+## Implementation choices and source-review gate
+
+A implementação estendida preserva o uso anônimo. Contas usam handle/senha sem
+email nem recuperação; sincronização é save/restore explícito com revisão CAS,
+sem mescla silenciosa. MusicXML e microfone permanecem no navegador. MIDI/microfone
+exigem ação e permissão separadas; estimativas de microfone não atribuem acertos.
+Afinação alternativa é demonstração fixa em dó, sem prometer entonação adaptativa.
+
+As cinquenta fontes de partitura têm entradas/transcrições, mas apenas vinte
+edições com fonte digital licenciada são publicadas no player. Trinta transcrições
+manuais ficam fora de produção até conferência com o PDF; compilar SVG/MIDI não
+prova fidelidade ao scan. Reinagle nº5, compasso12, tem leitura de baixo ainda
+ambígua e pausa editorial explicitamente marcada. Corrigimos também a referência
+de Beyer nº7 para PDF18–19. Nenhuma dessas pendências conta como entrega verificada.

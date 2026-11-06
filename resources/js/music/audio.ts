@@ -30,12 +30,22 @@ export class PianoAudio {
   context: AudioContext | null = null;
   mode: "synth" | "samples" = "synth";
   sampleError = false;
+  private output: DynamicsCompressorNode | null = null;
   private buffers = new Map<number, AudioBuffer>();
   private voices = new Set<() => void>();
   private loading: Promise<void> | null = null;
 
   async prepare() {
-    if (!this.context || this.context.state === "closed") this.context = new AudioContext();
+    if (!this.context || this.context.state === "closed") {
+      this.context = new AudioContext();
+      this.output = this.context.createDynamicsCompressor();
+      this.output.threshold.value = -9;
+      this.output.knee.value = 6;
+      this.output.ratio.value = 20;
+      this.output.attack.value = 0.001;
+      this.output.release.value = 0.15;
+      this.output.connect(this.context.destination);
+    }
     if (this.context.state === "suspended") await this.context.resume();
     if (!this.loading) this.loading = this.loadSamples();
     await this.loading;
@@ -71,17 +81,18 @@ export class PianoAudio {
     }
   }
 
-  play(midi: number, when: number, duration: number, volume = 1): () => void {
+  play(midi: number, when: number, duration: number, volume = 1, hz = frequency(midi)): () => void {
     const context = this.context;
-    if (!context || midi < 21 || midi > 108) return () => {};
+    if (!context || midi < 21 || midi > 108 || !Number.isFinite(hz) || hz <= 0) return () => {};
     const gain = context.createGain();
-    gain.connect(context.destination);
+    gain.connect(this.output ?? context.destination);
     const at = Math.max(when, context.currentTime);
     const sources: (OscillatorNode | AudioBufferSourceNode)[] = [];
     const sample = this.mode === "samples" ? this.buffers.get(midi) : undefined;
     if (sample) {
       const source = context.createBufferSource();
       source.buffer = sample;
+      source.playbackRate.value = hz / frequency(midi);
       source.connect(gain);
       sources.push(source);
     } else {
@@ -94,7 +105,7 @@ export class PianoAudio {
       ]) {
         const osc = context.createOscillator();
         osc.type = "sine";
-        osc.frequency.value = frequency(midi) * harmonic;
+        osc.frequency.value = hz * harmonic;
         const partial = context.createGain();
         partial.gain.value = level;
         osc.connect(partial);
@@ -143,6 +154,8 @@ export class PianoAudio {
   }
   close() {
     this.stopAll();
+    this.output?.disconnect();
+    this.output = null;
     void this.context?.close();
     this.context = null;
   }

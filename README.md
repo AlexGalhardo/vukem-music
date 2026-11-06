@@ -13,19 +13,27 @@ SQLite. English is the default locale; Brazilian Portuguese is supported.
 - Web Audio playback synchronized with score and piano highlighting, including
   pause/resume, stop, rests, tempo controls and horizontal following on small screens.
 - A searchable 50-work classical score library with difficulty, sources and edition licenses.
-- A chord explorer with simultaneous audio, staff and piano display, plus eleven
+- A chord explorer with simultaneous audio, staff and piano display, plus twelve
   bilingual topics covering triads, inversions, sevenths, cadences and modulation.
+- A 58-topic bilingual course with review rounds and semantic interval/scale exercises.
+- Local MusicXML engraving/polyphonic playback, transposition and tuning comparisons.
+- Optional account synchronization, JSON backup, opt-in MIDI and local microphone estimates.
 - Server/CLI ElevenLabs sample generation with bounded requests and tuning checks.
   Until an approved sample bank exists, the UI identifies its synthesized preview.
 - Railway deployment configuration, a multi-stage production image and SQLite backup.
 
 [ROADMAP.md](ROADMAP.md) is the primary execution/handoff file. External sample
 production and live Railway/DNS setup remain explicitly blocked on service access.
-Accounts, MusicXML import, MIDI input and advanced engraving are future scope.
+The extended course, browser-local MusicXML import, optional accounts, MIDI and
+microphone exploration are implemented; see their documented support limits.
+The library publishes 20 playable source editions. Thirty new transcriptions
+remain review drafts outside production until notation/content review is complete.
 
 ## Start locally
 
-Requirements: Go 1.27.3 and Bun 1.4.4. No ElevenLabs key is required for the preview.
+Requirements: Go 1.27.3 and Bun 1.4.4. The score build downloads the pinned
+LilyPond compiler on Linux x86-64; other platforms need LilyPond2.26.0 via
+`LILYPOND_BIN`, or Docker. No ElevenLabs key is required for the preview.
 
 ```sh
 bun install --frozen-lockfile
@@ -38,7 +46,8 @@ go run ./cmd/app
 Open <http://localhost:3000>. For frontend development, run `bun dev` in another
 terminal. Never expose the development server publicly. Do not commit `.env` or
 runtime SQLite files. The curriculum lives on the server; learner progress stays
-in this browser and does not sync between devices.
+in this browser by default. Optional accounts provide explicit save/restore
+across devices; JSON export/import also works without an account.
 
 ## Quality
 
@@ -73,6 +82,9 @@ See the recorded results in
 - [Architecture and supported score subset](docs/architecture.md).
 - [50-score research catalog](docs/repertoire-50.md).
 - [Harmony learning path](docs/harmony-learning-path.md).
+- [Extended learning and import limits](docs/extended-learning.md).
+- [Accounts and progress portability](docs/accounts.md).
+- [Reproducible score engraving](docs/score-build.md).
 - [Piano sample generation](docs/audio.md).
 - [Railway, persistence, backups and restore](docs/deployment.md).
 - [Study references](docs/study-reference.md): original notes for all 58 chapters

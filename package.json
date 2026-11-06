@@ -9,7 +9,7 @@
     "secrets:scan": "betterleaks git --no-banner --redact",
     "lint:md": "markdownlint-cli2 \"**/*.md\"",
     "dev": "vite",
-    "build": "vite build",
+    "build": "bun run scores:build && vite build",
     "build:ssr": "vite build --ssr",
     "typecheck": "tsc --noEmit",
     "check": "tsc --noEmit",
@@ -19,7 +19,8 @@
     "audio:generate": "bun scripts/generate-piano.ts",
     "verify": "bun check && bun lint && bun lint:md && bun run test && bun run build",
     "setup": "bun scripts/setup-env.ts",
-    "scores:fetch": "bun scripts/fetch-repertoire.ts"
+    "scores:fetch": "bun scripts/fetch-repertoire.ts",
+    "scores:build": "bun scripts/build-scores.ts"
   },
   "dependencies": {
     "@inertiajs/react": "3.9.1",
@@ -27,9 +28,11 @@
     "clsx": "^2.1.1",
     "cn": "^0.5.2",
     "lucide-react": "^1.69.0",
+    "opensheetmusicdisplay": "2.2.1",
     "radix-ui": "^1.8.1",
     "react": "19.3.1",
     "react-dom": "19.3.1",
+    "saxes": "6.0.0",
     "tailwind-merge": "^3.7.0"
   },
   "devDependencies": {
@@ -41,11 +44,15 @@
     "@types/react": "19.3.0",
     "@types/react-dom": "19.3.0",
     "@vitejs/plugin-react": "6.1.2",
-    "markdownlint-cli2": "0.23.3",
+    "markdownlint-cli2": "0.24.0",
     "railway": "^3.16.0",
     "tailwindcss": "4.3.3",
     "typescript": "7.0.2",
     "vite": "8.3.4"
   },
-  "name": "vukem-music"
+  "name": "vukem-music",
+  "overrides": {
+    "katex": "0.18.2",
+    "re2js": "2.8.7"
+  }
 }

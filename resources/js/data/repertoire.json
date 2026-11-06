@@ -449,14 +449,14 @@
       "en": "Student primo with teacher secondo (four hands).",
       "pt-BR": "Primo do aluno com secondo do professor (quatro mãos)."
     },
-    "pdfUrl": "https://archive.org/download/imslp-im-klavierspiel-op101-beyer-ferdinand/PMLP31149-F_Beyer-Op101.pdf#page=21",
+    "pdfUrl": "https://archive.org/download/imslp-im-klavierspiel-op101-beyer-ferdinand/PMLP31149-F_Beyer-Op101.pdf#page=19",
     "sourceUrl": "https://imslp.org/wiki/Vorschule_im_Klavierspiel,_Op.101_(Beyer,_Ferdinand)",
     "license": "Public Domain",
     "editor": "Edition Peters; Adolf Ruthardt, historical edition",
     "sourceSha256": "369d3800bc8ad42c97fb4312b92060060a6d42aee4e642c35de797fb65ff23c2",
-    "pages": [20, 21],
+    "pages": [18, 19],
     "playbackReady": false,
-    "downloadSha256": "4585f84cf031eb0d03c4687cfbab93092ab3741de2e45b2200e4b83c4d98f01b"
+    "downloadSha256": "c1315f55ebdd8b1da6b6345479eeb84b0537366902dd9c3a68f2509a7d1b855d"
   },
   {
     "id": "beyer-op101-08",
@@ -833,7 +833,7 @@
     "editor": "Alberto Simões",
     "sourceSha256": "25509af547e1fa93010b3bceff2bfcf4673da8bb0c17ed97780d89ffd52288ee",
     "pages": [],
-    "playbackReady": false,
+    "playbackReady": true,
     "downloadSha256": "25509af547e1fa93010b3bceff2bfcf4673da8bb0c17ed97780d89ffd52288ee"
   },
   {
@@ -860,7 +860,7 @@
     "editor": "Alberto Simões",
     "sourceSha256": "ebb7314449ff361bff98dd9936905deb7f6cf03ead44110bedb0ad692942e143",
     "pages": [],
-    "playbackReady": false,
+    "playbackReady": true,
     "downloadSha256": "ebb7314449ff361bff98dd9936905deb7f6cf03ead44110bedb0ad692942e143"
   },
   {
@@ -887,7 +887,7 @@
     "editor": "Alberto Simões",
     "sourceSha256": "e427e04f77891c9a3c69de8630840e4a2b7466c3f867cedca0e2e5018241e71e",
     "pages": [],
-    "playbackReady": false,
+    "playbackReady": true,
     "downloadSha256": "e427e04f77891c9a3c69de8630840e4a2b7466c3f867cedca0e2e5018241e71e"
   },
   {
@@ -914,7 +914,7 @@
     "editor": "Alberto Simões",
     "sourceSha256": "7fcfa719144acf28b752dff6f13c4b29689cb28d038ddb07d2f41e2a6f8b2616",
     "pages": [],
-    "playbackReady": false,
+    "playbackReady": true,
     "downloadSha256": "7fcfa719144acf28b752dff6f13c4b29689cb28d038ddb07d2f41e2a6f8b2616"
   },
   {
@@ -941,7 +941,7 @@
     "editor": "Alberto Simões",
     "sourceSha256": "3ab5adfe1930edd3ce6c4ceb8176c30520e23c388399734540c82826032913c0",
     "pages": [],
-    "playbackReady": false,
+    "playbackReady": true,
     "downloadSha256": "3ab5adfe1930edd3ce6c4ceb8176c30520e23c388399734540c82826032913c0"
   },
   {
@@ -968,7 +968,7 @@
     "editor": "Alberto Simões",
     "sourceSha256": "c32238eef00d7a337a5f8e01d9ff87500e9a932a1321b87931d070212e8891a0",
     "pages": [],
-    "playbackReady": false,
+    "playbackReady": true,
     "downloadSha256": "c32238eef00d7a337a5f8e01d9ff87500e9a932a1321b87931d070212e8891a0"
   },
   {
@@ -995,7 +995,7 @@
     "editor": "Alberto Simões",
     "sourceSha256": "fee972d578ec2939db9c563c2c155491c81157fcb16cf1a0fa12ebffc1c77133",
     "pages": [],
-    "playbackReady": false,
+    "playbackReady": true,
     "downloadSha256": "fee972d578ec2939db9c563c2c155491c81157fcb16cf1a0fa12ebffc1c77133"
   },
   {
@@ -1022,7 +1022,7 @@
     "editor": "Alberto Simões",
     "sourceSha256": "94763e379a5b988a3beae4d97733f238216b37941509e6766f9765e0ce12c72a",
     "pages": [],
-    "playbackReady": false,
+    "playbackReady": true,
     "downloadSha256": "94763e379a5b988a3beae4d97733f238216b37941509e6766f9765e0ce12c72a"
   },
   {
@@ -1049,7 +1049,7 @@
     "editor": "Alberto Simões",
     "sourceSha256": "407bb58c55497c23241dcc6df4de99a238e6c3f769e7f3f9e771943b77412344",
     "pages": [],
-    "playbackReady": false,
+    "playbackReady": true,
     "downloadSha256": "407bb58c55497c23241dcc6df4de99a238e6c3f769e7f3f9e771943b77412344"
   },
   {
@@ -1076,7 +1076,7 @@
     "editor": "Alberto Simões",
     "sourceSha256": "14745b78f8bc6751e7b9e34f7e1f1524c665729f97b285f3281a0b06bd8837f3",
     "pages": [],
-    "playbackReady": false,
+    "playbackReady": true,
     "downloadSha256": "14745b78f8bc6751e7b9e34f7e1f1524c665729f97b285f3281a0b06bd8837f3"
   },
   {
@@ -1103,7 +1103,7 @@
     "editor": "Philippe Hézaine",
     "sourceSha256": "be5fbd28ff8b3abf3c594b1562ef1808d4ef8d01634371d4730ca5f2b32f6f63",
     "pages": [],
-    "playbackReady": false,
+    "playbackReady": true,
     "downloadSha256": "be5fbd28ff8b3abf3c594b1562ef1808d4ef8d01634371d4730ca5f2b32f6f63"
   },
   {
@@ -1130,7 +1130,7 @@
     "editor": "Philippe Hézaine",
     "sourceSha256": "fe4955c234d6170d9324166320b6d56af68a0d8e08cd783288bcb86f0d8ca811",
     "pages": [],
-    "playbackReady": false,
+    "playbackReady": true,
     "downloadSha256": "fe4955c234d6170d9324166320b6d56af68a0d8e08cd783288bcb86f0d8ca811"
   },
   {
@@ -1157,7 +1157,7 @@
     "editor": "Philippe Hézaine",
     "sourceSha256": "319037440382f8c0f5125b38be6c0399b2f734f42536b386fae81b932fba5fc1",
     "pages": [],
-    "playbackReady": false,
+    "playbackReady": true,
     "downloadSha256": "319037440382f8c0f5125b38be6c0399b2f734f42536b386fae81b932fba5fc1"
   },
   {
@@ -1184,7 +1184,7 @@
     "editor": "Philippe Hézaine",
     "sourceSha256": "b621f17d0b23d082d1774823c2ca0f0696c22ba716c5449b2312e925aa3ef780",
     "pages": [],
-    "playbackReady": false,
+    "playbackReady": true,
     "downloadSha256": "b621f17d0b23d082d1774823c2ca0f0696c22ba716c5449b2312e925aa3ef780"
   },
   {
@@ -1211,7 +1211,7 @@
     "editor": "Allen Garvin",
     "sourceSha256": "6b34ba44122d9694156a113c749eee0bf3232f54ead431a44be6f2a1b6f32c8b",
     "pages": [],
-    "playbackReady": false,
+    "playbackReady": true,
     "downloadSha256": "6b34ba44122d9694156a113c749eee0bf3232f54ead431a44be6f2a1b6f32c8b"
   },
   {
@@ -1238,7 +1238,7 @@
     "editor": "Allen Garvin",
     "sourceSha256": "77f284dc8d5e6b79f5ea93c37fb3df9b97e7dafe708a7c4d527ed53486275525",
     "pages": [],
-    "playbackReady": false,
+    "playbackReady": true,
     "downloadSha256": "77f284dc8d5e6b79f5ea93c37fb3df9b97e7dafe708a7c4d527ed53486275525"
   },
   {
@@ -1265,7 +1265,7 @@
     "editor": "Nicolas Morant",
     "sourceSha256": "921e441748a0b1a6e290508c76e054efc50d53f86611fb7815597d926fa76323",
     "pages": [],
-    "playbackReady": false,
+    "playbackReady": true,
     "downloadSha256": "921e441748a0b1a6e290508c76e054efc50d53f86611fb7815597d926fa76323"
   },
   {
@@ -1292,7 +1292,7 @@
     "editor": "David McNamara",
     "sourceSha256": "e051dabc69b63bf9e665ac8579273a5f2583768ea4c453de8ea138d55fae5c7e",
     "pages": [],
-    "playbackReady": false,
+    "playbackReady": true,
     "downloadSha256": "e051dabc69b63bf9e665ac8579273a5f2583768ea4c453de8ea138d55fae5c7e"
   },
   {
@@ -1319,7 +1319,7 @@
     "editor": "Bas Wassink",
     "sourceSha256": "d65e0d8132da464b7c2f1e2f1c7b649946f89b8596b95e7373c454d0d223d319",
     "pages": [],
-    "playbackReady": false,
+    "playbackReady": true,
     "downloadSha256": "d65e0d8132da464b7c2f1e2f1c7b649946f89b8596b95e7373c454d0d223d319"
   },
   {
@@ -1346,7 +1346,7 @@
     "editor": "Bas Wassink",
     "sourceSha256": "278500ead2c9f578a6a7158fd382ecf7210cc89cf063b643026661044bddd43c",
     "pages": [],
-    "playbackReady": false,
+    "playbackReady": true,
     "downloadSha256": "278500ead2c9f578a6a7158fd382ecf7210cc89cf063b643026661044bddd43c"
   }
 ]

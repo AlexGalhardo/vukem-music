@@ -1,0 +1,1278 @@
+[
+  {
+    "id": "chapter-01",
+    "chapter": 1,
+    "group": "notation",
+    "title": {
+      "en": "Sound and music",
+      "pt-BR": "Som e música"
+    },
+    "body": {
+      "en": "Pitch relates to frequency; loudness relates to perceived intensity; timbre distinguishes sources. Duration describes how long an event lasts. Equal frequencies do not guarantee equal timbres.",
+      "pt-BR": "Altura relaciona-se à frequência; intensidade, ao volume percebido; timbre distingue fontes. Duração indica quanto um evento se estende. Frequências iguais não garantem timbres iguais."
+    },
+    "question": {
+      "en": "Which property distinguishes a piano from a flute on the same pitch?",
+      "pt-BR": "Qual propriedade distingue piano e flauta na mesma altura?"
+    },
+    "options": {
+      "en": ["Timbre", "Tempo", "Meter"],
+      "pt-BR": ["Timbre", "Andamento", "Compasso"]
+    },
+    "correct": 0
+  },
+  {
+    "id": "chapter-02",
+    "chapter": 2,
+    "group": "notation",
+    "title": {
+      "en": "Notes and staff",
+      "pt-BR": "Notas e pauta"
+    },
+    "body": {
+      "en": "The staff has five lines and four spaces. Ascending one line or space advances one letter name, while accidentals determine the semitone distance. Ledger lines continue the same pattern.",
+      "pt-BR": "A pauta tem cinco linhas e quatro espaços. Subir uma linha ou espaço avança um nome de nota; alterações determinam a distância em semitons. Linhas suplementares continuam o mesmo padrão."
+    },
+    "question": {
+      "en": "How many lines has a standard staff?",
+      "pt-BR": "Quantas linhas tem uma pauta tradicional?"
+    },
+    "options": {
+      "en": ["4", "5", "7"],
+      "pt-BR": ["4", "5", "7"]
+    },
+    "correct": 1
+  },
+  {
+    "id": "chapter-03",
+    "chapter": 3,
+    "group": "notation",
+    "title": {
+      "en": "Treble and bass clefs",
+      "pt-BR": "Claves de sol e fá"
+    },
+    "body": {
+      "en": "The treble clef locates G4 on the second line; the usual bass clef locates F3 on the fourth. Middle C, C4, uses a ledger line below treble or above bass. The piano's lower staff is not always in bass clef.",
+      "pt-BR": "A clave de sol situa Sol4 na segunda linha; a clave de fá usual situa Fá3 na quarta. Dó4 usa linha suplementar abaixo da pauta de sol ou acima da de fá. A pauta inferior do piano nem sempre usa clave de fá."
+    },
+    "question": {
+      "en": "Which pitch is on the second line in treble clef?",
+      "pt-BR": "Qual nota está na segunda linha em clave de sol?"
+    },
+    "options": {
+      "en": ["C4", "G4", "F3"],
+      "pt-BR": ["Dó4", "Sol4", "Fá3"]
+    },
+    "correct": 1
+  },
+  {
+    "id": "chapter-04",
+    "chapter": 4,
+    "group": "notation",
+    "title": {
+      "en": "Note values and rests",
+      "pt-BR": "Valores e pausas"
+    },
+    "body": {
+      "en": "A whole note equals two halves or four quarters. A rest occupies written time without a new pitch. Values are ratios: a quarter is a beat only when the chosen pulse assigns it that role.",
+      "pt-BR": "Uma semibreve equivale a duas mínimas ou quatro semínimas. A pausa ocupa tempo escrito sem nova altura. Valores são proporções: a semínima só é um pulso quando a unidade de referência assim determina."
+    },
+    "question": {
+      "en": "How many quarters equal one whole note?",
+      "pt-BR": "Quantas semínimas equivalem a uma semibreve?"
+    },
+    "options": {
+      "en": ["2", "4", "8"],
+      "pt-BR": ["2", "4", "8"]
+    },
+    "correct": 1
+  },
+  {
+    "id": "chapter-05",
+    "chapter": 5,
+    "group": "notation",
+    "title": {
+      "en": "Semitones and accidentals",
+      "pt-BR": "Semitons e alterações"
+    },
+    "body": {
+      "en": "A sharp raises a written pitch by one chromatic semitone; a flat lowers it. A natural cancels an alteration in its notational context. The 12-TET piano places one semitone between adjacent keys, including E–F and B–C.",
+      "pt-BR": "O sustenido eleva uma nota escrita em um semitom cromático; o bemol abaixa. O bequadro cancela uma alteração conforme o contexto. No piano de temperamento igual, teclas vizinhas distam um semitom, inclusive Mi–Fá e Si–Dó."
+    },
+    "question": {
+      "en": "Which natural-note pair is one semitone apart?",
+      "pt-BR": "Qual par de notas naturais dista um semitom?"
+    },
+    "options": {
+      "en": ["C–D", "E–F", "F–G"],
+      "pt-BR": ["Dó–Ré", "Mi–Fá", "Fá–Sol"]
+    },
+    "correct": 1
+  },
+  {
+    "id": "chapter-06",
+    "chapter": 6,
+    "group": "notation",
+    "title": {
+      "en": "Augmentation dots",
+      "pt-BR": "Pontos de aumento"
+    },
+    "body": {
+      "en": "The first dot adds half of the original value, the second adds half of that addition. A dotted quarter lasts three eighths; a double-dotted quarter lasts seven sixteenths. Dots change duration rather than tempo.",
+      "pt-BR": "O primeiro ponto acrescenta metade do valor original; o segundo, metade do primeiro acréscimo. Uma semínima pontuada dura três colcheias; com dois pontos, sete semicolcheias. Pontos alteram duração, não andamento."
+    },
+    "question": {
+      "en": "A dotted quarter equals how many eighths?",
+      "pt-BR": "Uma semínima pontuada equivale a quantas colcheias?"
+    },
+    "options": {
+      "en": ["2", "3", "4"],
+      "pt-BR": ["2", "3", "4"]
+    },
+    "correct": 1
+  },
+  {
+    "id": "chapter-07",
+    "chapter": 7,
+    "group": "notation",
+    "title": {
+      "en": "Staccato and articulation",
+      "pt-BR": "Staccato e articulação"
+    },
+    "body": {
+      "en": "A dot above or below a notehead indicates staccato, unlike an augmentation dot beside it. It suggests separation, not a universal numerical reduction. Gate length in a practice synthesizer is a demonstration, not an interpretation rule.",
+      "pt-BR": "Um ponto acima ou abaixo da cabeça indica staccato, diferente do ponto de aumento ao lado. Sugere separação, sem redução numérica universal. A duração de emissão no sintetizador é uma demonstração, não regra interpretativa."
+    },
+    "question": {
+      "en": "Does staccato prescribe exactly half duration in every style?",
+      "pt-BR": "Staccato determina exatamente metade da duração em todo estilo?"
+    },
+    "options": {
+      "en": ["Always", "No", "Only in 4/4"],
+      "pt-BR": ["Sempre", "Não", "Só em 4/4"]
+    },
+    "correct": 1
+  },
+  {
+    "id": "chapter-08",
+    "chapter": 8,
+    "group": "notation",
+    "title": {
+      "en": "Ties and slurs",
+      "pt-BR": "Ligaduras de prolongamento e expressão"
+    },
+    "body": {
+      "en": "A tie joins the same written pitch into one sustained sound; add its durations without reattacking. A slur groups notes and can span different pitches. Their similar curves do not make their functions interchangeable.",
+      "pt-BR": "A ligadura de prolongamento une a mesma altura escrita em um som sustentado: some durações sem novo ataque. A ligadura de expressão agrupa notas e pode abranger alturas diferentes. Curvas semelhantes não tornam suas funções iguais."
+    },
+    "question": {
+      "en": "Two tied quarters normally have how many attacks?",
+      "pt-BR": "Duas semínimas ligadas por prolongamento têm normalmente quantos ataques?"
+    },
+    "options": {
+      "en": ["1", "2", "4"],
+      "pt-BR": ["1", "2", "4"]
+    },
+    "correct": 0
+  },
+  {
+    "id": "chapter-09",
+    "chapter": 9,
+    "group": "notation",
+    "title": {
+      "en": "Movable clefs",
+      "pt-BR": "Claves móveis"
+    },
+    "body": {
+      "en": "A C clef marks middle C on its indicated line. Alto clef puts C4 on the third line; tenor clef puts it on the fourth. Read from the reference line rather than reusing treble-clef letter positions.",
+      "pt-BR": "A clave de dó marca o dó central na linha indicada. Na clave de dó na terceira linha, Dó4 ocupa essa linha; na quarta, ocupa a quarta. Leia a partir da referência, sem reutilizar posições da clave de sol."
+    },
+    "question": {
+      "en": "Where is C4 in alto clef?",
+      "pt-BR": "Onde fica Dó4 na clave de dó na terceira linha?"
+    },
+    "options": {
+      "en": ["Line 2", "Line 3", "Line 4"],
+      "pt-BR": ["Linha 2", "Linha 3", "Linha 4"]
+    },
+    "correct": 1
+  },
+  {
+    "id": "chapter-10",
+    "chapter": 10,
+    "group": "intervals",
+    "title": {
+      "en": "Interval number and quality",
+      "pt-BR": "Número e qualidade dos intervalos"
+    },
+    "body": {
+      "en": "Count letter names inclusively for interval number, then inspect semitones for quality. C–E is a third, C–F a fourth. C–E has four semitones and is major; C–E♭ has three and is minor.",
+      "pt-BR": "Conte nomes de notas incluindo as extremidades para obter o número; depois examine semitons para a qualidade. Dó–Mi é terça; Dó–Fá, quarta. Dó–Mi tem quatro semitons e é maior; Dó–Mi♭ tem três e é menor."
+    },
+    "question": {
+      "en": "What is C4–E♭4?",
+      "pt-BR": "Qual é o intervalo Dó4–Mi♭4?"
+    },
+    "options": {
+      "en": ["Major third", "Minor third", "Perfect fourth"],
+      "pt-BR": ["Terça maior", "Terça menor", "Quarta justa"]
+    },
+    "correct": 1
+  },
+  {
+    "id": "chapter-11",
+    "chapter": 11,
+    "group": "intervals",
+    "title": {
+      "en": "Augmented and diminished intervals",
+      "pt-BR": "Intervalos aumentados e diminutos"
+    },
+    "body": {
+      "en": "An augmented interval exceeds a major or perfect baseline by one semitone. Diminishing a perfect interval removes one semitone; diminishing a major interval removes two. Written spelling matters: C–F♯ is an augmented fourth, C–G♭ a diminished fifth.",
+      "pt-BR": "O aumentado supera em um semitom a referência maior ou justa. Diminuir um justo retira um semitom; diminuir um maior retira dois. A grafia importa: Dó–Fá♯ é quarta aumentada; Dó–Sol♭, quinta diminuta."
+    },
+    "question": {
+      "en": "C–F♯ is which written interval?",
+      "pt-BR": "Dó–Fá♯ é qual intervalo escrito?"
+    },
+    "options": {
+      "en": ["Perfect fifth", "Augmented fourth", "Diminished fifth"],
+      "pt-BR": ["Quinta justa", "Quarta aumentada", "Quinta diminuta"]
+    },
+    "correct": 1
+  },
+  {
+    "id": "chapter-12",
+    "chapter": 12,
+    "group": "intervals",
+    "title": {
+      "en": "Compound intervals",
+      "pt-BR": "Intervalos compostos"
+    },
+    "body": {
+      "en": "Intervals larger than an octave are compound. Subtract seven from the interval number to find its simple counterpart while retaining quality: a major tenth reduces to a major third. Do not subtract twelve from a letter-based interval number.",
+      "pt-BR": "Intervalos maiores que a oitava são compostos. Subtraia sete do número para achar o correspondente simples, mantendo a qualidade: décima maior reduz-se a terça maior. Não subtraia doze de um número baseado em nomes de notas."
+    },
+    "question": {
+      "en": "A major tenth reduces to what?",
+      "pt-BR": "Uma décima maior reduz-se a quê?"
+    },
+    "options": {
+      "en": ["Major third", "Major second", "Perfect fifth"],
+      "pt-BR": ["Terça maior", "Segunda maior", "Quinta justa"]
+    },
+    "correct": 0
+  },
+  {
+    "id": "chapter-13",
+    "chapter": 13,
+    "group": "intervals",
+    "title": {
+      "en": "Interval inversion",
+      "pt-BR": "Inversão dos intervalos"
+    },
+    "body": {
+      "en": "For simple intervals inverted within the octave, the numbers sum to nine. Major and minor exchange; augmented and diminished exchange; perfect remains perfect. This is interval inversion, a different operation from moving a chord's third into the bass.",
+      "pt-BR": "Na inversão simples dentro da oitava, os números somam nove. Maior e menor se trocam; aumentado e diminuto se trocam; justo permanece justo. Essa operação é diferente de colocar a terça de um acorde no baixo."
+    },
+    "question": {
+      "en": "A major third inverts to what?",
+      "pt-BR": "Uma terça maior inverte-se em quê?"
+    },
+    "options": {
+      "en": ["Major sixth", "Minor sixth", "Perfect fifth"],
+      "pt-BR": ["Sexta maior", "Sexta menor", "Quinta justa"]
+    },
+    "correct": 1
+  },
+  {
+    "id": "chapter-14",
+    "chapter": 14,
+    "group": "intervals",
+    "title": {
+      "en": "Enharmonic spelling",
+      "pt-BR": "Grafia enarmônica"
+    },
+    "body": {
+      "en": "C♯ and D♭ use the same key in 12-TET but have different letter functions. Enharmonic equivalence of sound does not erase spelling in an interval, scale or chord. Other tuning systems may distinguish their frequencies.",
+      "pt-BR": "Dó♯ e Ré♭ usam a mesma tecla no temperamento igual, mas têm funções de grafia diferentes. Equivalência sonora não apaga a escrita em intervalos, escalas e acordes. Outros sistemas podem distinguir suas frequências."
+    },
+    "question": {
+      "en": "Does equal sound always mean equal written interval?",
+      "pt-BR": "Som igual significa sempre intervalo escrito igual?"
+    },
+    "options": {
+      "en": ["Yes", "No", "Only on piano"],
+      "pt-BR": ["Sim", "Não", "Só no piano"]
+    },
+    "correct": 1
+  },
+  {
+    "id": "chapter-15",
+    "chapter": 15,
+    "group": "intervals",
+    "title": {
+      "en": "Scale degrees",
+      "pt-BR": "Graus da escala"
+    },
+    "body": {
+      "en": "A scale orders pitches around a reference center. Degree numbers express position in that scale: in C major, G is degree 5 and B degree 7. A degree name depends on the current scale, not a permanent property of a key.",
+      "pt-BR": "A escala ordena alturas em torno de uma referência. Números de grau indicam posição: em Dó maior, Sol é grau 5 e Si é grau 7. O grau depende da escala atual, não é propriedade permanente de uma tecla."
+    },
+    "question": {
+      "en": "Which degree is G in C major?",
+      "pt-BR": "Qual é o grau de Sol em Dó maior?"
+    },
+    "options": {
+      "en": ["3", "5", "7"],
+      "pt-BR": ["3", "5", "7"]
+    },
+    "correct": 1
+  },
+  {
+    "id": "chapter-16",
+    "chapter": 16,
+    "group": "intervals",
+    "title": {
+      "en": "Harmonic series",
+      "pt-BR": "Série harmônica"
+    },
+    "body": {
+      "en": "An ideal harmonic series uses integer multiples of a fundamental: f, 2f, 3f and so on. Real piano strings can be inharmonic. Harmonic ratios help explain timbre and tuning but do not equal every interval of equal temperament.",
+      "pt-BR": "Uma série harmônica ideal usa múltiplos inteiros da fundamental: f, 2f, 3f e assim por diante. Cordas reais do piano podem apresentar inarmonicidade. Razões harmônicas ajudam a explicar timbre e afinação, mas não coincidem com todo intervalo temperado."
+    },
+    "question": {
+      "en": "What is the second harmonic of 220 Hz?",
+      "pt-BR": "Qual é o segundo harmônico de 220 Hz?"
+    },
+    "options": {
+      "en": ["110 Hz", "440 Hz", "660 Hz"],
+      "pt-BR": ["110 Hz", "440 Hz", "660 Hz"]
+    },
+    "correct": 1
+  },
+  {
+    "id": "chapter-17",
+    "chapter": 17,
+    "group": "intervals",
+    "title": {
+      "en": "Consonance and dissonance",
+      "pt-BR": "Consonância e dissonância"
+    },
+    "body": {
+      "en": "Consonance and dissonance involve acoustics, voicing, style and expectation. A dissonance can be an expressive goal rather than a mistake. Analyze preparation and resolution within the chosen historical context.",
+      "pt-BR": "Consonância e dissonância envolvem acústica, disposição, estilo e expectativa. Uma dissonância pode ser objetivo expressivo, não erro. Analise preparação e resolução dentro do contexto histórico escolhido."
+    },
+    "question": {
+      "en": "Is every dissonance a compositional error?",
+      "pt-BR": "Toda dissonância é um erro de composição?"
+    },
+    "options": {
+      "en": ["Yes", "No", "Only in minor"],
+      "pt-BR": ["Sim", "Não", "Só em menor"]
+    },
+    "correct": 1
+  },
+  {
+    "id": "chapter-18",
+    "chapter": 18,
+    "group": "scales",
+    "title": {
+      "en": "Major scales and signatures",
+      "pt-BR": "Escalas maiores e armaduras"
+    },
+    "body": {
+      "en": "A major scale follows 2–2–1–2–2–2–1 semitones. Use each letter once before the octave: G major needs F♯, not G♭. A key signature supplies default alterations; written local accidentals still require contextual reading.",
+      "pt-BR": "A escala maior segue 2–2–1–2–2–2–1 semitons. Use cada nome uma vez antes da oitava: Sol maior precisa de Fá♯, não Sol♭. A armadura fornece alterações padrão; acidentes locais exigem leitura contextual."
+    },
+    "question": {
+      "en": "Which alteration belongs to G major?",
+      "pt-BR": "Qual alteração pertence a Sol maior?"
+    },
+    "options": {
+      "en": ["B♭", "F♯", "C♯"],
+      "pt-BR": ["Si♭", "Fá♯", "Dó♯"]
+    },
+    "correct": 1
+  },
+  {
+    "id": "chapter-19",
+    "chapter": 19,
+    "group": "rhythm",
+    "title": {
+      "en": "Time signatures",
+      "pt-BR": "Compassos"
+    },
+    "body": {
+      "en": "The upper number groups written units; the lower number identifies the value. In 6/8, six eighths commonly form two dotted-quarter beats. In 3/4, three quarters commonly form three beats, despite equal total written duration.",
+      "pt-BR": "O número superior agrupa unidades escritas; o inferior identifica a figura. Em 6/8, seis colcheias costumam formar dois pulsos de semínima pontuada. Em 3/4, três semínimas costumam formar três pulsos, apesar da duração escrita total igual."
+    },
+    "question": {
+      "en": "How many dotted-quarter pulses commonly occur in 6/8?",
+      "pt-BR": "Quantos pulsos de semínima pontuada são comuns em 6/8?"
+    },
+    "options": {
+      "en": ["2", "3", "6"],
+      "pt-BR": ["2", "3", "6"]
+    },
+    "correct": 0
+  },
+  {
+    "id": "chapter-20",
+    "chapter": 20,
+    "group": "rhythm",
+    "title": {
+      "en": "Meter and grouping",
+      "pt-BR": "Métrica e agrupamento"
+    },
+    "body": {
+      "en": "Meter organizes stronger and weaker positions without requiring mechanical loud accents. Beaming, phrase and harmony can clarify grouping. Distinguish a beat's division from the number of beats in a bar.",
+      "pt-BR": "A métrica organiza posições fortes e fracas sem exigir acentos de volume mecânicos. Barras de união, frase e harmonia esclarecem agrupamentos. Distinga a divisão do pulso da quantidade de pulsos no compasso."
+    },
+    "question": {
+      "en": "Does a metrically strong beat always require louder playing?",
+      "pt-BR": "Um pulso metricamente forte exige sempre tocar mais forte?"
+    },
+    "options": {
+      "en": ["Yes", "No", "Only in 3/4"],
+      "pt-BR": ["Sim", "Não", "Só em 3/4"]
+    },
+    "correct": 1
+  },
+  {
+    "id": "chapter-21",
+    "chapter": 21,
+    "group": "scales",
+    "title": {
+      "en": "Minor-scale forms",
+      "pt-BR": "Formas da escala menor"
+    },
+    "body": {
+      "en": "Natural minor uses 2–1–2–2–1–2–2. Harmonic minor raises degree 7; the conventional ascending melodic form raises 6 and 7. Descending and stylistic practice vary; jazz melodic minor often keeps the raised form in both directions.",
+      "pt-BR": "A menor natural usa 2–1–2–2–1–2–2. A harmônica eleva o grau 7; a forma melódica ascendente convencional eleva 6 e 7. Descida e prática variam por estilo; no jazz, costuma-se manter a forma elevada nas duas direções."
+    },
+    "question": {
+      "en": "Which note is raised in A harmonic minor compared with natural minor?",
+      "pt-BR": "Qual nota se eleva em Lá menor harmônica em relação à natural?"
+    },
+    "options": {
+      "en": ["F", "G", "C"],
+      "pt-BR": ["Fá", "Sol", "Dó"]
+    },
+    "correct": 1
+  },
+  {
+    "id": "chapter-22",
+    "chapter": 22,
+    "group": "rhythm",
+    "title": {
+      "en": "Syncopation and offbeats",
+      "pt-BR": "Síncope e contratempo"
+    },
+    "body": {
+      "en": "Syncopation can sustain or accent a weaker position across an expected stronger one. An offbeat attack follows a beat division, often after a rest. Identify the prevailing meter before naming a displacement.",
+      "pt-BR": "A síncope pode prolongar ou acentuar uma posição fraca atravessando uma forte esperada. No contratempo, o ataque ocorre em posição deslocada, frequentemente após pausa. Identifique a métrica antes de classificar o deslocamento."
+    },
+    "question": {
+      "en": "Can a tie across a strong beat create syncopation?",
+      "pt-BR": "Uma ligadura atravessando um tempo forte pode criar síncope?"
+    },
+    "options": {
+      "en": ["Yes", "Never", "Only in free meter"],
+      "pt-BR": ["Sim", "Nunca", "Só em métrica livre"]
+    },
+    "correct": 0
+  },
+  {
+    "id": "chapter-23",
+    "chapter": 23,
+    "group": "scales",
+    "title": {
+      "en": "Altered forms of the major scale",
+      "pt-BR": "Formas alteradas da escala maior"
+    },
+    "body": {
+      "en": "Major scales can be modified for particular harmonic or historical purposes. Harmonic major lowers degree 6 while retaining the major third and leading tone. Name the exact altered degree instead of treating every major-mode variant as the standard major scale.",
+      "pt-BR": "A escala maior pode ser modificada para fins harmônicos ou históricos. A maior harmônica abaixa o grau 6, preservando terça maior e sensível. Nomeie o grau alterado sem tratar toda variante como a escala maior padrão."
+    },
+    "question": {
+      "en": "Which degree is lowered in harmonic major?",
+      "pt-BR": "Qual grau é abaixado na escala maior harmônica?"
+    },
+    "options": {
+      "en": ["3", "6", "7"],
+      "pt-BR": ["3", "6", "7"]
+    },
+    "correct": 1
+  },
+  {
+    "id": "chapter-24",
+    "chapter": 24,
+    "group": "scales",
+    "title": {
+      "en": "Closely related keys",
+      "pt-BR": "Tons vizinhos"
+    },
+    "body": {
+      "en": "Key relationships can be compared through signatures, shared notes and common chords. G major and C major differ by one signature alteration. A shared chord may serve different functions in the two keys.",
+      "pt-BR": "Parentesco tonal pode ser comparado por armaduras, notas e acordes comuns. Sol maior e Dó maior diferem por uma alteração na armadura. Um acorde compartilhado pode ter funções diferentes nas duas tonalidades."
+    },
+    "question": {
+      "en": "Which major key differs from C major by one sharp?",
+      "pt-BR": "Qual tonalidade maior difere de Dó maior por um sustenido?"
+    },
+    "options": {
+      "en": ["G major", "D major", "A major"],
+      "pt-BR": ["Sol maior", "Ré maior", "Lá maior"]
+    },
+    "correct": 0
+  },
+  {
+    "id": "chapter-25",
+    "chapter": 25,
+    "group": "scales",
+    "title": {
+      "en": "Modulation and tonicization",
+      "pt-BR": "Modulação e tonicização"
+    },
+    "body": {
+      "en": "A secondary dominant can briefly emphasize another chord without establishing a new key. Modulation requires enough context to support a new tonal center. A cadence and subsequent phrase can confirm what a single progression leaves ambiguous.",
+      "pt-BR": "Uma dominante secundária pode enfatizar outro acorde brevemente sem estabelecer nova tonalidade. A modulação exige contexto que sustente outro centro. Cadência e frase posterior podem confirmar o que uma sequência isolada deixa ambíguo."
+    },
+    "question": {
+      "en": "Does one secondary dominant always establish modulation?",
+      "pt-BR": "Uma dominante secundária sempre estabelece modulação?"
+    },
+    "options": {
+      "en": ["Yes", "No", "Only in major"],
+      "pt-BR": ["Sim", "Não", "Só em maior"]
+    },
+    "correct": 1
+  },
+  {
+    "id": "chapter-26",
+    "chapter": 26,
+    "group": "scales",
+    "title": {
+      "en": "Diatonic modes",
+      "pt-BR": "Modos diatônicos"
+    },
+    "body": {
+      "en": "A mode is defined by interval structure and tonal center, not merely its starting key. D Dorian uses D–E–F–G–A–B–C; its major sixth distinguishes it from D natural minor. Phrasing and harmony must support D as the center.",
+      "pt-BR": "Um modo é definido por estrutura intervalar e centro, não só pela primeira tecla. Ré dórico usa Ré–Mi–Fá–Sol–Lá–Si–Dó; a sexta maior o distingue de Ré menor natural. Fraseado e harmonia precisam sustentar Ré como centro."
+    },
+    "question": {
+      "en": "Which note distinguishes D Dorian from D natural minor?",
+      "pt-BR": "Qual nota distingue Ré dórico de Ré menor natural?"
+    },
+    "options": {
+      "en": ["F", "B", "C"],
+      "pt-BR": ["Fá", "Si", "Dó"]
+    },
+    "correct": 1
+  },
+  {
+    "id": "chapter-27",
+    "chapter": 27,
+    "group": "scales",
+    "title": {
+      "en": "Transposition",
+      "pt-BR": "Transposição"
+    },
+    "body": {
+      "en": "Transposing moves music by a chosen interval while retaining interval relationships. Preserve both letter distance and chromatic size when spelling the new notes. Distinguish an audio-only practice shift from a newly transposed written score.",
+      "pt-BR": "Transpor desloca a música por um intervalo, preservando relações. Mantenha distância de nomes e tamanho cromático ao escrever as novas notas. Distinga o deslocamento sonoro de treino de uma nova partitura transposta."
+    },
+    "question": {
+      "en": "Transpose C–E–G up a major second.",
+      "pt-BR": "Transponha Dó–Mi–Sol uma segunda maior acima."
+    },
+    "options": {
+      "en": ["D–F♯–A", "D–F–A", "E–G–B"],
+      "pt-BR": ["Ré–Fá♯–Lá", "Ré–Fá–Lá", "Mi–Sol–Si"]
+    },
+    "correct": 0
+  },
+  {
+    "id": "chapter-28",
+    "chapter": 28,
+    "group": "rhythm",
+    "title": {
+      "en": "Beat-unit conventions",
+      "pt-BR": "Convenções de unidade de tempo"
+    },
+    "body": {
+      "en": "The beat unit and tempo reference must be explicit. A dotted-quarter mark of 60 in 6/8 means 180 eighths per minute: each dotted quarter contains three eighths. Always retain the unit when comparing tempos.",
+      "pt-BR": "A unidade de pulso e a referência do andamento precisam ser explícitas. Semínima pontuada a 60 em 6/8 corresponde a 180 colcheias por minuto, pois cada pulso contém três colcheias. Preserve a unidade ao comparar andamentos."
+    },
+    "question": {
+      "en": "At dotted-quarter = 60, how many eighths occur per minute?",
+      "pt-BR": "Com semínima pontuada = 60, quantas colcheias ocorrem por minuto?"
+    },
+    "options": {
+      "en": ["60", "120", "180"],
+      "pt-BR": ["60", "120", "180"]
+    },
+    "correct": 2
+  },
+  {
+    "id": "chapter-29",
+    "chapter": 29,
+    "group": "scales",
+    "title": {
+      "en": "Transposing modes",
+      "pt-BR": "Transposição dos modos"
+    },
+    "body": {
+      "en": "Keep a mode's interval pattern when moving its tonic. C Dorian is C–D–E♭–F–G–A–B♭, rather than all white keys beginning on C. A signature can help notation but does not by itself establish the perceived center.",
+      "pt-BR": "Mantenha o padrão intervalar do modo ao mudar a tônica. Dó dórico usa Dó–Ré–Mi♭–Fá–Sol–Lá–Si♭, e não apenas teclas brancas. A armadura ajuda a escrita, mas não estabelece sozinha o centro percebido."
+    },
+    "question": {
+      "en": "Does C Dorian contain A or A♭?",
+      "pt-BR": "Dó dórico contém Lá ou Lá♭?"
+    },
+    "options": {
+      "en": ["A", "A♭", "Neither"],
+      "pt-BR": ["Lá", "Lá♭", "Nenhum"]
+    },
+    "correct": 0
+  },
+  {
+    "id": "chapter-30",
+    "chapter": 30,
+    "group": "rhythm",
+    "title": {
+      "en": "Tempo and metronome marks",
+      "pt-BR": "Andamento e metrônomo"
+    },
+    "body": {
+      "en": "BPM measures repetitions of a stated unit per minute. Quarter = 120 and half = 60 can describe the same underlying note durations. Terms such as Allegro indicate character and customary speed ranges rather than one universal number.",
+      "pt-BR": "BPM mede repetições de uma unidade declarada por minuto. Semínima = 120 e mínima = 60 podem descrever as mesmas durações. Termos como Allegro indicam caráter e faixas usuais, não um número universal."
+    },
+    "question": {
+      "en": "Quarter = 120 corresponds to half = what?",
+      "pt-BR": "Semínima = 120 corresponde a mínima = quanto?"
+    },
+    "options": {
+      "en": ["60", "120", "240"],
+      "pt-BR": ["60", "120", "240"]
+    },
+    "correct": 0
+  },
+  {
+    "id": "chapter-31",
+    "chapter": 31,
+    "group": "scales",
+    "title": {
+      "en": "Constructed scales",
+      "pt-BR": "Escalas construídas"
+    },
+    "body": {
+      "en": "Whole-tone and pentatonic scales use interval collections unlike the ordinary seven-note major scale. C whole-tone may be spelled C–D–E–F♯–G♯–A♯. Explain the chosen construction instead of forcing seven distinct scale degrees onto every collection.",
+      "pt-BR": "Escalas de tons inteiros e pentatônicas usam coleções diferentes da escala maior de sete notas. Dó de tons inteiros pode ser Dó–Ré–Mi–Fá♯–Sol♯–Lá♯. Explique a construção escolhida sem impor sete graus a toda coleção."
+    },
+    "question": {
+      "en": "How many pitch classes has a whole-tone scale in 12-TET?",
+      "pt-BR": "Quantas classes de altura tem a escala de tons inteiros no temperamento igual?"
+    },
+    "options": {
+      "en": ["5", "6", "7"],
+      "pt-BR": ["5", "6", "7"]
+    },
+    "correct": 1
+  },
+  {
+    "id": "chapter-32",
+    "chapter": 32,
+    "group": "rhythm",
+    "title": {
+      "en": "Tuplets",
+      "pt-BR": "Quiálteras"
+    },
+    "body": {
+      "en": "A tuplet fits a stated number of notes into the time normally occupied by another number of the same written value. Three eighths in the time of two last one quarter in total. Use actual-to-normal ratios rather than guessing from a printed 3 alone.",
+      "pt-BR": "A quiáltera encaixa uma quantidade declarada no tempo normalmente ocupado por outra quantidade da mesma figura. Três colcheias no lugar de duas duram juntas uma semínima. Use a razão entre quantidade real e normal, sem adivinhar apenas pelo número 3."
+    },
+    "question": {
+      "en": "Three eighth-note triplets in the time of two last how many quarter beats?",
+      "pt-BR": "Três colcheias em quiáltera no lugar de duas duram quantos pulsos de semínima?"
+    },
+    "options": {
+      "en": ["1", "1.5", "3"],
+      "pt-BR": ["1", "1,5", "3"]
+    },
+    "correct": 0
+  },
+  {
+    "id": "chapter-33",
+    "chapter": 33,
+    "group": "expression",
+    "title": {
+      "en": "Dynamics",
+      "pt-BR": "Dinâmica"
+    },
+    "body": {
+      "en": "Dynamics describe relative intensity and musical hierarchy. Piano and forte are contextual, while crescendos shape change over time. MIDI velocity and digital gain are useful controls but not complete models of perceived loudness.",
+      "pt-BR": "Dinâmica descreve intensidade relativa e hierarquia musical. Piano e forte dependem do contexto; crescendos moldam mudanças ao longo do tempo. Velocidade MIDI e ganho digital são controles úteis, mas não modelos completos de volume percebido."
+    },
+    "question": {
+      "en": "What does crescendo request?",
+      "pt-BR": "O que pede um crescendo?"
+    },
+    "options": {
+      "en": ["Gradual increase in intensity", "Faster tempo", "Higher pitch"],
+      "pt-BR": ["Aumento gradual da intensidade", "Andamento mais rápido", "Nota mais aguda"]
+    },
+    "correct": 0
+  },
+  {
+    "id": "chapter-34",
+    "chapter": 34,
+    "group": "expression",
+    "title": {
+      "en": "Expression and phrasing",
+      "pt-BR": "Expressão e fraseado"
+    },
+    "body": {
+      "en": "Phrasing joins local notes into larger gestures. Agogic nuance, articulation and balance contribute alongside dynamics. A phrase boundary need not coincide with every bar line, and expressive freedom should be explained within style.",
+      "pt-BR": "O fraseado reúne notas em gestos maiores. Nuances agógicas, articulação e equilíbrio contribuem com a dinâmica. Limites de frase não precisam coincidir com cada barra; liberdade expressiva deve ser contextualizada pelo estilo."
+    },
+    "question": {
+      "en": "Must every bar line end a phrase?",
+      "pt-BR": "Toda barra de compasso termina uma frase?"
+    },
+    "options": {
+      "en": ["Yes", "No", "Only in slow music"],
+      "pt-BR": ["Sim", "Não", "Só em música lenta"]
+    },
+    "correct": 1
+  },
+  {
+    "id": "chapter-35",
+    "chapter": 35,
+    "group": "scales",
+    "title": {
+      "en": "Scales across traditions",
+      "pt-BR": "Escalas em diferentes tradições"
+    },
+    "body": {
+      "en": "Scale names and tuning practices belong to musical cultures and analytical contexts. A piano demonstration of a collection is not a complete model of a tradition using flexible pitch or microintervals. Identify the particular source and tuning before generalizing.",
+      "pt-BR": "Nomes de escalas e práticas de afinação pertencem a culturas e contextos analíticos. Demonstrar uma coleção no piano não modela uma tradição com alturas flexíveis ou microintervalos. Identifique fonte e afinação antes de generalizar."
+    },
+    "question": {
+      "en": "Can 12-TET reproduce every tuning tradition exactly?",
+      "pt-BR": "O temperamento igual reproduz exatamente toda tradição de afinação?"
+    },
+    "options": {
+      "en": ["Yes", "No", "Only with pedal"],
+      "pt-BR": ["Sim", "Não", "Só com pedal"]
+    },
+    "correct": 1
+  },
+  {
+    "id": "chapter-36",
+    "chapter": 36,
+    "group": "expression",
+    "title": {
+      "en": "Repeats and abbreviations",
+      "pt-BR": "Repetições e abreviaturas"
+    },
+    "body": {
+      "en": "Repeat signs, alternate endings and navigation words control musical traversal. Execute first and second endings on their indicated passes. D.C., D.S. and coda jumps need an explicit route and stopping condition; they are not ordinary backward repeats.",
+      "pt-BR": "Sinais de repetição, casas e palavras de navegação controlam o percurso. Execute primeira e segunda casas nas passagens indicadas. D.C., D.S. e coda exigem rota e condição de parada; não são simples repetições para trás."
+    },
+    "question": {
+      "en": "On the second pass, which ending is usually taken?",
+      "pt-BR": "Na segunda passagem, qual casa costuma ser executada?"
+    },
+    "options": {
+      "en": ["First", "Second", "Both at once"],
+      "pt-BR": ["Primeira", "Segunda", "Ambas juntas"]
+    },
+    "correct": 1
+  },
+  {
+    "id": "chapter-37",
+    "chapter": 37,
+    "group": "expression",
+    "title": {
+      "en": "Special performance terms",
+      "pt-BR": "Termos especiais de execução"
+    },
+    "body": {
+      "en": "Terms such as pizzicato, arco and con sordino depend on the instrument. A keyboard simulation can explain their intention without reproducing the technique faithfully. Consult the instrument and edition rather than assigning a universal piano effect.",
+      "pt-BR": "Termos como pizzicato, arco e con sordino dependem do instrumento. Uma simulação ao teclado pode explicar a intenção sem reproduzir fielmente a técnica. Consulte instrumento e edição em vez de atribuir um efeito universal de piano."
+    },
+    "question": {
+      "en": "On a bowed string instrument, pizzicato ordinarily means what?",
+      "pt-BR": "Em instrumento de cordas com arco, pizzicato costuma significar o quê?"
+    },
+    "options": {
+      "en": ["Pluck the string", "Use more bow", "Transpose an octave"],
+      "pt-BR": ["Dedilhar a corda", "Usar mais arco", "Transpor uma oitava"]
+    },
+    "correct": 0
+  },
+  {
+    "id": "chapter-38",
+    "chapter": 38,
+    "group": "expression",
+    "title": {
+      "en": "Register and the piano range",
+      "pt-BR": "Registro e extensão do piano"
+    },
+    "body": {
+      "en": "The standard 88-key piano extends from A0 to C8 in scientific pitch notation. Ledger lines and octave signs represent register in different ways. A historical octave-label convention may use numbers different from the scientific convention used here.",
+      "pt-BR": "O piano padrão de 88 teclas vai de Lá0 a Dó8 na notação científica. Linhas suplementares e sinais de oitava representam registro de maneiras diferentes. Convenções históricas podem usar números diferentes dos adotados aqui."
+    },
+    "question": {
+      "en": "Which MIDI number is middle C in this application?",
+      "pt-BR": "Qual número MIDI representa o dó central nesta aplicação?"
+    },
+    "options": {
+      "en": ["60", "69", "88"],
+      "pt-BR": ["60", "69", "88"]
+    },
+    "correct": 0
+  },
+  {
+    "id": "chapter-39",
+    "chapter": 39,
+    "group": "expression",
+    "title": {
+      "en": "Note-name systems",
+      "pt-BR": "Sistemas de nomes de notas"
+    },
+    "body": {
+      "en": "Letter names and solfège syllables can refer to the same written pitches. This app uses fixed-do Portuguese naming and scientific octave numbers: C4 is Dó4. Movable-do teaching gives syllables a different, scale-relative role.",
+      "pt-BR": "Letras e sílabas de solfejo podem nomear as mesmas alturas escritas. O aplicativo usa dó fixo em português e oitavas científicas: C4 é Dó4. No dó móvel, as sílabas têm papel relativo à escala."
+    },
+    "question": {
+      "en": "What is B in the app's Portuguese fixed-do naming?",
+      "pt-BR": "Qual é o nome de B no dó fixo usado aqui?"
+    },
+    "options": {
+      "en": ["Si", "Ré", "Sol"],
+      "pt-BR": ["Si", "Ré", "Sol"]
+    },
+    "correct": 0
+  },
+  {
+    "id": "chapter-40",
+    "chapter": 40,
+    "group": "harmony",
+    "title": {
+      "en": "Triads",
+      "pt-BR": "Tríades"
+    },
+    "body": {
+      "en": "Stack a third and a fifth above the root. Major, minor, diminished and augmented triads differ in interval quality. A C-minor triad uses C–E♭–G, preserving the third's letter name rather than substituting D♯ in a spelling question.",
+      "pt-BR": "Empilhe terça e quinta acima da fundamental. Tríades maiores, menores, diminutas e aumentadas diferem nas qualidades intervalares. Dó menor usa Dó–Mi♭–Sol, preservando o nome da terça em vez de substituir Ré♯ numa pergunta de grafia."
+    },
+    "question": {
+      "en": "Which notes form C minor?",
+      "pt-BR": "Quais notas formam Dó menor?"
+    },
+    "options": {
+      "en": ["C–E–G", "C–E♭–G", "C–E♭–G♭"],
+      "pt-BR": ["Dó–Mi–Sol", "Dó–Mi♭–Sol", "Dó–Mi♭–Sol♭"]
+    },
+    "correct": 1
+  },
+  {
+    "id": "chapter-41",
+    "chapter": 41,
+    "group": "harmony",
+    "title": {
+      "en": "Altered triads",
+      "pt-BR": "Tríades alteradas"
+    },
+    "body": {
+      "en": "An altered chord changes a specified chord member. C augmented contains C–E–G♯: its fifth is raised while the major third remains. Name the altered member and keep it distinct from a key-signature change.",
+      "pt-BR": "Um acorde alterado modifica um membro especificado. Dó aumentado contém Dó–Mi–Sol♯: a quinta sobe e a terça maior permanece. Nomeie o membro alterado e distinga isso de uma mudança de armadura."
+    },
+    "question": {
+      "en": "Which member is raised in C augmented compared with C major?",
+      "pt-BR": "Qual membro se eleva em Dó aumentado em relação a Dó maior?"
+    },
+    "options": {
+      "en": ["Root", "Third", "Fifth"],
+      "pt-BR": ["Fundamental", "Terça", "Quinta"]
+    },
+    "correct": 2
+  },
+  {
+    "id": "chapter-42",
+    "chapter": 42,
+    "group": "harmony",
+    "title": {
+      "en": "Triad inversions",
+      "pt-BR": "Inversões das tríades"
+    },
+    "body": {
+      "en": "The bass determines inversion; the root still names the chord. E–G–C is C major in first inversion, while G–C–E is second inversion. An octave displacement of an upper voice changes voicing without necessarily changing inversion.",
+      "pt-BR": "O baixo determina a inversão; a fundamental continua nomeando o acorde. Mi–Sol–Dó é Dó maior na primeira inversão; Sol–Dó–Mi, na segunda. Deslocar uma voz superior de oitava muda a disposição sem necessariamente mudar a inversão."
+    },
+    "question": {
+      "en": "Which bass identifies C major in first inversion?",
+      "pt-BR": "Qual baixo identifica Dó maior na primeira inversão?"
+    },
+    "options": {
+      "en": ["C", "E", "G"],
+      "pt-BR": ["Dó", "Mi", "Sol"]
+    },
+    "correct": 1
+  },
+  {
+    "id": "chapter-43",
+    "chapter": 43,
+    "group": "harmony",
+    "title": {
+      "en": "Chord symbols and figured bass",
+      "pt-BR": "Cifras e baixo cifrado"
+    },
+    "body": {
+      "en": "Chord symbols identify root and quality; slash bass specifies a bass note, as in C/E. Figured bass instead describes intervals above a bass in context. The slash in V/V describes a secondary function and is not slash-bass notation.",
+      "pt-BR": "Cifras indicam fundamental e qualidade; a barra especifica baixo, como C/E. O baixo cifrado descreve intervalos sobre um baixo no contexto. A barra em V/V indica função secundária, não a escrita de baixo da cifra popular."
+    },
+    "question": {
+      "en": "In C/E, which note is the bass?",
+      "pt-BR": "Em C/E, qual nota é o baixo?"
+    },
+    "options": {
+      "en": ["C", "E", "G"],
+      "pt-BR": ["Dó", "Mi", "Sol"]
+    },
+    "correct": 1
+  },
+  {
+    "id": "chapter-44",
+    "chapter": 44,
+    "group": "ornaments",
+    "title": {
+      "en": "Appoggiatura",
+      "pt-BR": "Apojatura"
+    },
+    "body": {
+      "en": "An appoggiatura decorates and leans into a principal note, often creating a meaningful dissonance. Its timing and stress depend on period, notation and context. A small printed note does not universally mean an unmeasured note played before the beat.",
+      "pt-BR": "A apojatura ornamenta e apoia uma nota principal, frequentemente criando dissonância significativa. Tempo e acento dependem da época, escrita e contexto. Uma nota pequena não significa universalmente nota sem duração tocada antes do pulso."
+    },
+    "question": {
+      "en": "Is every appoggiatura performed identically across historical styles?",
+      "pt-BR": "Toda apojatura é realizada da mesma forma em estilos históricos diferentes?"
+    },
+    "options": {
+      "en": ["Yes", "No", "Only in major"],
+      "pt-BR": ["Sim", "Não", "Só em maior"]
+    },
+    "correct": 1
+  },
+  {
+    "id": "chapter-45",
+    "chapter": 45,
+    "group": "ornaments",
+    "title": {
+      "en": "Mordent",
+      "pt-BR": "Mordente"
+    },
+    "body": {
+      "en": "A mordent decorates a principal note with a neighboring pitch and return. Symbols and terminology have varied historically. Check the edition and accidentals to identify the neighbor and execution rather than treating the sign as a fixed audio sample.",
+      "pt-BR": "O mordente ornamenta uma nota principal com vizinha e retorno. Símbolos e nomes variaram historicamente. Confira edição e alterações para identificar vizinha e execução, em vez de tratar o sinal como amostra sonora fixa."
+    },
+    "question": {
+      "en": "What is essential when interpreting a mordent?",
+      "pt-BR": "O que é essencial ao interpretar um mordente?"
+    },
+    "options": {
+      "en": ["Edition and context", "Only file size", "Only the piano brand"],
+      "pt-BR": ["Edição e contexto", "Só tamanho do arquivo", "Só marca do piano"]
+    },
+    "correct": 0
+  },
+  {
+    "id": "chapter-46",
+    "chapter": 46,
+    "group": "ornaments",
+    "title": {
+      "en": "Turn",
+      "pt-BR": "Grupeto"
+    },
+    "body": {
+      "en": "A turn circles a principal pitch through neighboring notes. Its placement before, above or between notes helps determine timing. Written accidentals can alter upper and lower neighbors independently.",
+      "pt-BR": "O grupeto circunda uma nota principal com notas vizinhas. Sua posição antes, acima ou entre notas ajuda a determinar o tempo de execução. Alterações escritas podem modificar vizinhas superior e inferior separadamente."
+    },
+    "question": {
+      "en": "Can a turn's upper and lower neighbors have different alterations?",
+      "pt-BR": "As vizinhas superior e inferior de um grupeto podem ter alterações diferentes?"
+    },
+    "options": {
+      "en": ["Yes", "No", "Only on strings"],
+      "pt-BR": ["Sim", "Não", "Só nas cordas"]
+    },
+    "correct": 0
+  },
+  {
+    "id": "chapter-47",
+    "chapter": 47,
+    "group": "ornaments",
+    "title": {
+      "en": "Trill",
+      "pt-BR": "Trinado"
+    },
+    "body": {
+      "en": "A trill alternates a principal pitch and a neighbor. Starting note, speed and termination vary with style and source. A long trill must fit its allocated musical span; it does not add arbitrary extra beats.",
+      "pt-BR": "O trinado alterna uma nota principal e uma vizinha. Nota inicial, velocidade e terminação variam por estilo e fonte. Um trinado longo cabe no espaço musical reservado; não acrescenta pulsos arbitrariamente."
+    },
+    "question": {
+      "en": "Does a trill automatically add extra beats to a measure?",
+      "pt-BR": "O trinado acrescenta automaticamente pulsos ao compasso?"
+    },
+    "options": {
+      "en": ["Yes", "No", "Only after a rest"],
+      "pt-BR": ["Sim", "Não", "Só após pausa"]
+    },
+    "correct": 1
+  },
+  {
+    "id": "chapter-48",
+    "chapter": 48,
+    "group": "ornaments",
+    "title": {
+      "en": "Arpeggio and glissando",
+      "pt-BR": "Arpejo e glissando"
+    },
+    "body": {
+      "en": "An arpeggio spreads chord tones over time; a block chord strikes them together. Glissando connects registers with a sliding or stepped effect according to the instrument. Written timing and style determine whether an arpeggio begins before or on the beat.",
+      "pt-BR": "O arpejo distribui notas de um acorde no tempo; o acorde em bloco as ataca juntas. O glissando conecta registros por efeito deslizante ou por degraus, conforme o instrumento. Escrita e estilo determinam se o arpejo começa antes ou sobre o pulso."
+    },
+    "question": {
+      "en": "How does an arpeggio differ from a block chord?",
+      "pt-BR": "Como o arpejo difere do acorde em bloco?"
+    },
+    "options": {
+      "en": ["Notes spread in time", "No pitches", "Always faster tempo"],
+      "pt-BR": ["Notas distribuídas no tempo", "Sem alturas", "Andamento sempre mais rápido"]
+    },
+    "correct": 0
+  },
+  {
+    "id": "chapter-49",
+    "chapter": 49,
+    "group": "harmony",
+    "title": {
+      "en": "Melody and voice leading",
+      "pt-BR": "Melodia e condução de vozes"
+    },
+    "body": {
+      "en": "Analyze each voice as a horizontal line, even in chords. Common-tone retention and small motions can connect harmony smoothly. Parallel-perfect-interval checks belong to declared common-practice exercises, not universal prohibitions on valid music.",
+      "pt-BR": "Analise cada voz como linha horizontal, mesmo em acordes. Notas comuns e movimentos pequenos podem ligar harmonias suavemente. Verificações de intervalos justos paralelos pertencem a exercícios tonais declarados, não a proibições universais."
+    },
+    "question": {
+      "en": "In G7–C, where does the leading tone B commonly resolve?",
+      "pt-BR": "Em G7–C, para onde a sensível Si costuma resolver?"
+    },
+    "options": {
+      "en": ["C", "F", "A♭"],
+      "pt-BR": ["Dó", "Fá", "Lá♭"]
+    },
+    "correct": 0
+  },
+  {
+    "id": "chapter-50",
+    "chapter": 50,
+    "group": "harmony",
+    "title": {
+      "en": "Four-part chord writing",
+      "pt-BR": "Escrita de acordes a quatro vozes"
+    },
+    "body": {
+      "en": "Four voices need not imply four different pitch classes: a triad can double one chord member. Identify actual bass, voice ranges, spacing and context. Doubling rules vary with inversion and harmonic function.",
+      "pt-BR": "Quatro vozes não exigem quatro classes de altura: uma tríade pode dobrar um membro. Identifique baixo, extensões das vozes, espaçamento e contexto. Regras de dobramento variam com inversão e função."
+    },
+    "question": {
+      "en": "Can a triad be written in four voices?",
+      "pt-BR": "Uma tríade pode ser escrita a quatro vozes?"
+    },
+    "options": {
+      "en": ["Yes", "No", "Only without a bass"],
+      "pt-BR": ["Sim", "Não", "Só sem baixo"]
+    },
+    "correct": 0
+  },
+  {
+    "id": "chapter-51",
+    "chapter": 51,
+    "group": "harmony",
+    "title": {
+      "en": "Seventh chords",
+      "pt-BR": "Acordes de sétima"
+    },
+    "body": {
+      "en": "Add a seventh above a triad. C7 uses C–E–G–B♭; Cmaj7 uses B natural. The chordal seventh often resolves downward in common-practice dominant harmony, but that tendency is contextual.",
+      "pt-BR": "Acrescente uma sétima a uma tríade. C7 usa Dó–Mi–Sol–Si♭; Cmaj7 usa Si natural. Na dominante tonal usual, a sétima tende a descer, mas essa tendência depende do contexto."
+    },
+    "question": {
+      "en": "Which seventh belongs to C7?",
+      "pt-BR": "Qual sétima pertence a C7?"
+    },
+    "options": {
+      "en": ["B", "B♭", "B♯"],
+      "pt-BR": ["Si", "Si♭", "Si♯"]
+    },
+    "correct": 1
+  },
+  {
+    "id": "chapter-52",
+    "chapter": 52,
+    "group": "harmony",
+    "title": {
+      "en": "Altered seventh chords",
+      "pt-BR": "Acordes de sétima alterados"
+    },
+    "body": {
+      "en": "Changing a chord member changes its color and possible function. In C7♯5 the fifth becomes G♯ while B♭ remains the minor seventh. Spelling should explain the altered degree rather than merely listing piano-key equivalents.",
+      "pt-BR": "Mudar um membro altera cor e possíveis funções. Em C7♯5, a quinta vira Sol♯ e Si♭ permanece a sétima menor. A grafia deve explicar o grau alterado, não apenas listar teclas equivalentes."
+    },
+    "question": {
+      "en": "Which pitch replaces G in C7♯5?",
+      "pt-BR": "Qual altura substitui Sol em C7♯5?"
+    },
+    "options": {
+      "en": ["G♯", "G♭", "A♭ as a written fifth"],
+      "pt-BR": ["Sol♯", "Sol♭", "Lá♭ como quinta escrita"]
+    },
+    "correct": 0
+  },
+  {
+    "id": "chapter-53",
+    "chapter": 53,
+    "group": "harmony",
+    "title": {
+      "en": "Seventh-chord inversions",
+      "pt-BR": "Inversões das tétrades"
+    },
+    "body": {
+      "en": "A seventh chord has three inversions in addition to root position. Third inversion places the seventh in the bass. C7/B♭ keeps C as root even though B♭ is the lowest sounding pitch.",
+      "pt-BR": "Uma tétrade tem três inversões além do estado fundamental. Na terceira inversão, a sétima fica no baixo. C7/Si♭ mantém Dó como fundamental mesmo com Si♭ como altura mais grave."
+    },
+    "question": {
+      "en": "Which bass gives C7 its third inversion?",
+      "pt-BR": "Qual baixo coloca C7 na terceira inversão?"
+    },
+    "options": {
+      "en": ["E", "G", "B♭"],
+      "pt-BR": ["Mi", "Sol", "Si♭"]
+    },
+    "correct": 2
+  },
+  {
+    "id": "chapter-54",
+    "chapter": 54,
+    "group": "harmony",
+    "title": {
+      "en": "Ninth chords",
+      "pt-BR": "Acordes de nona"
+    },
+    "body": {
+      "en": "A ninth extends a seventh chord by another third. C9 conventionally contains C–E–G–B♭–D, while Cadd9 lacks the implied seventh. Real voicings often omit members; omissions require contextual interpretation.",
+      "pt-BR": "A nona estende a tétrade por outra terça. C9 costuma conter Dó–Mi–Sol–Si♭–Ré; Cadd9 não implica a sétima. Disposições reais podem omitir membros; omissões exigem interpretação contextual."
+    },
+    "question": {
+      "en": "Which chord symbol conventionally includes a minor seventh?",
+      "pt-BR": "Qual cifra costuma incluir a sétima menor?"
+    },
+    "options": {
+      "en": ["Cadd9", "C9", "C5"],
+      "pt-BR": ["Cadd9", "C9", "C5"]
+    },
+    "correct": 1
+  },
+  {
+    "id": "chapter-55",
+    "chapter": 55,
+    "group": "advanced",
+    "title": {
+      "en": "Other chord structures",
+      "pt-BR": "Outras estruturas de acordes"
+    },
+    "body": {
+      "en": "Not all chords are stacks of thirds. Quartal harmony stacks fourths; clusters use close neighboring pitches. Name the construction and context instead of forcing every sonority into a major/minor triad label.",
+      "pt-BR": "Nem todo acorde é empilhamento de terças. A harmonia quartal empilha quartas; clusters usam alturas vizinhas próximas. Nomeie construção e contexto, sem forçar toda sonoridade a uma tríade maior ou menor."
+    },
+    "question": {
+      "en": "Quartal harmony is built primarily from what?",
+      "pt-BR": "A harmonia quartal é construída principalmente de quê?"
+    },
+    "options": {
+      "en": ["Thirds", "Fourths", "Octaves only"],
+      "pt-BR": ["Terças", "Quartas", "Só oitavas"]
+    },
+    "correct": 1
+  },
+  {
+    "id": "chapter-56",
+    "chapter": 56,
+    "group": "advanced",
+    "title": {
+      "en": "Chord affinity and enharmony",
+      "pt-BR": "Afinidade e enarmonia dos acordes"
+    },
+    "body": {
+      "en": "Shared tones and voice-leading possibilities connect chords. Enharmonic respelling can reinterpret a sonority's function, as with a diminished seventh in 12-TET. The sounding collection alone does not determine one unique tonal analysis.",
+      "pt-BR": "Notas comuns e possibilidades de condução conectam acordes. Uma reescrita enarmônica pode reinterpretar a função, como numa sétima diminuta temperada. A coleção sonora isolada não determina uma única análise tonal."
+    },
+    "question": {
+      "en": "Does one sounding collection always imply exactly one harmonic function?",
+      "pt-BR": "Uma coleção sonora sempre implica uma única função harmônica?"
+    },
+    "options": {
+      "en": ["Yes", "No", "Only in 4/4"],
+      "pt-BR": ["Sim", "Não", "Só em 4/4"]
+    },
+    "correct": 1
+  },
+  {
+    "id": "chapter-57",
+    "chapter": 57,
+    "group": "advanced",
+    "title": {
+      "en": "Transposing instruments",
+      "pt-BR": "Instrumentos transpositores"
+    },
+    "body": {
+      "en": "Written and concert pitch can differ. A B♭ clarinet's written C5 sounds B♭4, a major second lower. Preserve instrument transposition separately from a learner's optional playback transposition.",
+      "pt-BR": "Altura escrita e de efeito podem diferir. O Dó5 escrito para clarinete em Si♭ soa Si♭4, uma segunda maior abaixo. Preserve a transposição do instrumento separada da transposição opcional do treino."
+    },
+    "question": {
+      "en": "A B♭ clarinet's written C5 sounds what?",
+      "pt-BR": "O Dó5 escrito do clarinete em Si♭ soa como quê?"
+    },
+    "options": {
+      "en": ["C5", "B♭4", "D5"],
+      "pt-BR": ["Dó5", "Si♭4", "Ré5"]
+    },
+    "correct": 1
+  },
+  {
+    "id": "chapter-58",
+    "chapter": 58,
+    "group": "advanced",
+    "title": {
+      "en": "Modern notation and explicit contracts",
+      "pt-BR": "Notação moderna e convenções explícitas"
+    },
+    "body": {
+      "en": "Graphic scores, indeterminacy and microtonal signs may require instructions beyond traditional notation. State what a symbol controls and what remains the performer's choice. A software player should report unsupported meaning instead of inventing a confident execution.",
+      "pt-BR": "Partituras gráficas, indeterminação e sinais microtonais podem exigir instruções adicionais. Declare o que o símbolo controla e o que fica à escolha do intérprete. Um player deve informar significado não suportado, sem inventar uma execução como se fosse certa."
+    },
+    "question": {
+      "en": "What should a player do with unsupported notation?",
+      "pt-BR": "O que um player deve fazer com notação não suportada?"
+    },
+    "options": {
+      "en": ["Silently guess", "Report the limitation", "Delete the source"],
+      "pt-BR": ["Adivinhar em silêncio", "Informar a limitação", "Apagar a fonte"]
+    },
+    "correct": 1
+  }
+]

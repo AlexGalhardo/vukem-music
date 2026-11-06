@@ -8,3 +8,5 @@
 *.woff2 binary
 go.sum linguist-generated
 resources/public/js/*.min.js -text linguist-vendored
+# Preserve the licensed notation sources' original spacing.
+scores/sources/*.ly whitespace=-blank-at-eol,-blank-at-eof

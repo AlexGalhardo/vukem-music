@@ -2,6 +2,7 @@ import { describe, expect, test } from "bun:test";
 import repertoire from "../../resources/js/data/repertoire.json";
 import { chordPitches } from "../../resources/js/music/harmony";
 import { pitchName, toMidi } from "../../resources/js/music/theory";
+import sources from "../../scores/manifest.json";
 
 const c = { step: "C", octave: 4, alter: 0 } as const;
 describe("chord spelling and inversion", () => {
@@ -39,7 +40,7 @@ test("50 distinct, attributed, bilingual works retain edition provenance", () =>
     expect(work.title["pt-BR"].length).toBeGreaterThan(0);
     expect(work.level).toBeGreaterThanOrEqual(0);
     expect(work.level).toBeLessThanOrEqual(3);
-    expect(work.playbackReady).toBe(false);
+    expect(work.playbackReady).toBe(sources.some((source) => source.id === work.id && source.review !== "pending"));
     for (const page of work.pages) expect(page).toBeGreaterThan(0);
   }
 });

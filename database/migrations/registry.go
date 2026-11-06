@@ -3,4 +3,4 @@ package migrations
 
 import "github.com/AlexGalhardo/vukem/schema"
 
-func All() []schema.Migration { return []schema.Migration{createLessons()} }
+func All() []schema.Migration { return []schema.Migration{createLessons(), createLearners()} }

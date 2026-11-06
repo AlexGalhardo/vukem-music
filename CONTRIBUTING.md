@@ -86,3 +86,16 @@ git config core.hooksPath .githooks
 Open an issue with the version, the steps to reproduce and what you expected
 instead. For anything security-related, follow
 [SECURITY.md](SECURITY.md) instead of opening an issue.
+
+## Extended score builds
+
+`bun run build` compiles the licensed repertoire with pinned LilyPond2.26.0 before
+Vite. Linux x86-64 downloads/checks the tool automatically; set `LILYPOND_BIN` on
+other supported systems or use Docker. Keep original edition licenses and hashes
+when changing sources. See [score-build](docs/score-build.md), [import limits](docs/extended-learning.md)
+and [account semantics](docs/accounts.md) before modifying those systems.
+
+Markdown tooling pins security overrides for `re2js`2.8.7 and `katex`0.18.2.
+Upstream Markdown packages otherwise retain vulnerable transitive versions.
+Run `bun lint:md` and `bun audit` when updating these overrides; remove them when
+the upstream dependency ranges include the fixed releases.

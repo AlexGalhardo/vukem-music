@@ -7,7 +7,7 @@ export interface Progress {
   attempts: number;
   correct: number;
 }
-const empty = (): Progress => ({ version: 1, completed: [], attempts: 0, correct: 0 });
+export const empty = (): Progress => ({ version: 1, completed: [], attempts: 0, correct: 0 });
 export function parseProgress(raw: string | null): Progress {
   if (!raw) return empty();
   try {
@@ -34,6 +34,33 @@ export function parseProgress(raw: string | null): Progress {
   } catch {
     return empty();
   }
+}
+export function validFoundation(value: unknown): value is Progress {
+  if (!value || typeof value !== "object") return false;
+  const v = value as Progress;
+  return (
+    Object.keys(v).every((key) => ["version", "completed", "attempts", "correct"].includes(key)) &&
+    v.version === 1 &&
+    Array.isArray(v.completed) &&
+    v.completed.length <= 500 &&
+    new Set(v.completed).size === v.completed.length &&
+    v.completed.every((id) => typeof id === "string" && /^[a-z-]{1,80}$/.test(id)) &&
+    Number.isSafeInteger(v.attempts) &&
+    Number.isSafeInteger(v.correct) &&
+    v.attempts >= 0 &&
+    v.attempts <= 1000000000 &&
+    v.correct >= 0 &&
+    v.correct <= v.attempts
+  );
+}
+export function replaceProgress(value: Progress) {
+  if (!validFoundation(value)) throw new Error("Invalid foundation progress");
+  loaded = true;
+  update({ version: 1, completed: [...new Set(value.completed)], attempts: value.attempts, correct: value.correct });
+}
+export function currentProgress() {
+  load();
+  return state;
 }
 let state = empty();
 let loaded = false;

@@ -42,3 +42,10 @@ regexes = [
 	'''_FAKE_|(?i)placeholder|changeme|example''',
 	'''(?i)x{8,}|\.\.\.$''',
 ]
+
+[[allowlists]]
+description = "Exact EN/PT password field labels; changed values remain scanned"
+condition = "AND"
+paths = ['''^resources/lang/(en|pt-BR)\.json$''']
+regexTarget = "line"
+regexes = ['''^\s*"(?:accountPassword|deletePassword)": "(?:Password|Senha|Confirm password to delete account|Confirme a senha para excluir a conta)",?\s*$''']

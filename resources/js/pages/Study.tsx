@@ -1,10 +1,15 @@
 import { Head, Link } from "@inertiajs/react";
 import { ArrowRight, BookOpen, Check, CircleCheck, Clock3, GraduationCap, Piano, Sparkles, Target } from "lucide-react";
 import { useCallback, useRef, useState } from "react";
+import { Account } from "../components/music/Account";
+import { Course } from "../components/music/Course";
 import { Exercise } from "../components/music/Exercise";
 import { Harmony } from "../components/music/Harmony";
+import { Instruments } from "../components/music/Instruments";
+import { LibraryPlayer } from "../components/music/LibraryPlayer";
 import { Player } from "../components/music/Player";
 import { Repertoire } from "../components/music/Repertoire";
+import { ScoreImport } from "../components/music/ScoreImport";
 import { Badge } from "../components/ui/badge";
 import { Button } from "../components/ui/button";
 import { Card } from "../components/ui/card";
@@ -64,7 +69,7 @@ function HeroArt() {
   );
 }
 
-export default function Study({ lessons, view, selected }: StudyProps) {
+export default function Study({ lessons, view, selected, work }: StudyProps) {
   const { t, local, href } = useI18n();
   const { progress, complete, reset } = useProgress();
   const exerciseAnswer = useRef<((midi: number) => void) | null>(null);
@@ -80,6 +85,11 @@ export default function Study({ lessons, view, selected }: StudyProps) {
   return (
     <>
       <Head title={`${title} · Vukem Music`} />
+      {view === "library-work" && <LibraryPlayer id={work ?? ""} />}
+      {view === "account" && <Account />}
+      {view === "course" && <Course />}
+      {view === "instruments" && <Instruments />}
+      {view === "import" && <ScoreImport />}
       {view === "library" && <Repertoire />}
       {view === "harmony" && <Harmony />}
       {view === "overview" && (

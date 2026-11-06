@@ -12,6 +12,7 @@ unchecked task. Maintain the roadmap and record evidence in `docs/verification.m
   the reference book's exercises or claim exhaustive visual score verification.
 - Model score time independently from screen position; AudioContext is playback's
   clock. Written pitch and sounding pitch are separate concepts.
-- Maintain no-account local progress. Do not add auth/import/MIDI as incidental work.
+- Maintain no-account local progress. Auth/import/MIDI are explicitly authorized by the full-roadmap request; keep
+  their privacy, ownership and supported-feature contracts documented.
 - Commit messages use Conventional Commits. Push only to the requested origin.
 - Mark external generation/deployment done only after observing the real outcome.

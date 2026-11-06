@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 
 	"github.com/AlexGalhardo/vukem-music/app/curriculum"
+	"github.com/AlexGalhardo/vukem-music/scores"
 	"github.com/AlexGalhardo/vukem/database"
 	"github.com/AlexGalhardo/vukem/errs"
 	"github.com/AlexGalhardo/vukem/inertia"
@@ -16,6 +17,10 @@ func Study(db *database.DB, view string) web.HandlerFunc {
 		lessons, err := curriculum.All(c.Context(), db)
 		if err != nil {
 			return err
+		}
+		work := c.Param("work")
+		if view == "library-work" && !scores.Has(work) {
+			return errs.ErrNotFound
 		}
 		selected := c.Param("lesson")
 		if selected != "" {
@@ -34,6 +39,6 @@ func Study(db *database.DB, view string) web.HandlerFunc {
 				return errs.ErrNotFound
 			}
 		}
-		return inertia.Render(c, "Study", inertia.Props{"lessons": lessons, "view": view, "selected": selected})
+		return inertia.Render(c, "Study", inertia.Props{"lessons": lessons, "view": view, "selected": selected, "work": work})
 	}
 }

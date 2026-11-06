@@ -8,8 +8,9 @@ score events. An initial migration installs eight lessons transactionally. Start
 runs pending migrations; it does not reseed or overwrite the curriculum on each
 request. To change already-installed lessons, add an explicit data migration.
 
-React receives curriculum through Inertia props. Browser requests are read-only;
-there are no public admin, generation, account or upload endpoints. Locale comes
+React receives curriculum through Inertia props. Curriculum routes are read-only;
+optional account endpoints persist only the signed-in learner's progress. There
+are no public admin, generation or file-upload endpoints. Locale comes
 from Vukem's resolver and is propagated in navigation URLs. Catalogs and course
 content are embedded in production binaries. Vite bundles the frontend.
 
@@ -30,9 +31,11 @@ The initial renderer/player supports monophonic, original 4/4 studies in treble
 and bass clefs, natural notes and explicit single accidentals, whole/half/quarter/
 eighth duration notation and basic rests. Current lessons use half and quarter
 values. This is a bounded study renderer, not a general-purpose engraving engine.
-Key signatures, measure-wide accidental inference, ties, slurs, tuplets, multiple
-voices, repeats, pedal and file import are not implemented. Do not accept arbitrary
-scores or imply support for these features without extending and testing the model.
+That original renderer stays bounded. Extended import uses a separate validated
+MusicXML model, rational polyphonic performance and OpenSheetMusicDisplay; curated
+repertoire uses build-time LilyPond SVG/MIDI. Their explicit limits and unsupported
+features are documented in [extended learning](extended-learning.md) and
+[score build](score-build.md).
 
 ## Playback lifecycle
 
@@ -62,8 +65,9 @@ review of educational notation. See the execution assertions in `ROADMAP.md`.
 
 `/library` and `/harmony` use the same Vukem/Inertia shell. Their original bilingual
 teaching data and edition metadata are bundled from `resources/js/data`; the eight
-foundational lesson records remain in SQLite. These extensions do not add writes,
-uploads or public audio-generation endpoints. Language changes use Inertia with
+foundational lesson records remain in SQLite. The library/harmony views do not add writes or uploads. Optional account writes
+are isolated through the authenticated session; no public audio-generation
+endpoint is introduced. Language changes use Inertia with
 state preservation so a chosen chord, inversion or library filter survives.
 
 The library contains fifty distinct work IDs, with source-edition hashes and page
@@ -78,5 +82,18 @@ staff handles its explicit double alterations and ledger lines; this does not
 extend the monophonic score transport to arbitrary polyphonic repertoire.
 Stop, selection changes, blur, hidden tabs and unmount cancel chord playback;
 pending audio preparation is guarded so stale actions cannot restart a chord.
-Eleven original bilingual topics provide worked examples and open study tasks;
+Twelve original bilingual topics provide worked examples and open study tasks;
 these tasks do not update the foundational exercise counters or assert mastery.
+
+## Extended systems
+
+The 58-topic course and foundation progress use independently versioned local
+stores. [Account synchronization](accounts.md) explicitly saves/restores a combined
+snapshot with optimistic revisions; there is no implicit merge. SQLite stores
+password hashes and progress, with framework session authentication and CSRF.
+
+[MusicXML, MIDI and microphone](extended-learning.md) are opt-in browser features.
+Imports and microphone audio remain local. AudioContext time also drives the
+extended transport; tuning and audio-only transposition leave written notation
+separate. Compiled [curated scores](score-build.md) preserve source licenses and
+are embedded as generated public assets in production.

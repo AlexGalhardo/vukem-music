@@ -124,3 +124,55 @@ This includes the production image, race-enabled Go checks, vulnerability checks
 secret scanning, Markdown and frontend/browser checks. The remote browser run
 passed all five journeys in 7.0 seconds. Remote `main` matched the implementation
 SHA when checked. A documentation-only commit records this observed result.
+
+## Full-roadmap implementation extension — 2026-11-05
+
+The full-roadmap request authorized the previously future software phases.
+Implemented: 58 original bilingual topic/review entries, semantic interval/scales
+and extended chord construction, MusicXML validation/OSMD engraving, rational
+polyphony/ties/repeats, audio-only transposition and fixed-C tuning comparisons,
+optional SQLite accounts with ownership/CSRF/revision checks, JSON progress
+portability, MIDI velocity/sustain cleanup and opt-in local microphone estimates.
+
+Validation of this extension:
+
+- `bun check` and Biome passed; markdownlint0.24.0 passed all 80 Markdown files.
+- 24 unit tests, 1,408 assertions passed. Fixtures include unsafe XML, rational
+  tuplets, ties, repeat endings, explicit nested-repeat rejection, interval quality,
+  scale spelling, alternate answers, ninth inversions, MIDI parsing, noise and
+  harmonic pitch estimates, validated backup and all fifty source input hashes.
+- Eleven Playwright journeys passed together after the production source-review
+  gate was added (4.2 minutes under concurrent compilation). They cover the original
+  product, 58-topic rounds, account save/restore/deletion, MusicXML SVG/polyphony,
+  MIDI sustain/repeated notes/blur/disconnect, microphone opt-in/local440Hz/track
+  release, and the licensed Mozart edition's SVG/piano transport in EN/PT.
+- The browser also verifies that the unresolved Reinagle edition's route and
+  generated JSON both return404. The native Mozart page screenshot was visually
+  inspected for score/control/piano layout; this is not a fifty-score PDF review.
+- `go test -race -count=1 ./...` passed, including account isolation/conflict/CSRF
+  tests and the production catalog gate. Go vet passed before the catalog gate;
+  a final vet check and the commit hook also cover the final Go changes.
+- Frontend production build passed. OpenSheetMusicDisplay is a separate lazy
+  chunk (approximately1.4MB before gzip); the bundler's large-chunk notice is
+  expected. XML is passed as a Document so short XML is never interpreted as a URL.
+- All fifty notation sources compiled through the separate editorial-review
+  command, with MIDI/engraved-attack consistency checks. Production publishes
+  only twenty licensed source editions. Thirty hand transcriptions remain drafts;
+  Reinagle No.5 bar12 has an unresolved bass reading. No automated check is claimed
+  as independent source comparison or specialist content review.
+- `bun audit` found no vulnerabilities across362 packages after updating Markdown
+  tooling and pinning documented security overrides for KaTeX and re2js.
+
+Local Docker validation hit the managed environment's small filesystem twice.
+Unused build cache was pruned, and the asset stage switched to Debian Bun slim
+for glibc-compatible LilyPond with less image storage. A subsequent older-dependency
+build was cancelled after package security updates superseded its context; it had
+installed dependencies and compiled initial source editions. Do not report this as
+an entirely verified final image. The new remote image job must validate the final
+Dockerfile and lockfile; record its actual result after publication.
+
+No real ElevenLabs generation, listening approval, Railway deployment, DNS update
+or independent musical specialist review occurred in these checks. See the
+remaining quality gates and exact supported-feature contracts in `ROADMAP.md`,
+[extended learning](extended-learning.md), [score build](score-build.md) and
+[accounts](accounts.md).

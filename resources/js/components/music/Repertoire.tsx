@@ -1,11 +1,13 @@
+import { Link } from "@inertiajs/react";
 import { useState } from "react";
+import sources from "../../../../scores/manifest.json";
 import repertoire from "../../data/repertoire.json";
 import { useI18n } from "../../lib/i18n";
 import { Badge } from "../ui/badge";
 import { Card } from "../ui/card";
 
 export function Repertoire() {
-  const { t, local } = useI18n();
+  const { t, local, href } = useI18n();
   const [search, setSearch] = useState("");
   const [level, setLevel] = useState("");
   const needle = search
@@ -75,6 +77,11 @@ export function Repertoire() {
             <p className="text-sm leading-6 text-muted-foreground">{local(work.goal)}</p>
             <p className="text-xs leading-5 text-muted-foreground">{local(work.part)}</p>
             <div className="mt-2 flex flex-wrap gap-4 text-sm text-primary">
+              {sources.some((source) => source.id === work.id && source.review !== "pending") && (
+                <Link href={href(`/library/${work.id}`)} className="underline underline-offset-4">
+                  {t("ui.playStudyEdition")}
+                </Link>
+              )}
               <a href={work.pdfUrl} target="_blank" rel="noreferrer" className="underline underline-offset-4">
                 {t("ui.openPdf")}
               </a>

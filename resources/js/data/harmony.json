@@ -251,5 +251,28 @@
       "en": "Choose a Petzold minuet from the library. Mark phrases on a private copy and justify each section boundary.",
       "pt-BR": "Escolha um minueto de Petzold na biblioteca. Marque frases em uma cópia privada e justifique cada divisão."
     }
+  },
+  {
+    "id": "extensions",
+    "title": {
+      "en": "Ninths, altered chords and context",
+      "pt-BR": "Nonas, acordes alterados e contexto"
+    },
+    "level": {
+      "en": "Advanced",
+      "pt-BR": "Avançado"
+    },
+    "body": {
+      "en": "A ninth extends a seventh chord by another third. Chord symbols distinguish an extension from an added tone: C9 implies a minor seventh; Cadd9 does not. Altered fifths and ninths retain their written degree identities. Actual voicings can omit members, so infer function from context rather than a pitch set alone.",
+      "pt-BR": "A nona estende uma tétrade por outra terça. A cifra distingue extensão de nota adicionada: C9 implica sétima menor; Cadd9 não. Quintas e nonas alteradas mantêm a identidade dos graus escritos. Disposições reais podem omitir membros; deduza função pelo contexto, não só pela coleção de alturas."
+    },
+    "example": {
+      "en": "C9 = C–E–G–B♭–D; Cmaj9 = C–E–G–B–D; Cm9 = C–E♭–G–B♭–D. C7♯5 = C–E–G♯–B♭. Compare them in the explorer before connecting G9 to C major.",
+      "pt-BR": "C9 = Dó–Mi–Sol–Si♭–Ré; Cmaj9 = Dó–Mi–Sol–Si–Ré; Cm9 = Dó–Mi♭–Sol–Si♭–Ré. C7♯5 = Dó–Mi–Sol♯–Si♭. Compare no explorador antes de ligar G9 a Dó maior."
+    },
+    "task": {
+      "en": "Build G9 and name its third and seventh. Resolve B toward C and F toward E in a common-practice reduction; explain the style-dependent tendency.",
+      "pt-BR": "Construa G9 e nomeie terça e sétima. Resolva Si para Dó e Fá para Mi numa redução tonal usual; explique a tendência dependente de estilo."
+    }
   }
 ]

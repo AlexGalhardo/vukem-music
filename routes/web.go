@@ -8,8 +8,10 @@ import (
 	"github.com/AlexGalhardo/vukem/middleware"
 	"github.com/AlexGalhardo/vukem/router"
 
+	"github.com/AlexGalhardo/vukem-music/app/accounts"
 	"github.com/AlexGalhardo/vukem-music/app/controllers"
 	"github.com/AlexGalhardo/vukem-music/resources"
+	"github.com/AlexGalhardo/vukem/auth/hash"
 )
 
 // Web registers the browser routes. vukem route:list shows them.
@@ -27,11 +29,18 @@ func Web(r *router.Router, app *vukem.App) error {
 		return err
 	}
 
+	accounts.New(db, hash.Default()).Routes(r)
+
 	r.Get("/", controllers.Study(db, "overview")).Name("home")
 	r.Get("/lessons", controllers.Study(db, "lessons")).Name("lessons")
 	r.Get("/lessons/{lesson}", controllers.Study(db, "lesson")).Name("lesson")
 	r.Get("/practice", controllers.Study(db, "practice")).Name("practice")
+	r.Get("/library/{work}", controllers.Study(db, "library-work")).Name("library.work")
 	r.Get("/library", controllers.Study(db, "library")).Name("library")
+	r.Get("/import", controllers.Study(db, "import")).Name("import")
+	r.Get("/course", controllers.Study(db, "course")).Name("course")
+	r.Get("/instruments", controllers.Study(db, "instruments")).Name("instruments")
+	r.Get("/account", controllers.Study(db, "account")).Name("account")
 	r.Get("/harmony", controllers.Study(db, "harmony")).Name("harmony")
 	r.Get("/progress", controllers.Study(db, "progress")).Name("progress")
 

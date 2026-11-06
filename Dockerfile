@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM oven/bun:1.4.4-alpine AS assets
+FROM oven/bun:1.4.4-slim AS assets
 WORKDIR /src
 COPY . .
 # Combine install/build to avoid duplicating node_modules in intermediate layers.
@@ -14,6 +14,7 @@ WORKDIR /src
 ENV CGO_ENABLED=0
 COPY . .
 COPY --from=assets /src/resources/public/build resources/public/build
+COPY --from=assets /src/resources/public/generated-scores resources/public/generated-scores
 RUN --mount=type=secret,id=system_ca \
     --mount=type=cache,target=/go/pkg/mod \
     --mount=type=cache,target=/root/.cache/go-build \
