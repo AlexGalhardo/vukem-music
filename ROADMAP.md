@@ -51,6 +51,8 @@ This is the primary handoff file for future sessions and agents. Read this file,
   - [x] Add `.env.example`, safe ignores and repeatable developer commands.
     - [x] Prepare private `.env` setup without printing or rotating an existing APP_KEY.
   - [x] Assert: no secrets, book assets, databases or local path replacements tracked.
+  - [x] Record framework evolution feedback with evidence and acceptance criteria
+    in `vukem-feedback.md`; distinguish proposals from confirmed defects.
 - [x] Publish the initial structure.
   - [x] Initialize `main` and set the requested GitHub origin.
   - [x] Commit and push the validated foundation.

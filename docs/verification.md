@@ -295,3 +295,16 @@ against the existing private bank/provenance without generating more audio.
 Runtime parameters were checked against the implementation at `3e04910`.
 Markdown lint is the applicable check for this documentation-only update; no
 new audio generation, application behavior or listening approval is claimed.
+
+## Vukem framework feedback — 2026-11-06
+
+Created root `vukem-feedback.md` with 21 prioritized, evidence-based feedback items.
+Cross-checked application source/history and framework revision 45a36f80e729,
+including CLI key generation/rotation, doctor, Docker template, strict JSON binding
+and optional/deferred Inertia props. The report distinguishes observed integration
+friction, source inspection and unimplemented proposals; it does not claim an
+upstream bug where the issue belongs to this application or its infrastructure.
+
+This is a documentation-only change, checked with Markdown lint and whitespace/
+local-link validation. No new deployment, framework patch, API generation or
+runtime test result is implied.

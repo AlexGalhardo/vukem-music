@@ -449,3 +449,12 @@ medidos por fonte, limites do banco, DSP, reprodução, transporte, MIDI/microfo
 cache, licenciamento e reprodução dos resultados. Os prompts atuais foram
 conferidos contra o construtor de requisições com stub local, sem novas chamadas
 à ElevenLabs. Não confundir afinação automática com aprovação auditiva.
+
+## Feedback para o framework — 2026-11-06
+
+O mantenedor pediu um registro na raiz, `vukem-feedback.md`, com os feedbacks
+encontrados durante o desenvolvimento e publicação na `main`. O documento reúne
+21 pontos priorizados, separando observações, inspeção da revisão fixada e propostas.
+Inclui critérios de aceite e recursos existentes que devem ser melhor documentados;
+não atribui problemas de infraestrutura, áudio ou código local ao core do Vukem.
+Não foram solicitadas mudanças no framework nem abertura de issues upstream.
