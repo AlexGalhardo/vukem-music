@@ -13,7 +13,8 @@
       "!playwright-report",
       "!test-results",
       "!resources/views",
-      "!resources/vite"
+      "!resources/vite",
+      "!.claude"
     ]
   },
   "formatter": {

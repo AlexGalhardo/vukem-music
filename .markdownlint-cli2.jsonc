@@ -19,5 +19,5 @@
     "MD060": false
   },
   "globs": ["**/*.md"],
-  "ignores": ["**/node_modules/**", "**/testdata/**"]
+  "ignores": ["**/node_modules/**", "**/testdata/**", ".claude/skills/**"]
 }
