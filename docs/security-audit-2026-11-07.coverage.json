@@ -1,0 +1,227 @@
+[
+  {
+    "coverage_id": ".github%2Fworkflows%2Fci.yml%23checkout::.github%2Fworkflows%2Fci.yml%23permissions::profile%2Fquick%2Fall-in-scope-subsystems::ATTACK-CLASSES.md%23Obvious%20things",
+    "canonical_refs": {
+      "surface": ".github/workflows/ci.yml#checkout",
+      "boundary": ".github/workflows/ci.yml#permissions",
+      "subsystem": "profile/quick/all-in-scope-subsystems",
+      "attack_class": "ATTACK-CLASSES.md#Obvious things"
+    },
+    "surface": ".github/workflows/ci.yml#checkout",
+    "boundary": ".github/workflows/ci.yml#permissions",
+    "subsystem": "profile/quick/all-in-scope-subsystems",
+    "attack_class": "ATTACK-CLASSES.md#Obvious things",
+    "starting_paths": [
+      ".github/workflows/ci.yml",
+      ".github/workflows/release.yml",
+      ".github/workflows/scorecard.yml"
+    ],
+    "ordinary_attack_class_block": "ATTACK-CLASSES.md#Obvious things",
+    "selected_companion_blocks": [],
+    "excluded_blocks": [],
+    "prior_status": "none",
+    "attempts": [],
+    "wave": 1,
+    "status": "covered",
+    "agent_id": "hunter-main",
+    "reviewed_paths": [
+      ".github/workflows/ci.yml",
+      ".github/workflows/release.yml",
+      ".github/workflows/scorecard.yml"
+    ],
+    "local_checks": [
+      {
+        "agent_id": "hunter-main",
+        "reviewed_paths": [
+          ".github/workflows/ci.yml",
+          ".github/workflows/release.yml",
+          ".github/workflows/scorecard.yml"
+        ],
+        "invariant": "Workflows use least privilege, pinned actions and non-persisted credentials.",
+        "method": "source",
+        "result": "All pinned and non-persisted.",
+        "artifact": null
+      }
+    ],
+    "result_fingerprints": [],
+    "unresolved": []
+  },
+  {
+    "coverage_id": ".railway%2Frailway.ts%23env::Dockerfile%23USER::profile%2Fquick%2Fall-in-scope-subsystems::ATTACK-CLASSES.md%23Cloud%20and%20deployment",
+    "canonical_refs": {
+      "surface": ".railway/railway.ts#env",
+      "boundary": "Dockerfile#USER",
+      "subsystem": "profile/quick/all-in-scope-subsystems",
+      "attack_class": "ATTACK-CLASSES.md#Cloud and deployment"
+    },
+    "surface": ".railway/railway.ts#env",
+    "boundary": "Dockerfile#USER",
+    "subsystem": "profile/quick/all-in-scope-subsystems",
+    "attack_class": "ATTACK-CLASSES.md#Cloud and deployment",
+    "starting_paths": [
+      ".railway/railway.ts",
+      "Dockerfile",
+      "scripts/start.sh"
+    ],
+    "ordinary_attack_class_block": "ATTACK-CLASSES.md#Cloud and deployment",
+    "selected_companion_blocks": [],
+    "excluded_blocks": [],
+    "prior_status": "none",
+    "attempts": [],
+    "wave": 1,
+    "status": "candidate",
+    "agent_id": "hunter-main",
+    "reviewed_paths": [
+      ".railway/railway.ts",
+      "Dockerfile",
+      "scripts/start.sh"
+    ],
+    "local_checks": [
+      {
+        "agent_id": "hunter-main",
+        "reviewed_paths": [
+          ".railway/railway.ts",
+          "Dockerfile",
+          "scripts/start.sh"
+        ],
+        "invariant": "Service runs unprivileged with trusted-proxy settings declared.",
+        "method": "source",
+        "result": "RAILWAY_RUN_UID is 0.",
+        "artifact": null
+      }
+    ],
+    "result_fingerprints": [
+      "vukem-music:deploy:railway-runs-as-root"
+    ],
+    "unresolved": []
+  },
+  {
+    "coverage_id": "app%2Faccounts%2Faccounts.go%23Delete::app%2Faccounts%2Faccounts.go%23Verify::profile%2Fquick%2Fall-in-scope-subsystems::ATTACK-CLASSES.md%23Business%20logic",
+    "canonical_refs": {
+      "surface": "app/accounts/accounts.go#Delete",
+      "boundary": "app/accounts/accounts.go#Verify",
+      "subsystem": "profile/quick/all-in-scope-subsystems",
+      "attack_class": "ATTACK-CLASSES.md#Business logic"
+    },
+    "surface": "app/accounts/accounts.go#Delete",
+    "boundary": "app/accounts/accounts.go#Verify",
+    "subsystem": "profile/quick/all-in-scope-subsystems",
+    "attack_class": "ATTACK-CLASSES.md#Business logic",
+    "starting_paths": [
+      "app/accounts/accounts.go"
+    ],
+    "ordinary_attack_class_block": "ATTACK-CLASSES.md#Business logic",
+    "selected_companion_blocks": [],
+    "excluded_blocks": [],
+    "prior_status": "none",
+    "attempts": [],
+    "wave": 1,
+    "status": "covered",
+    "agent_id": "hunter-main",
+    "reviewed_paths": [
+      "app/accounts/accounts.go"
+    ],
+    "local_checks": [
+      {
+        "agent_id": "hunter-main",
+        "reviewed_paths": [
+          "app/accounts/accounts.go"
+        ],
+        "invariant": "Deleting needs the password.",
+        "method": "source",
+        "result": "Verified before delete.",
+        "artifact": null
+      }
+    ],
+    "result_fingerprints": [],
+    "unresolved": []
+  },
+  {
+    "coverage_id": "app%2Faccounts%2Faccounts.go%23Routes::app%2Faccounts%2Faccounts.go%23decode::profile%2Fquick%2Fall-in-scope-subsystems::ATTACK-CLASSES.md%23Access%20control",
+    "canonical_refs": {
+      "surface": "app/accounts/accounts.go#Routes",
+      "boundary": "app/accounts/accounts.go#decode",
+      "subsystem": "profile/quick/all-in-scope-subsystems",
+      "attack_class": "ATTACK-CLASSES.md#Access control"
+    },
+    "surface": "app/accounts/accounts.go#Routes",
+    "boundary": "app/accounts/accounts.go#decode",
+    "subsystem": "profile/quick/all-in-scope-subsystems",
+    "attack_class": "ATTACK-CLASSES.md#Access control",
+    "starting_paths": [
+      "app/accounts/accounts.go",
+      "routes/web.go"
+    ],
+    "ordinary_attack_class_block": "ATTACK-CLASSES.md#Access control",
+    "selected_companion_blocks": [],
+    "excluded_blocks": [],
+    "prior_status": "none",
+    "attempts": [],
+    "wave": 1,
+    "status": "covered",
+    "agent_id": "hunter-main",
+    "reviewed_paths": [
+      "app/accounts/accounts.go",
+      "routes/web.go"
+    ],
+    "local_checks": [
+      {
+        "agent_id": "hunter-main",
+        "reviewed_paths": [
+          "app/accounts/accounts.go",
+          "routes/web.go"
+        ],
+        "invariant": "Account routes are rate limited, bodies capped, progress writes use optimistic revision.",
+        "method": "source",
+        "result": "Present.",
+        "artifact": null
+      }
+    ],
+    "result_fingerprints": [],
+    "unresolved": []
+  },
+  {
+    "coverage_id": "resources%2Fjs%2Fcomponents%2Fmusic%2FLibraryPlayer.tsx%23NativeScore::scripts%2Fbuild-scores.ts%23sanitizeSvg::profile%2Fquick%2Fall-in-scope-subsystems::ATTACK-CLASSES.md%23Injection",
+    "canonical_refs": {
+      "surface": "resources/js/components/music/LibraryPlayer.tsx#NativeScore",
+      "boundary": "scripts/build-scores.ts#sanitizeSvg",
+      "subsystem": "profile/quick/all-in-scope-subsystems",
+      "attack_class": "ATTACK-CLASSES.md#Injection"
+    },
+    "surface": "resources/js/components/music/LibraryPlayer.tsx#NativeScore",
+    "boundary": "scripts/build-scores.ts#sanitizeSvg",
+    "subsystem": "profile/quick/all-in-scope-subsystems",
+    "attack_class": "ATTACK-CLASSES.md#Injection",
+    "starting_paths": [
+      "resources/js/components/music/LibraryPlayer.tsx",
+      "scripts/build-scores.ts"
+    ],
+    "ordinary_attack_class_block": "ATTACK-CLASSES.md#Injection",
+    "selected_companion_blocks": [],
+    "excluded_blocks": [],
+    "prior_status": "none",
+    "attempts": [],
+    "wave": 1,
+    "status": "covered",
+    "agent_id": "hunter-main",
+    "reviewed_paths": [
+      "resources/js/components/music/LibraryPlayer.tsx",
+      "scripts/build-scores.ts"
+    ],
+    "local_checks": [
+      {
+        "agent_id": "hunter-main",
+        "reviewed_paths": [
+          "resources/js/components/music/LibraryPlayer.tsx",
+          "scripts/build-scores.ts"
+        ],
+        "invariant": "Only sanitized, hash-checked SVG reaches the DOM.",
+        "method": "source",
+        "result": "Allowlist sanitizer and checksum.",
+        "artifact": null
+      }
+    ],
+    "result_fingerprints": [],
+    "unresolved": []
+  }
+]

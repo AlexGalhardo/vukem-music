@@ -1,0 +1,87 @@
+[
+  {
+    "verdict": "rejected",
+    "fingerprint": "vukem-music:accounts:sql-injection",
+    "title": "Account queries concatenate input",
+    "description": "Register, login and save use SQL with user input.",
+    "claimed_root_cause": "Register, login and save use SQL with user input.",
+    "trace": [
+      {
+        "kind": "entrypoint",
+        "file": "app/accounts/accounts.go",
+        "line": 176,
+        "scope": "Register",
+        "description": "JSON body."
+      }
+    ],
+    "evidence": [
+      {
+        "file": "app/accounts/accounts.go",
+        "line": 176,
+        "description": "Every query uses placeholders; handles match a pattern and bodies are capped at 64 KiB with unknown fields rejected."
+      }
+    ],
+    "reason": "Parameterized and bounded."
+  },
+  {
+    "verdict": "needs_validation",
+    "fingerprint": "vukem-music:deploy:railway-runs-as-root",
+    "title": "Railway service runs as uid 0 despite the non-root image user",
+    "description": "The Dockerfile drops to user `app`, but the Railway IaC sets RAILWAY_RUN_UID to 0 (needed to write the mounted volume), so the process may run as root.",
+    "claimed_root_cause": "RAILWAY_RUN_UID=0 overrides the image USER.",
+    "trace": [
+      {
+        "kind": "entrypoint",
+        "file": ".railway/railway.ts",
+        "line": 22,
+        "scope": "defineRailway env",
+        "description": "Declared service variable."
+      },
+      {
+        "kind": "sink",
+        "file": ".railway/railway.ts",
+        "line": 22,
+        "scope": "defineRailway env",
+        "description": "The Go process runs with root privileges inside the container."
+      }
+    ],
+    "evidence": [
+      {
+        "file": ".railway/railway.ts",
+        "line": 22,
+        "description": "RAILWAY_RUN_UID is \"0\" while the Dockerfile sets USER app."
+      }
+    ],
+    "blockers": [
+      "Whether a volume group id or ownership setting would let the service run unprivileged is Railway platform behaviour outside the repository."
+    ],
+    "validation_plan": {
+      "local": "Read the Railway volume permission documentation.",
+      "deployment": "Owner tests RAILWAY_RUN_UID=1000 with a volume ownership fix in a staging environment."
+    }
+  },
+  {
+    "verdict": "rejected",
+    "fingerprint": "vukem-music:scores:svg-xss",
+    "title": "Score SVG rendered with dangerouslySetInnerHTML executes script",
+    "description": "LibraryPlayer injects fetched SVG pages into the DOM.",
+    "claimed_root_cause": "LibraryPlayer injects fetched SVG pages into the DOM.",
+    "trace": [
+      {
+        "kind": "entrypoint",
+        "file": "resources/js/components/music/LibraryPlayer.tsx",
+        "line": 86,
+        "scope": "NativeScore",
+        "description": "Same-origin generated score pages."
+      }
+    ],
+    "evidence": [
+      {
+        "file": "resources/js/components/music/LibraryPlayer.tsx",
+        "line": 86,
+        "description": "Pages are produced by the pinned LilyPond, pass an allowlist sanitizer at build (elements, attributes, DTD, style checks) and are checked by SHA-256 and a URL prefix before use."
+      }
+    ],
+    "reason": "Content is build-time curated and sanitized, not user supplied."
+  }
+]
