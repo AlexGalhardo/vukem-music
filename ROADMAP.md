@@ -157,13 +157,13 @@ This is the primary handoff file for future sessions and agents. Read this file,
 
 ## GitHub release delivery
 
-- [ ] Publish the initial release using the Vukem release pattern.
+- [x] Publish the initial release using the Vukem release pattern.
   - [x] Inspect the reference release assets, workflow and categorized notes.
   - [x] Prepare GoReleaser, changelog extraction, CI gate and release verification docs.
   - [x] Exclude secrets, runtime data, PDFs/OCR and restricted generated audio.
-  - [ ] Build and verify all six platform archives, checksums, SBOMs, signature and provenance.
-  - [ ] Publish `v0.1.0` only after successful CI for its exact commit.
-  - [ ] Assert: observe the published release and its fifteen uploaded assets; record its URL.
+  - [x] Build and verify all six platform archives, checksums, SBOMs, signature and provenance.
+  - [x] Publish `v0.1.0` only after successful CI for its exact commit.
+  - [x] Assert: observe the published release and its fifteen uploaded assets; record its URL (docs/verification.md).
 
 ## Extended delivery — now explicitly authorized
 

@@ -330,3 +330,17 @@ formats Markdown tables: the earlier audio/feedback documents passed markdownlin
 but failed Biome formatting. Those tables were formatted before publication.
 Final local lint and exact-commit remote CI must pass before creating the release
 tag. No existing CI failure is described as a successful release check.
+
+## Release v0.1.0 published — 2026-11-09
+
+Release: <https://github.com/AlexGalhardo/vukem-music/releases/tag/v0.1.0>, published
+2026-11-09T23:05:29Z with fifteen assets: six platform archives, six SPDX SBOMs,
+`checksums.txt`, `checksums.txt.sigstore.json` and `vukem-music.intoto.jsonl`.
+
+The release workflow created two releases for the same tag: one published release holding
+only the provenance asset and one draft holding the fourteen GoReleaser assets. The
+maintainer-side operator moved the fourteen assets to the published release (SHA-256
+checked against `checksums.txt`) and deleted the draft. Cause: GoReleaser did not reuse the
+draft created by `gh release create` because `release.use_existing_draft` was not set; it is
+now `true` in `.config/goreleaser.yaml`. The corrected workflow has not run yet; the next
+release is its first observation.
