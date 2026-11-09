@@ -1,7 +1,7 @@
 import { randomBytes } from "node:crypto";
 import { chmod, readFile, rename, writeFile } from "node:fs/promises";
 import { join } from "node:path";
-import { withApplicationKey } from "./lib/setup-environment";
+import { enableGitHooks, withApplicationKey } from "./lib/setup-environment";
 
 const root = join(import.meta.dir, "..");
 const destination = join(root, ".env");
@@ -22,4 +22,7 @@ console.log(
   result.generated
     ? ".env prepared with a private application key (not displayed)."
     : "Existing application key preserved.",
+);
+console.log(
+  enableGitHooks(root) ? "Git hooks enabled (core.hooksPath=.githooks)." : "Not a git checkout: git hooks not enabled.",
 );

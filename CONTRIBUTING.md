@@ -55,7 +55,7 @@ vague release note.
 
 The `commit-msg` hook in `.githooks/` checks the header and the `pre-commit`
 hook runs `gofmt` and `go vet` on the staged Go files. They are already wired
-up in a clone made by `vukem new`; in any other clone, run:
+up in a clone made by `vukem new`, and `bun run setup` enables them. To do it by hand, run:
 
 ```sh
 git config core.hooksPath .githooks
