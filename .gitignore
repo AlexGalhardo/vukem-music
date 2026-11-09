@@ -36,3 +36,6 @@ node_modules/
 
 # GoReleaser binaries, archives and signing/provenance build output
 /dist/
+
+# The framework feedback queue lives at the workspace root, never here.
+vukem-feedback.md

@@ -16,3 +16,5 @@ unchecked task. Maintain the roadmap and record evidence in `docs/verification.m
   their privacy, ownership and supported-feature contracts documented.
 - Commit messages use Conventional Commits. Push only to the requested origin.
 - Mark external generation/deployment done only after observing the real outcome.
+- Vukem framework findings go in the single shared `vukem-feedback.md` at the workspace root (the folder that
+  holds `vukem/` and every app), never in a copy inside this repo.
