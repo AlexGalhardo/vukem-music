@@ -4,6 +4,7 @@ import (
 	"database/sql"
 	"os"
 	"path/filepath"
+	"runtime"
 	"testing"
 
 	"github.com/AlexGalhardo/vukem-music/app/commands"
@@ -29,7 +30,8 @@ func TestConsistentBackupAndRestore(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	if info.Mode().Perm() != 0o600 {
+	// Windows has no POSIX permission bits: Go reports 0666 for any writable file.
+	if runtime.GOOS != "windows" && info.Mode().Perm() != 0o600 {
 		t.Fatalf("backup permissions=%o", info.Mode().Perm())
 	}
 	restored, err := sql.Open("sqlite", path)
