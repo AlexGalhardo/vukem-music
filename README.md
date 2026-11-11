@@ -39,7 +39,7 @@ Prebuilt packages and verification instructions are documented in
 
 ## Start locally
 
-Requirements: Go 1.27.3 and Bun 1.4.4. The score build downloads the pinned
+Requirements: Go 1.27.4 and Bun 1.4.4. The score build downloads the pinned
 LilyPond compiler on Linux x86-64; other platforms need LilyPond2.26.0 via
 `LILYPOND_BIN`, or Docker. No ElevenLabs key is required for the preview.
 
