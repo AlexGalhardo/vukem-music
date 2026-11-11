@@ -5,7 +5,7 @@ COPY . .
 # Combine install/build to avoid duplicating node_modules in intermediate layers.
 RUN bun install --frozen-lockfile && bun run build
 
-FROM golang:1.27.3-alpine3.24 AS build
+FROM golang:1.27.4-alpine3.24 AS build
 WORKDIR /src
 ENV CGO_ENABLED=0
 COPY . .
