@@ -13,7 +13,7 @@ COPY --from=assets /src/resources/public/build resources/public/build
 COPY --from=assets /src/resources/public/generated-scores resources/public/generated-scores
 RUN go build -trimpath -ldflags="-s -w" -o /out/app ./cmd/app
 
-FROM alpine:3.24.2
+FROM alpine:3.24.4
 RUN apk add --no-cache ca-certificates tzdata \
     && adduser -D -H -u 10001 app \
     && mkdir -p /app/storage && chown app:app /app/storage
