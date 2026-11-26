@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM oven/bun:1.4.4-slim AS assets
+FROM oven/bun:1.4.5-slim AS assets
 WORKDIR /src
 COPY . .
 # Combine install/build to avoid duplicating node_modules in intermediate layers.
